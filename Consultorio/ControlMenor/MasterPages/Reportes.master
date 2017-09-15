@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true"
+    CodeBehind="Reportes.master.cs" Inherits="Consultorio.ControlMenor.MasterPages.Reportes" %>
+
+<%@ MasterType VirtualPath="~/Global.Master" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <%-- Scripts globales --%>
+
+    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-1.5.1.min.js") %>'></script>
+
+    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
+
+    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery.dataTables.min.js") %>'></script>
+
+    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery.ui.selectmenu.js") %>'></script>
+
+    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/ui.checkbox.js") %>'></script>
+
+    <%-- Estilos jQueryUI y dataTable --%>
+    <link href='<%= ResolveUrl("~/ControlMenor/css/redmond/jquery.ui.all.css") %>' rel="stylesheet"
+        type="text/css" />
+    <link href='<%= ResolveUrl("~/ControlMenor/css/datatable.css") %>' rel="stylesheet"
+        type="text/css" />
+    <link href='<%= ResolveUrl("~/ControlMenor/css/jquery.ui.selectmenu.css") %>' rel="stylesheet"
+        type="text/css" />
+    <link href='<%= ResolveUrl("~/ControlMenor/css/ui.checkbox.css") %>' rel="stylesheet"
+        type="text/css" />
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Busca y formatea las grillas que haya.
+            $('.grilla').dataTable({
+                "bJQueryUI": true,
+                "oLanguage": {
+                    "sSearch": "Buscar:",
+                    "sLengthMenu": "Mostrar _MENU_ ítems por página",
+                    "sZeroRecords": "No se encontró nada",
+                    "sInfo": "Mostrando _START_ a _END_ de _TOTAL_ ítems",
+                    "sInfoEmpty": "Mostrando 0 a 0 de 0 ítems",
+                    "sInfoFiltered": "(filtrado de _MAX_ ítems totales)"
+                },
+                "iDisplayLength": 10,
+                "aaSorting": [[1, "asc"]],
+                "aoColumnDefs": [
+			            { "bSortable": false, "aTargets": [0] }
+		            ]
+            });
+            // Formatea las cajas de texto
+            $('input[type=text]').addClass("ui-widget-content ui-corner-all");
+            $('textarea').addClass("ui-widget-content ui-corner-all");
+            // Formatea los selects (sólo los chicos, para que no exploten)
+            $('select').filter(function(index) { return ($(this).children().size() < 50); }).selectmenu();
+            // Agrega los datepickers (todo campo de texto que incluya "Fecha" en el nombre).
+            $.datepicker.setDefaults($.datepicker.regional["es"]);
+            $('input[type=text][name*=Fecha]').datepicker({
+                showOn: "button",
+                buttonText: "Elija",
+                dateFormat: "dd/mm/yy"
+            });
+            // Formatea botones de los datepickers
+            $('button.ui-datepicker-trigger').button({
+                icons: { primary: "ui-icon-calendar" },
+                text: false
+            });
+            // Formatea radiobuttons
+            $('input[type=radio]').checkbox();
+            // Formatea checkboxes
+            $('input[type=checkbox]').checkbox();
+        });
+    </script>
+
+    <%-- Placeholder para agregar css o scripts locales --%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Superior" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="contenido" runat="server">
+    <%-- Cuerpo  --%>
+    <div class="content ui-widget ui-widget-content ui-corner-all ui-helper-clearfix">
+        <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

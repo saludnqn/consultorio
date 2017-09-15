@@ -1,0 +1,1353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D97FE839-877E-4F54-A1E0-442F63FEEBC5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Consultorio</RootNamespace>
+    <AssemblyName>Consultorio</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.10618.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CrystalDecisions.VSDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtensionMethods, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ExtensionMethods.dll</HintPath>
+    </Reference>
+    <Reference Include="fastjson, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\fastjson.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicAjax, Version=0.3.0.0, Culture=neutral, PublicKeyToken=bf4053b35db106f3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MagicAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NPlot, Version=0.9.10.0, Culture=neutral, PublicKeyToken=4eda430eb4395eb1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SubSonic2.2\SubSonic2.2\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Abm\AbmConsultorios.aspx" />
+    <Content Include="Abm\TablaConsultorios.aspx" />
+    <Content Include="Agenda\AgendaAuditoria.aspx" />
+    <Content Include="Agenda\AgendaDistribucion.aspx" />
+    <Content Include="Agenda\AgendaEdit.aspx" />
+    <Content Include="Agenda\AgendaList.aspx" />
+    <Content Include="Agenda\AgendaNew.aspx" />
+    <Content Include="Agenda\AgendaPorEspacio.aspx" />
+    <Content Include="Agenda\AgendaPorRango.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AJAXExtensionsToolbox.dll" />
+    <Content Include="bin\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="bin\CrystalDecisions.ReportSource.dll" />
+    <Content Include="bin\CrystalDecisions.Shared.dll" />
+    <Content Include="bin\CrystalDecisions.VSDesigner.dll" />
+    <Content Include="bin\CrystalDecisions.Web.dll" />
+    <Content Include="bin\DalSic.dll" />
+    <Content Include="bin\ExtensionMethods.dll" />
+    <Content Include="bin\MagicAjax.dll" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Salud.Security.SSO.Core.dll" />
+    <Content Include="bin\Salud.Security.SSO.dll" />
+    <Content Include="bin\SubSonic.dll" />
+    <Content Include="ConsultaAmbulatoria\Alertas\ControlPerinatal.aspx" />
+    <Content Include="ConsultaAmbulatoria\Alertas\DatosAlertas.aspx" />
+    <Content Include="ConsultaAmbulatoria\BuscarEmbarazada.aspx" />
+    <Content Include="ConsultaAmbulatoria\BuscarMenor.aspx" />
+    <Content Include="ConsultaAmbulatoria\BuscarPaciente.aspx" />
+    <Content Include="ConsultaAmbulatoria\Consultas.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlMenor\AreasDesarrollo.ascx" />
+    <Content Include="ConsultaAmbulatoria\ControlMenor\Control.ascx" />
+    <Content Include="ConsultaAmbulatoria\ControlMenor\ControlOdontologico.ascx" />
+    <Content Include="ConsultaAmbulatoria\ControlMenor\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlMenor\Enfermeria.ascx" />
+    <Content Include="ConsultaAmbulatoria\ControlMenor\EstadoNutricional.ascx" />
+    <Content Include="ConsultaAmbulatoria\ControlMenor\FactoresProtectores.ascx" />
+    <Content Include="ConsultaAmbulatoria\ControlMenor\FactoresRiesgo.ascx" />
+    <Content Include="ConsultaAmbulatoria\ControlMenor\Hemoglobina.ascx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Actividades\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Actividades\Edit.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Alerta\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\AlturaUterina\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\ControlOdontologico\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\ControlOdontologico\Edit.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Control\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Control\EditarControl.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\actualizar.png" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\alertBox.css" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\buscar.png" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\cperinatal.css" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\cperinataldetalles.css" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\cperinatalextra.css" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\delete.png" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\editar.png" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\HCPerinatal.png" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\hcppdf.png" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\imghcp.png" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Estado\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Evaluacion\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Graficos\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Interconsultas\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Interconsultas\Edit.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\js\date-es-AR.js" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\js\date.js" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\js\html2canvas.js" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\js\moment.js" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\PanelControl\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Parto\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Parto\Edit.aspx" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\Score\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\Default.aspx" />
+    <Content Include="ConsultaAmbulatoria\DiagnosticoEdit.aspx" />
+    <Content Include="ConsultaAmbulatoria\Inicio.aspx" />
+    <Content Include="ConsultaAmbulatoria\Mensaje.aspx" />
+    <Content Include="ConsultaAmbulatoria\SeleccionTurno.aspx" />
+    <Content Include="ConsultaAmbulatoria\Services\cie10.aspx" />
+    <Content Include="ConsultaAmbulatoria\Services\Cie10Proxy.js" />
+    <Content Include="ConsultaAmbulatoria\Services\estnut.aspx" />
+    <Content Include="ConsultaAmbulatoria\Services\med.aspx" />
+    <Content Include="ConsultaAmbulatoria\Services\Medicamento.asmx" />
+    <Content Include="ConsultaAmbulatoria\Services\odonto.aspx" />
+    <Content Include="ConsultaAmbulatoria\temp\Test.aspx" />
+    <Content Include="ConsultaAmbulatoria\UserControls\ConsultaAmbulatoria.ascx" />
+    <Content Include="ConsultaAmbulatoria\UserControls\Consultas.ascx" />
+    <Content Include="ConsultaAmbulatoria\UserControls\DiagCIE10.ascx" />
+    <Content Include="ConsultaAmbulatoria\UserControls\DiagnosticoPrincipal.ascx" />
+    <Content Include="ConsultaAmbulatoria\UserControls\DiagnosticoSecundario.ascx" />
+    <Content Include="ConsultaAmbulatoria\UserControls\Medicamento.ascx" />
+    <Content Include="ConsultaAmbulatoria\UserControls\PrestacionOdontologia.ascx" />
+    <Content Include="ConsultorioMedico\AtencionConsultorio\AgendaList.aspx" />
+    <Content Include="ConsultorioMedico\DatosControl.aspx" />
+    <Content Include="ConsultorioMedico\Default.aspx" />
+    <Content Include="ConsultorioMedico\RecetaEdit.aspx" />
+    <Content Include="ConsultorioMedico\TopDiagnosticos.aspx" />
+    <Content Include="ControlMenor\MasterPages\ControlMenor.master" />
+    <Content Include="ControlMenor\MasterPages\PanelControl.master" />
+    <Content Include="ControlMenor\MasterPages\Reportes.master" />
+    <Content Include="Default.aspx" />
+    <Content Include="Informes\DemandaRechazada.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Agenda\Agenda.rar" />
+    <Content Include="Informes\CrystalReport1.mht" />
+    <Content Include="Informes\Informes.rar" />
+    <Content Include="Actualizaciones.pdf" />
+    <Content Include="Informe final de consultoria.pdf" />
+    <Content Include="Informe final de consultoría Neuquén 2012 _1_.pdf" />
+    <Content Include="ModeloPlanillaConsultorio.pdf" />
+    <Content Include="ModeloPlanillaOdontologia.pdf" />
+    <Content Include="ModeloPlanillaSaludMental.pdf" />
+    <Content Include="nota tecnica gestion de turnos.pdf" />
+    <Content Include="Procedimiento Solicitud y entrega de turnos para consulta ambulatoria en CS.pdf" />
+    <Content Include="ConsultaAmbulatoria\ControlPerinatal\css\HistoriaClinicaPerinatal.pdf" />
+    <Content Include="ConsultaAmbulatoria\MasterPages\Consultorio.master" />
+    <Content Include="ConsultaAmbulatoria\MasterPages\ConsultorioPerinatal.Master" />
+    <Content Include="ConsultaAmbulatoria\Ayuda.pdf" />
+    <Content Include="Global.Master" />
+    <Content Include="mConsultorio.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PanelConsultas\AgendaList.aspx" />
+    <Content Include="PanelConsultas\ConsultasxEfector.aspx" />
+    <Content Include="PanelConsultas\PrincipalEfector.aspx" />
+    <Content Include="PanelConsultas\ReporteC2.aspx" />
+    <Content Include="PanelConsultas\ReporteDiagnosticos.aspx" />
+    <Content Include="PanelConsultas\TurnosView.aspx" />
+    <Content Include="PanelConsultas\TurnosxEfector.aspx" />
+    <Content Include="Principal.aspx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="style.css" />
+    <Content Include="Turnos.css" />
+    <Content Include="Turnos\AsistenciaEdit.aspx" />
+    <Content Include="Turnos\ATerapeuticoList.aspx" />
+    <Content Include="Turnos\ConsultorioPaciente.aspx" />
+    <Content Include="Turnos\DiagnosticoEdit.aspx" />
+    <Content Include="Turnos\DiagnosticoEditConsultorio.aspx" />
+    <Content Include="Turnos\DiagnosticoEditOdontologia.aspx" />
+    <Content Include="Turnos\PacienteList.aspx" />
+    <Content Include="Turnos\PacientesConTurnos.aspx" />
+    <Content Include="Turnos\PacientesConTurnos2.aspx" />
+    <Content Include="Turnos\Test.aspx" />
+    <Content Include="Turnos\TurnoComprobante.aspx" />
+    <Content Include="Turnos\TurnoNuevo.aspx" />
+    <Content Include="Turnos\TurnoNuevoDefault.aspx" />
+    <Content Include="Turnos\TurnoNuevoSinEfector.aspx" />
+    <Content Include="Turnos\TurnosAdmin.aspx" />
+    <Content Include="Turnos\TurnosAdminBusqueda.aspx" />
+    <Content Include="Turnos\TurnosAuditoria.aspx" />
+    <Content Include="Turnos\TurnosPorPaciente.aspx" />
+    <Content Include="Turnos\TurnosProtegidos\buscarAgenda.aspx" />
+    <Content Include="Turnos\TurnosProtegidos\mostrarTurnoPaciente.aspx" />
+    <Content Include="Turnos\TurnosProtegidos\seleccionarInterconsulta.aspx" />
+    <Content Include="Turnos\TurnosProtegidos\turnosDisponibles.aspx" />
+    <Content Include="Turnos\TurnosProtegidos\verificarAsignacionAgenda.aspx" />
+    <Content Include="Turnos\TurnosProtegidos\WebServicePrueba.asmx" />
+    <Content Include="Turnos\TurnosSeguridad.aspx" />
+    <Content Include="UserControls\AlertaCM.ascx" />
+    <Content Include="UserControls\AlertasControlMenor.ascx" />
+    <Content Include="UserControls\CalendarioVacunacion.ascx" />
+    <Content Include="UserControls\ConsultorioPaciente.ascx" />
+    <Content Include="UserControls\Efector.ascx" />
+    <Content Include="UserControls\ObrasSociales.ascx" />
+    <Content Include="UserControls\PacienteProvincial.ascx" />
+    <Content Include="UserControls\Profesional.ascx" />
+    <Content Include="UserControls\ResumenPaciente.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abm\AbmConsultorios.aspx.cs">
+      <DependentUpon>AbmConsultorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Abm\AbmConsultorios.aspx.designer.cs">
+      <DependentUpon>AbmConsultorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Abm\TablaConsultorios.aspx.cs">
+      <DependentUpon>TablaConsultorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Abm\TablaConsultorios.aspx.designer.cs">
+      <DependentUpon>TablaConsultorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaAuditoria.aspx.cs">
+      <DependentUpon>AgendaAuditoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaAuditoria.aspx.designer.cs">
+      <DependentUpon>AgendaAuditoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaDistribucion.aspx.cs">
+      <DependentUpon>AgendaDistribucion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaDistribucion.aspx.designer.cs">
+      <DependentUpon>AgendaDistribucion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaEdit.aspx.cs">
+      <DependentUpon>AgendaEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaEdit.aspx.designer.cs">
+      <DependentUpon>AgendaEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaList.aspx.cs">
+      <DependentUpon>AgendaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaList.aspx.designer.cs">
+      <DependentUpon>AgendaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaNew.aspx.cs">
+      <DependentUpon>AgendaNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaNew.aspx.designer.cs">
+      <DependentUpon>AgendaNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaPorEspacio.aspx.cs">
+      <DependentUpon>AgendaPorEspacio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaPorEspacio.aspx.designer.cs">
+      <DependentUpon>AgendaPorEspacio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaPorRango.aspx.cs">
+      <DependentUpon>AgendaPorRango.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaPorRango.aspx.designer.cs">
+      <DependentUpon>AgendaPorRango.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\GuradarAgenda.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="ConsultaAmbulatoria\Alertas\ControlPerinatal.aspx.cs">
+      <DependentUpon>ControlPerinatal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Alertas\ControlPerinatal.aspx.designer.cs">
+      <DependentUpon>ControlPerinatal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Alertas\DatosAlertas.aspx.cs">
+      <DependentUpon>DatosAlertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Alertas\DatosAlertas.aspx.designer.cs">
+      <DependentUpon>DatosAlertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\BuscarEmbarazada.aspx.cs">
+      <DependentUpon>BuscarEmbarazada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\BuscarEmbarazada.aspx.designer.cs">
+      <DependentUpon>BuscarEmbarazada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\BuscarMenor.aspx.cs">
+      <DependentUpon>BuscarMenor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\BuscarMenor.aspx.designer.cs">
+      <DependentUpon>BuscarMenor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\BuscarPaciente.aspx.cs">
+      <DependentUpon>BuscarPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\BuscarPaciente.aspx.designer.cs">
+      <DependentUpon>BuscarPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\AreasDesarrollo.ascx.cs">
+      <DependentUpon>AreasDesarrollo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\AreasDesarrollo.ascx.designer.cs">
+      <DependentUpon>AreasDesarrollo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\Control.ascx.cs">
+      <DependentUpon>Control.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\Control.ascx.designer.cs">
+      <DependentUpon>Control.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\ControlOdontologico.ascx.cs">
+      <DependentUpon>ControlOdontologico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\ControlOdontologico.ascx.designer.cs">
+      <DependentUpon>ControlOdontologico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\Enfermeria.ascx.cs">
+      <DependentUpon>Enfermeria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\Enfermeria.ascx.designer.cs">
+      <DependentUpon>Enfermeria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\EstadoNutricional.ascx.cs">
+      <DependentUpon>EstadoNutricional.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\EstadoNutricional.ascx.designer.cs">
+      <DependentUpon>EstadoNutricional.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\FactoresProtectores.ascx.cs">
+      <DependentUpon>FactoresProtectores.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\FactoresProtectores.ascx.designer.cs">
+      <DependentUpon>FactoresProtectores.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\FactoresRiesgo.ascx.cs">
+      <DependentUpon>FactoresRiesgo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\FactoresRiesgo.ascx.designer.cs">
+      <DependentUpon>FactoresRiesgo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\Hemoglobina.ascx.cs">
+      <DependentUpon>Hemoglobina.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlMenor\Hemoglobina.ascx.designer.cs">
+      <DependentUpon>Hemoglobina.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Actividades\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Actividades\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Actividades\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Actividades\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Alerta\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Alerta\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\AlturaUterina\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\AlturaUterina\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\ControlOdontologico\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\ControlOdontologico\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\ControlOdontologico\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\ControlOdontologico\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Control\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Control\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Control\EditarControl.aspx.cs">
+      <DependentUpon>EditarControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Control\EditarControl.aspx.designer.cs">
+      <DependentUpon>EditarControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Estado\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Estado\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Evaluacion\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Evaluacion\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Graficos\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Graficos\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Interconsultas\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Interconsultas\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Interconsultas\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Interconsultas\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\PanelControl\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\PanelControl\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Parto\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Parto\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Parto\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Parto\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Score\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Score\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\DiagnosticoEdit.aspx.cs">
+      <DependentUpon>DiagnosticoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\DiagnosticoEdit.aspx.designer.cs">
+      <DependentUpon>DiagnosticoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\MasterPages\Consultorio.master.cs">
+      <DependentUpon>Consultorio.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\MasterPages\Consultorio.master.designer.cs">
+      <DependentUpon>Consultorio.master</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\MasterPages\ConsultorioPerinatal.Master.cs">
+      <DependentUpon>ConsultorioPerinatal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\MasterPages\ConsultorioPerinatal.Master.designer.cs">
+      <DependentUpon>ConsultorioPerinatal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Mensaje.aspx.cs">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Mensaje.aspx.designer.cs">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\SeleccionTurno.aspx.cs">
+      <DependentUpon>SeleccionTurno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\SeleccionTurno.aspx.designer.cs">
+      <DependentUpon>SeleccionTurno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Services\cie10.aspx.cs">
+      <DependentUpon>cie10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Services\cie10.aspx.designer.cs">
+      <DependentUpon>cie10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Services\estnut.aspx.cs">
+      <DependentUpon>estnut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Services\estnut.aspx.designer.cs">
+      <DependentUpon>estnut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Services\med.aspx.cs">
+      <DependentUpon>med.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Services\med.aspx.designer.cs">
+      <DependentUpon>med.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Services\Medicamento.asmx.cs">
+      <DependentUpon>Medicamento.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Services\odonto.aspx.cs">
+      <DependentUpon>odonto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\Services\odonto.aspx.designer.cs">
+      <DependentUpon>odonto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\temp\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\temp\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\ConsultaAmbulatoria.ascx.cs">
+      <DependentUpon>ConsultaAmbulatoria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\ConsultaAmbulatoria.ascx.designer.cs">
+      <DependentUpon>ConsultaAmbulatoria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\Consultas.ascx.cs">
+      <DependentUpon>Consultas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\Consultas.ascx.designer.cs">
+      <DependentUpon>Consultas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\DiagCIE10.ascx.cs">
+      <DependentUpon>DiagCIE10.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\DiagCIE10.ascx.designer.cs">
+      <DependentUpon>DiagCIE10.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\DiagnosticoPrincipal.ascx.cs">
+      <DependentUpon>DiagnosticoPrincipal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\DiagnosticoPrincipal.ascx.designer.cs">
+      <DependentUpon>DiagnosticoPrincipal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\DiagnosticoSecundario.ascx.cs">
+      <DependentUpon>DiagnosticoSecundario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\DiagnosticoSecundario.ascx.designer.cs">
+      <DependentUpon>DiagnosticoSecundario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\Medicamento.ascx.cs">
+      <DependentUpon>Medicamento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\Medicamento.ascx.designer.cs">
+      <DependentUpon>Medicamento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\PrestacionOdontologia.ascx.cs">
+      <DependentUpon>PrestacionOdontologia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaAmbulatoria\UserControls\PrestacionOdontologia.ascx.designer.cs">
+      <DependentUpon>PrestacionOdontologia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultorioMedico\AtencionConsultorio\AgendaList.aspx.cs">
+      <DependentUpon>AgendaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultorioMedico\AtencionConsultorio\AgendaList.aspx.designer.cs">
+      <DependentUpon>AgendaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultorioMedico\DatosControl.aspx.cs">
+      <DependentUpon>DatosControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultorioMedico\DatosControl.aspx.designer.cs">
+      <DependentUpon>DatosControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultorioMedico\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultorioMedico\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultorioMedico\RecetaEdit.aspx.cs">
+      <DependentUpon>RecetaEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultorioMedico\RecetaEdit.aspx.designer.cs">
+      <DependentUpon>RecetaEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultorioMedico\TopDiagnosticos.aspx.cs">
+      <DependentUpon>TopDiagnosticos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultorioMedico\TopDiagnosticos.aspx.designer.cs">
+      <DependentUpon>TopDiagnosticos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlMenor\MasterPages\ControlMenor.master.cs">
+      <DependentUpon>ControlMenor.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlMenor\MasterPages\ControlMenor.master.designer.cs">
+      <DependentUpon>ControlMenor.master</DependentUpon>
+    </Compile>
+    <Compile Include="ControlMenor\MasterPages\PanelControl.master.cs">
+      <DependentUpon>PanelControl.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlMenor\MasterPages\PanelControl.master.designer.cs">
+      <DependentUpon>PanelControl.master</DependentUpon>
+    </Compile>
+    <Compile Include="ControlMenor\MasterPages\Reportes.master.cs">
+      <DependentUpon>Reportes.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlMenor\MasterPages\Reportes.master.designer.cs">
+      <DependentUpon>Reportes.master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.Master.cs">
+      <DependentUpon>Global.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.Master.designer.cs">
+      <DependentUpon>Global.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\ConsultorioPaciente1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultorioPaciente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\ConsultorioPacienteEcografia1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultorioPacienteEcografia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\ConsultorioPacienteHistorial1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultorioPacienteHistorial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\ConsultorioPacienteHistorialOdontologia1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultorioPacienteHistorialOdontologia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\DemandaRechazada.aspx.cs">
+      <DependentUpon>DemandaRechazada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Informes\DemandaRechazada.aspx.designer.cs">
+      <DependentUpon>DemandaRechazada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\DistribucionConsultorio1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DistribucionConsultorio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\HistoriasClinicas1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HistoriasClinicas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\PacientesTurno1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PacientesTurno.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\Planilla1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Planilla.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\PlanillaOdontologia21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanillaOdontologia2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\PlanillaSaludMental1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanillaSaludMental.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\PlanillaSaludMental_Oficio1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanillaSaludMental_Oficio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\Planilla_Oficio1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Planilla_Oficio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\Profesionales1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Profesionales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mConsultorio.Master.cs">
+      <DependentUpon>mConsultorio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mConsultorio.Master.designer.cs">
+      <DependentUpon>mConsultorio.Master</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="PanelConsultas\AgendaList.aspx.cs">
+      <DependentUpon>AgendaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\AgendaList.aspx.designer.cs">
+      <DependentUpon>AgendaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PanelConsultas\ConsultasxEfector.aspx.cs">
+      <DependentUpon>ConsultasxEfector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\ConsultasxEfector.aspx.designer.cs">
+      <DependentUpon>ConsultasxEfector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PanelConsultas\EstadisticaConsultas1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadisticaConsultas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\EstadisticaDiagnostico1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadisticaDiagnostico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\EstadisticaDiagnosticoC21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadisticaDiagnosticoC2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\EstadisticaDiagnosticoDetallada1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadisticaDiagnosticoDetallada.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\PrincipalEfector.aspx.cs">
+      <DependentUpon>PrincipalEfector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\PrincipalEfector.aspx.designer.cs">
+      <DependentUpon>PrincipalEfector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PanelConsultas\ReporteC2.aspx.cs">
+      <DependentUpon>ReporteC2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\ReporteC2.aspx.designer.cs">
+      <DependentUpon>ReporteC2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PanelConsultas\ReporteDiagnosticos.aspx.cs">
+      <DependentUpon>ReporteDiagnosticos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\ReporteDiagnosticos.aspx.designer.cs">
+      <DependentUpon>ReporteDiagnosticos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PanelConsultas\TurnosView.aspx.cs">
+      <DependentUpon>TurnosView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\TurnosView.aspx.designer.cs">
+      <DependentUpon>TurnosView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PanelConsultas\TurnosxEfector.aspx.cs">
+      <DependentUpon>TurnosxEfector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelConsultas\TurnosxEfector.aspx.designer.cs">
+      <DependentUpon>TurnosxEfector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Turnos\AsistenciaEdit.aspx.cs">
+      <DependentUpon>AsistenciaEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\AsistenciaEdit.aspx.designer.cs">
+      <DependentUpon>AsistenciaEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\ATerapeuticoList.aspx.cs">
+      <DependentUpon>ATerapeuticoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\ATerapeuticoList.aspx.designer.cs">
+      <DependentUpon>ATerapeuticoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\ConsultorioPaciente.aspx.cs">
+      <DependentUpon>ConsultorioPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\ConsultorioPaciente.aspx.designer.cs">
+      <DependentUpon>ConsultorioPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\DiagnosticoEdit.aspx.cs">
+      <DependentUpon>DiagnosticoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\DiagnosticoEdit.aspx.designer.cs">
+      <DependentUpon>DiagnosticoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\DiagnosticoEditConsultorio.aspx.cs">
+      <DependentUpon>DiagnosticoEditConsultorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\DiagnosticoEditConsultorio.aspx.designer.cs">
+      <DependentUpon>DiagnosticoEditConsultorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\DiagnosticoEditOdontologia.aspx.cs">
+      <DependentUpon>DiagnosticoEditOdontologia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\DiagnosticoEditOdontologia.aspx.designer.cs">
+      <DependentUpon>DiagnosticoEditOdontologia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\GuardarTurno.cs" />
+    <Compile Include="Turnos\PacienteList.aspx.cs">
+      <DependentUpon>PacienteList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\PacienteList.aspx.designer.cs">
+      <DependentUpon>PacienteList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\PacientesConTurnos.aspx.cs">
+      <DependentUpon>PacientesConTurnos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\PacientesConTurnos.aspx.designer.cs">
+      <DependentUpon>PacientesConTurnos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\PacientesConTurnos2.aspx.cs">
+      <DependentUpon>PacientesConTurnos2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\PacientesConTurnos2.aspx.designer.cs">
+      <DependentUpon>PacientesConTurnos2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnoComprobante.aspx.cs">
+      <DependentUpon>TurnoComprobante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnoComprobante.aspx.designer.cs">
+      <DependentUpon>TurnoComprobante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnoNuevo.aspx.cs">
+      <DependentUpon>TurnoNuevo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnoNuevo.aspx.designer.cs">
+      <DependentUpon>TurnoNuevo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnoNuevoDefault.aspx.cs">
+      <DependentUpon>TurnoNuevoDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnoNuevoDefault.aspx.designer.cs">
+      <DependentUpon>TurnoNuevoDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnoNuevoSinEfector.aspx.cs">
+      <DependentUpon>TurnoNuevoSinEfector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnoNuevoSinEfector.aspx.designer.cs">
+      <DependentUpon>TurnoNuevoSinEfector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosAdmin.aspx.cs">
+      <DependentUpon>TurnosAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosAdmin.aspx.designer.cs">
+      <DependentUpon>TurnosAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosAdminBusqueda.aspx.cs">
+      <DependentUpon>TurnosAdminBusqueda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosAdminBusqueda.aspx.designer.cs">
+      <DependentUpon>TurnosAdminBusqueda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosAuditoria.aspx.cs">
+      <DependentUpon>TurnosAuditoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosAuditoria.aspx.designer.cs">
+      <DependentUpon>TurnosAuditoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosPorPaciente.aspx.cs">
+      <DependentUpon>TurnosPorPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosPorPaciente.aspx.designer.cs">
+      <DependentUpon>TurnosPorPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\agenda.cs" />
+    <Compile Include="Turnos\TurnosProtegidos\buscarAgenda.aspx.cs">
+      <DependentUpon>buscarAgenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\buscarAgenda.aspx.designer.cs">
+      <DependentUpon>buscarAgenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\especialidades.cs" />
+    <Compile Include="Turnos\TurnosProtegidos\existePacienteEnAgenda.cs" />
+    <Compile Include="Turnos\TurnosProtegidos\mostrarTurnoPaciente.aspx.cs">
+      <DependentUpon>mostrarTurnoPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\mostrarTurnoPaciente.aspx.designer.cs">
+      <DependentUpon>mostrarTurnoPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\profesional.cs" />
+    <Compile Include="Turnos\TurnosProtegidos\seleccionarInterconsulta.aspx.cs">
+      <DependentUpon>seleccionarInterconsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\seleccionarInterconsulta.aspx.designer.cs">
+      <DependentUpon>seleccionarInterconsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\turnosDisponibles.aspx.cs">
+      <DependentUpon>turnosDisponibles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\turnosDisponibles.aspx.designer.cs">
+      <DependentUpon>turnosDisponibles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\turnosProtegidos.cs" />
+    <Compile Include="Turnos\TurnosProtegidos\verificarAsignacionAgenda.aspx.cs">
+      <DependentUpon>verificarAsignacionAgenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\verificarAsignacionAgenda.aspx.designer.cs">
+      <DependentUpon>verificarAsignacionAgenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\TurnosProtegidos\WebServicePrueba.asmx.cs">
+      <DependentUpon>WebServicePrueba.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosSeguridad.aspx.cs">
+      <DependentUpon>TurnosSeguridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\TurnosSeguridad.aspx.designer.cs">
+      <DependentUpon>TurnosSeguridad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AlertaCM.ascx.cs">
+      <DependentUpon>AlertaCM.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AlertaCM.ascx.designer.cs">
+      <DependentUpon>AlertaCM.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AlertasControlMenor.ascx.cs">
+      <DependentUpon>AlertasControlMenor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AlertasControlMenor.ascx.designer.cs">
+      <DependentUpon>AlertasControlMenor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CalendarioVacunacion.ascx.cs">
+      <DependentUpon>CalendarioVacunacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CalendarioVacunacion.ascx.designer.cs">
+      <DependentUpon>CalendarioVacunacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ConsultorioPaciente.ascx.cs">
+      <DependentUpon>ConsultorioPaciente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ConsultorioPaciente.ascx.designer.cs">
+      <DependentUpon>ConsultorioPaciente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Efector.ascx.cs">
+      <DependentUpon>Efector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Efector.ascx.designer.cs">
+      <DependentUpon>Efector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ObrasSociales.ascx.cs">
+      <DependentUpon>ObrasSociales.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ObrasSociales.ascx.designer.cs">
+      <DependentUpon>ObrasSociales.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PacienteProvincial.ascx.cs">
+      <DependentUpon>PacienteProvincial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PacienteProvincial.ascx.designer.cs">
+      <DependentUpon>PacienteProvincial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Profesional.ascx.cs">
+      <DependentUpon>Profesional.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Profesional.ascx.designer.cs">
+      <DependentUpon>Profesional.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ResumenPaciente.ascx.cs">
+      <DependentUpon>ResumenPaciente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ResumenPaciente.ascx.designer.cs">
+      <DependentUpon>ResumenPaciente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades\DateDifference.cs" />
+    <Compile Include="Utilidades\DTdiff.cs" />
+    <Compile Include="Utilidades\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Informes\ConsultorioPaciente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultorioPaciente1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\ConsultorioPacienteEcografia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultorioPacienteEcografia1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\ConsultorioPacienteHistorial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultorioPacienteHistorial1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\ConsultorioPacienteHistorialOdontologia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultorioPacienteHistorialOdontologia1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\DistribucionConsultorio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DistribucionConsultorio1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\HistoriasClinicas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HistoriasClinicas1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\PacientesTurno.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PacientesTurno1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\Planilla.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Planilla1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\PlanillaOdontologia2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PlanillaOdontologia21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\PlanillaSaludMental.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PlanillaSaludMental1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\PlanillaSaludMental_Oficio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PlanillaSaludMental_Oficio1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\Planilla_Oficio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Planilla_Oficio1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\Profesionales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Profesionales1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelConsultas\EstadisticaConsultas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstadisticaConsultas1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelConsultas\EstadisticaDiagnostico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstadisticaDiagnostico1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelConsultas\EstadisticaDiagnosticoC2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstadisticaDiagnosticoC21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelConsultas\EstadisticaDiagnosticoDetallada.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EstadisticaDiagnosticoDetallada1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SSO\SSO\Salud.Security.SSO.Core\Salud.Security.SSO.Core.csproj">
+      <Project>{834c6e3c-14df-4810-a02e-e42f4f3f4add}</Project>
+      <Name>Salud.Security.SSO.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SSO\SSO\Salud.Security.SSO\Salud.Security.SSO.csproj">
+      <Project>{8128c75f-66fb-4b4f-8ec1-0a51850bdbe3}</Project>
+      <Name>Salud.Security.SSO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DalSic\DalSic.csproj">
+      <Project>{b44e2719-6da4-4c40-b200-cdf3b8854ec5}</Project>
+      <Name>DalSic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52719</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52719/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>https://www.desarrollo.saludnqn.gob.ar/consultorio</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

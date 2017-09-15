@@ -1,0 +1,467 @@
+﻿#sipExtraContainer
+{
+    background-image: url(../../../images/ControlPerinatal/cperinatal-extra-back5.jpg);
+    width: 917px;
+    height: 171px;
+    position: relative;
+}
+/* Antecedentes Gineco Obstetricos: Antecendentes*/
+.rbAgoAntecedenteEclampsiaNo
+{
+    position: absolute;
+    top: 31px;
+    left: 29px;
+}
+.rbAgoAntecedenteEclampsiaSi
+{
+    position: absolute;
+    top: 31px;
+    left: 48px;
+}
+.rbAgoAntecedentePreeclampsiaNo
+{
+    position: absolute;
+    top: 48px;
+    left: 29px;
+}
+.rbAgoAntecedentePreeclampsiaSi
+{
+    position: absolute;
+    top: 48px;
+    left: 48px;
+}
+.rbAgoAntecedenteCirugiaGUNo
+{
+    position: absolute;
+    top: 65px;
+    left: 29px;
+}
+.rbAgoAntecedenteCirugiaGUSi
+{
+    position: absolute;
+    top: 65px;
+    left: 48px;
+}
+.rbAgoAntecedenteAPPrematuraNo
+{
+    position: absolute;
+    top: 82px;
+    left: 29px;
+}
+.rbAgoAntecedenteAPPrematuraSi
+{
+    position: absolute;
+    top: 82px;
+    left: 48px;
+}
+.rbAgoAntecedenteRCIUNo
+{
+    position: absolute;
+    top: 99px;
+    left: 29px;
+}
+.rbAgoAntecedenteRCIUSi
+{
+    position: absolute;
+    top: 99px;
+    left: 48px;
+}
+.rbAgoAntecedenteHemorragiaObstetricaNo
+{
+    position: absolute;
+    top: 116px;
+    left: 29px;
+}
+.rbAgoAntecedenteHemorragiaObstetricaSi
+{
+    position: absolute;
+    top: 116px;
+    left: 48px;
+}
+.rbAgoAntecedenteMacrosomoiaFetalNo
+{
+    position: absolute;
+    top: 133px;
+    left: 29px;
+}
+.rbAgoAntecedenteMacrosomoiaFetalSi
+{
+    position: absolute;
+    top: 133px;
+    left: 48px;
+}
+.rbAgoAntecedentePolihidramniosNo
+{
+    position: absolute;
+    top: 150px;
+    left: 29px;
+}
+.rbAgoAntecedentePolihidramniosSi
+{
+    position: absolute;
+    top: 150px;
+    left: 48px;
+}
+.rbAgoAntecedenteOligoanmiosNo
+{
+    position: absolute;
+    top: 31px;
+    left: 280px;
+}
+.rbAgoAntecedenteOligoanmiosSi
+{
+    position: absolute;
+    top: 31px;
+    left: 299px;
+}
+.rbAgoAntecedenteRPMembranasNo
+{
+    position: absolute;
+    top: 48px;
+    left: 280px;
+}
+.rbAgoAntecedenteRPMembranasSi
+{
+    position: absolute;
+    top: 48px;
+    left: 299px;
+}
+.rbAgoAntecedenteIsoInmunizacionesNo
+{
+    position: absolute;
+    top: 65px;
+    left: 280px;
+}
+.rbAgoAntecedenteIsoInmunizacionesSi
+{
+    position: absolute;
+    top: 65px;
+    left: 299px;
+}
+.rbAgoAntecedenteColestasisNo
+{
+    position: absolute;
+    top: 82px;
+    left: 280px;
+}
+.rbAgoAntecedenteColestasisSi
+{
+    position: absolute;
+    top: 82px;
+    left: 299px;
+}
+.rbAgoAntecedenteMortPerinRecurrenteNo
+{
+    position: absolute;
+    top: 99px;
+    left: 280px;
+}
+.rbAgoAntecedenteMortPerinRecurrenteSi
+{
+    position: absolute;
+    top: 99px;
+    left: 299px;
+}
+.rbAgoAntecedenteRetencionPlacentaNo
+{
+    position: absolute;
+    top: 116px;
+    left: 280px;
+}
+.rbAgoAntecedenteRetencionPlacentaSi
+{
+    position: absolute;
+    top: 116px;
+    left: 299px;
+}
+.rbAgoAntecedenteDistociaHombrosNo
+{
+    position: absolute;
+    top: 133px;
+    left: 280px;
+}
+.rbAgoAntecedenteDistociaHombrosSi
+{
+    position: absolute;
+    top: 133px;
+    left: 299px;
+}
+.rbAgoAntecedenteMalformCongenNo
+{
+    position: absolute;
+    top: 150px;
+    left: 280px;
+}
+
+.rbAgoAntecedenteMalformCongenSi
+{
+    position: absolute;
+    top: 150px;
+    left: 299px;
+}
+/* Antecedentes Gineco Obstetricos: Actual*/
+.rbAgoActualEclampsiaNo
+{
+    position: absolute;
+    top: 31px;
+    left: 222px;
+}
+.rbAgoActualEclampsiaSi
+{
+    position: absolute;
+    top: 31px;
+    left: 241px;
+}
+.rbAgoActualPreeclampsiaNo
+{
+    position: absolute;
+    top: 48px;
+    left: 222px;
+}
+.rbAgoActualPreeclampsiaSi
+{
+    position: absolute;
+    top: 48px;
+    left: 241px;
+}
+.rbAgoActualCirugiaGUNo
+{
+    position: absolute;
+    top: 65px;
+    left: 222px;
+}
+.rbAgoActualCirugiaGUSi
+{
+    position: absolute;
+    top: 65px;
+    left: 241px;
+}
+.rbAgoActualAPPrematuraNo
+{
+    position: absolute;
+    top: 82px;
+    left: 222px;
+}
+.rbAgoActualAPPrematuraSi
+{
+    position: absolute;
+    top: 82px;
+    left: 241px;
+}
+.rbAgoActualRCIUNo
+{
+    position: absolute;
+    top: 99px;
+    left: 222px;
+}
+.rbAgoActualRCIUSi
+{
+    position: absolute;
+    top: 99px;
+    left: 241px;
+}
+.rbAgoActualHemorragiaObstetricaNo
+{
+    position: absolute;
+    top: 116px;
+    left: 222px;
+}
+.rbAgoActualHemorragiaObstetricaSi
+{
+    position: absolute;
+    top: 116px;
+    left: 241px;
+}
+.rbAgoActualMacrosomoiaFetalNo
+{
+    position: absolute;
+    top: 133px;
+    left: 222px;
+}
+.rbAgoActualMacrosomoiaFetalSi
+{
+    position: absolute;
+    top: 133px;
+    left: 241px;
+}
+.rbAgoActualPolihidramniosNo
+{
+    position: absolute;
+    top: 150px;
+    left: 222px;
+}
+.rbAgoActualPolihidramniosSi
+{
+    position: absolute;
+    top: 150px;
+    left: 241px;
+}
+.rbAgoActualOligoanmiosNo
+{
+    position: absolute;
+    top: 31px;
+    left: 473px;
+}
+.rbAgoActualOligoanmiosSi
+{
+    position: absolute;
+    top: 31px;
+    left: 492px;
+}
+.rbAgoActualRPMembranasNo
+{
+    position: absolute;
+    top: 48px;
+    left: 473px;
+}
+.rbAgoActualRPMembranasSi
+{
+    position: absolute;
+    top: 48px;
+    left: 492px;
+}
+.rbAgoActualIsoInmunizacionesNo
+{
+    position: absolute;
+    top: 65px;
+    left: 473px;
+}
+.rbAgoActualIsoInmunizacionesSi
+{
+    position: absolute;
+    top: 65px;
+    left: 492px;
+}
+.rbAgoActualColestasisNo
+{
+    position: absolute;
+    top: 82px;
+    left: 473px;
+}
+.rbAgoActualColestasisSi
+{
+    position: absolute;
+    top: 82px;
+    left: 492px;
+}
+/* Factores de Riesgo */
+.rbFactorRiesgoEmbarazoSinContSocialSi
+{
+    position: absolute;
+    top: 14px;
+    left: 772px;
+}
+.rbFactorRiesgoEmbarazoSinContSocialNo
+{
+    position: absolute;
+    top: 14px;
+    left: 753px;
+}
+.rbFactorRiesgoFamiliaSinIngresosFijosSi
+{
+    position: absolute;
+    top: 30px;
+    left: 772px;
+}
+.rbFactorRiesgoFamiliaSinIngresosFijosNo
+{
+    position: absolute;
+    top: 30px;
+    left: 753px;
+}
+.rbFactorRiesgoEmbarazoFuertRechazadoSi
+{
+    position: absolute;
+    top: 47px;
+    left: 772px;
+}
+.rbFactorRiesgoEmbarazoFuertRechazadoNo
+{
+    position: absolute;
+    top: 47px;
+    left: 753px;
+}
+.rbFactorRiesgoHijosDadosAdopcionSi
+{
+    position: absolute;
+    top: 63px;
+    left: 772px;
+}
+.rbFactorRiesgoHijosDadosAdopcionNo
+{
+    position: absolute;
+    top: 63px;
+    left: 753px;
+}
+.rbFactorRiesgoViviendaSinServiciosBasicosSi
+{
+    position: absolute;
+    top: 79px;
+    left: 772px;
+}
+.rbFactorRiesgoViviendaSinServiciosBasicosNo
+{
+    position: absolute;
+    top: 79px;
+    left: 753px;
+}
+/* Otros Datos */
+.rbCaptacionOportunaDespues16Sem
+{
+    position: absolute;
+    top: 21px;
+    left: 811px;
+}
+.rbCaptacionOportunaAntes16Sem
+{
+    position: absolute;
+    top: 41px;
+    left: 811px;
+}
+.txtFechaMuestraPAP
+{
+    position: absolute;
+    top: 88px;
+    left: 802px;
+    width: 104px;
+}
+
+.txtFechaAntigripal{
+position: absolute;
+    top: 136px;
+    left: 679px;
+    width: 104px;
+}
+
+.txtFechaTripleAcelular{
+position: absolute;
+    top: 136px;
+    left: 557px;
+    width: 104px;
+}
+
+/* Desarrolla enfermedad en el embarazo actual */
+.rbDesarrollaAnemiaNo
+{
+    position: absolute;
+    top: 131px;
+    left: 875px;
+}
+.rbDesarrollaDiabetesNo
+{
+    position: absolute;
+    top: 151px;
+    left: 875px;
+}
+.rbDesarrollaAnemiaSi
+{
+    position: absolute;
+    top: 131px;
+    left: 895px;
+}
+.rbDesarrollaDiabetesSi
+{
+    position: absolute;
+    top: 151px;
+    left: 895px;
+}

@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Global.master.cs" Inherits="Consultorio.Global" %>
+
+<!DOCTYPE html>
+<html long="es-AR">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Subsecretaría de Salud - Sistema Integral Provincial de Salud</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link href="App_Themes/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="App_Themes/bootstrap-3.3.6/js/jquery-3.1.0.min.js"></script>
+    <script src="App_Themes/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+    .container-fluid {
+        margin-top: 6px;
+         }
+    .navbar-header{
+        float:right !important;
+    }
+    .navbar-default {
+    background-color: #E0E0E0 !important;
+    border-color: #E0E0E0 !important;
+}
+    
+        .navbar-nav > li input {
+            background-color: #C1CC9E;
+            margin-right: 4px;
+        }
+
+            .navbar-nav > li input:hover {
+                background-color: #C1CC9E;
+                color: #fff;
+            }
+             .navbar-nav > li input:active {
+                background-color: #C1CC9E;
+                color: #fff;
+            }
+    </style>
+
+    <%-- PaceHolder para scripts o css incluidos en la página. --%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div id="wrap">
+
+    <form id="form1" runat="server">
+        <%-- ScriptManager --%>
+        <asp:ScriptManager runat="server" ID="sm" />
+
+
+        <%-- Nuevo encabezado --%>
+        <header class="art-header clearfix">
+            <div class="row">
+                <div class="art-shapes">
+                    <div class="col-md-4 text-left">
+                        <div class="art-logoDiv"></div>
+                    </div>
+                    <div class="col-md-4 text-center" style="color: white">
+                        <%-- Titulo --%>
+                        <strong>
+                            <asp:Label ID="lblProyecto" runat="server" Font-Size="Large" Text="CONTROL PERINATAL" />
+                            <br />
+                            <asp:Label ID="lblSistema" runat="server" Font-Size="12px" Text="SISTEMA INTEGRADO PROVINCIAL DE SALUD" />
+                            <br />
+                        </strong>
+                        <asp:Label ID="lblEfector" Font-Size="Small" runat="server" />
+                    </div>
+                    <div class="col-md-4 text-right" style="color: white">
+                        <%-- Botones menu superior --%>
+
+                        <asp:ImageButton ID="Img1" runat="server" ImageUrl="~/Images/Toolbar/home.png"
+                            CssClass="art-imgs" ToolTip="Página principal" />
+
+                        <asp:ImageButton ID="Img2" runat="server" ImageUrl="~/Images/Toolbar/config.png"
+                            CssClass="art-imgs" ToolTip="Datos Usuario" />
+
+                        <asp:ImageButton ID="Img3" runat="server" ImageUrl="~/Images/Toolbar/shut-down.png"
+                            CssClass="art-imgs" ToolTip="Cerrar Sesión. Salir del Sistema" />
+                        <%-- Datos de los usuarios --%>
+                        <br />
+                        Usuario:
+                        <asp:Label ID="lblUsr" Font-Size="Small" runat="server" />
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <%-- <asp:ImageButton ID="Img1" runat="server" ImageUrl="~/Images/Toolbar/home.png"
+                            CssClass="art-imgs" ToolTip="Página principal" />
+                        <%-- Links de Ayuda --%>
+
+
+
+
+            <%--<div><asp:HyperLink runat="server" NavigateUrl="~/ConsultaAmbulatoria/Inicio.aspx" CssClass="hll"
+                        ID="HyperLink4" Text="Inicio Consultas" BorderColor="#fbec88" BorderWidth="1px" ForeColor="#fbec88" BorderStyle="solid" />
+                    <asp:HyperLink runat="server" NavigateUrl="~/ConsultaAmbulatoria/BuscarPaciente.aspx" CssClass="hll"
+                        ID="HyperLink1" Text="Consultas Ambulatorias" BorderColor="#fbec88" BorderWidth="1px" ForeColor="#fbec88" BorderStyle="solid" />
+                    <asp:HyperLink runat="server" NavigateUrl="~/ConsultaAmbulatoria/BuscarMenor.aspx" CssClass="hll"
+                        ID="HyperLink2" Text="Control del Menor" BorderColor="#fbec88" BorderWidth="1px" ForeColor="#fbec88" BorderStyle="solid" />
+                    <asp:HyperLink runat="server" NavigateUrl="~/ConsultaAmbulatoria/BuscarEmbarazada.aspx" CssClass="hll"
+                        ID="HyperLink3" Text="Control Perinatal" BorderColor="#fbec88" BorderWidth="1px" ForeColor="#fbec88" BorderStyle="solid"/>
+                </div>--%>
+        </header>
+        <%-- Separador cabecera-cuerpo --%>
+        <div class="lineaColor">
+        </div>
+        <asp:ContentPlaceHolder ID="Superior" runat="server">
+            <%-- ********** MENU *************************** --%>
+
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                  <div class="navbar-header">
+                  
+                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li>
+                            <asp:Button CausesValidation="false" ID="btnInicio" runat="server" text="Inicio" CssClass="btn btn-default" ToolTip="Pagina de Inicio" OnClick="btnInicio_Click" formnovalidate/>
+
+                        </li>
+                        <li>
+                            <asp:Button ID="btnConsolidado" runat="server" Text="Consolidado" CssClass="btn btn-default" ToolTip="Ver consolidado" OnClick="btnConsolidado_Click" formnovalidate />
+                        </li>
+                      </ul>
+                      </div>
+                   </div>
+               </div>
+               <!-- /.container-fluid -->            
+
+           </nav>
+          
+
+
+        </asp:ContentPlaceHolder>
+        <%-- Cuerpo de la página --%>
+        <div class="centroGrande content">
+            <%--<div class="ubicacionmenu">
+            <div class="imagemenu">
+                <asp:Menu ID="mnuPrincipal" MaximumDynamicDisplayLevels="7" runat="server" Height="30px"
+                    Orientation="Horizontal" CssClass="acc-section">
+                    <DynamicMenuStyle BorderWidth="1px" CssClass="acc-section" BorderColor="#00898d"
+                        Width="110px" />
+                    <DynamicHoverStyle Font-Bold="True" />
+                    <StaticMenuStyle BorderColor="#00898d" Width="30px" CssClass="acc-content" />
+                    <StaticMenuItemStyle Width="120px" CssClass="acc-content" />
+                    <StaticHoverStyle Font-Bold="True" />
+                </asp:Menu>
+            </div>
+        </div>--%>
+            <div class="cont">
+                <%-- Contenido de la página (correspondiente al subsistema) --%>
+                <asp:ContentPlaceHolder ID="contenido" runat="server" />
+            </div>
+        </div>
+        <%-- Footer de la pagina --%>
+        </div>
+        </form>
+     <!--#footer-->
+        <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                     <p id="CopyRi"> Copyright &copy; 2016. Subsecretaría de Salud de Neuquén - Dirección Gral. de TIC'S</p>
+                </div>
+                <div class="col-sm-6">
+                    
+                    <img src="../Images/tics.jpg" class="img-responsive" alt="TICS" style="float:right; margin-top: 1em;" /> 
+                    
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+   
+</body>
+</html>

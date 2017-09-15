@@ -1,0 +1,5 @@
+C:\SSO\SSO\Salud.Security.SSO.Core\bin\Salud.Security.SSO.Core.dll.config
+C:\SSO\SSO\Salud.Security.SSO.Core\bin\Salud.Security.SSO.Core.dll
+C:\SSO\SSO\Salud.Security.SSO.Core\bin\Salud.Security.SSO.Core.pdb
+C:\SSO\SSO\Salud.Security.SSO.Core\obj\Release\Salud.Security.SSO.Core.dll
+C:\SSO\SSO\Salud.Security.SSO.Core\obj\Release\Salud.Security.SSO.Core.pdb

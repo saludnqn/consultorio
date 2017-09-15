@@ -1,0 +1,262 @@
+﻿#sipDetallesContainer
+{
+    background-image: url(../../../images/ControlPerinatal/cperinatal-detallesContainer-back.jpg);
+    width: 897px;
+    min-height: 117px;
+    position: relative;
+    padding-top: 23px;
+    padding-left: 20px;
+}
+.sipDetalles
+{
+    background-image: url(../../../images/ControlPerinatal/cperinatal-detalles-back2.jpg);
+    width: 897px;
+    height: 46px;
+    position: relative; /*left: 20px;*/
+}
+.txtDetalle
+{
+    background-color: Transparent;
+    border: Solid 1px Gray;
+    height: 20px !important;
+    line-height: 20px !important;
+    font-size: 12px !important;
+    padding: 0 !important;
+    margin: 0;
+}
+.txtDetalleFecha
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 102px;
+}
+.txtDetalleEdadGestacional
+{
+    position: absolute;
+    top: 0px;
+    left: 105px;
+    width: 41px;
+}
+.txtDetallePeso
+{
+    position: absolute;
+    top: 0px;
+    left: 149px;
+    width: 75px;
+}
+.txtDetallePresionArterialSistolica
+{
+    position: absolute;
+    top: 0px;
+    left: 227px;
+    width: 28px;
+}
+.txtDetallePresionArterialDistolica
+{
+    position: absolute;
+    top: 0px;
+    left: 257px;
+    width: 28px;
+}
+.txtDetalleAlturaUterina
+{
+    position: absolute;
+    top: 0px;
+    left: 286px;
+    width: 40px;
+}
+.txtDetallePresentacion
+{
+    position: absolute;
+    top: 0px;
+    left: 328px;
+    width: 30px;
+}
+.txtDetalleFrecuenciaCardiacaFetal
+{
+    position: absolute;
+    top: 0px;
+    left: 360px;
+    width: 38px;
+}
+.txtDetalleMovimientosFetales
+{
+    position: absolute;
+    top: 0px;
+    left: 401px;
+    width: 36px;
+}
+.txtDetalleProteinuria
+{
+    position: absolute;
+    top: 0px;
+    left: 438px;
+    width: 33px;
+}
+.txtDetalleAlarmaExamenesTratamientos
+{
+    position: absolute;
+    top: 0px;
+    left: 474px;
+    width: 303px;
+}
+.txtDetalleInicialesTecnico
+{
+    position: absolute;
+    top: 0px;
+    left: 778px;
+    width: 38px;
+}
+.txtDetalleProximaCita
+{
+    position: absolute;
+    top: 0px;
+    left: 818px;
+    width: 74px;
+}
+.txtDetalleIMC{
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    width: 72px;
+}
+.txtDetalleObservaciones
+{
+    position: absolute;
+    top: 23px;
+    left: 227px;
+    width: 665px;
+}
+
+/* Labels */
+.lblDetalle
+{
+    height: 18px !important;
+    font-size: 12px !important;
+    padding-top: 2px;
+}
+
+.lblDetalleFecha
+{
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    width: 102px;
+}
+.lblDetalleEdadGestacional
+{
+    position: absolute;
+    top: 0px;
+    left: 107px;
+    width: 41px;
+}
+.lblDetallePeso
+{
+    position: absolute;
+    top: 0px;
+    left: 151px;
+    width: 75px;
+}
+.lblDetallePresionArterial
+{
+    position: absolute;
+    top: 0px;
+    left: 229px;
+    width: 58px;
+}
+.lblDetalleAlturaUterina
+{
+    position: absolute;
+    top: 0px;
+    left: 288px;
+    width: 40px;
+}
+.lblDetallePresentacion
+{
+    position: absolute;
+    top: 0px;
+    left: 330px;
+    width: 30px;
+}
+.lblDetalleFrecuenciaCardiacaFetal
+{
+    position: absolute;
+    top: 0px;
+    left: 362px;
+    width: 38px;
+}
+.lblDetalleMovimientosFetales
+{
+    position: absolute;
+    top: 0px;
+    left: 403px;
+    width: 36px;
+}
+.lblDetalleProteinuria
+{
+    position: absolute;
+    top: 0px;
+    left: 440px;
+    width: 33px;
+}
+.lblDetalleAlarmaExamenesTratamientos
+{
+    position: absolute;
+    top: 0px;
+    left: 476px;
+    width: 303px;
+}
+
+.lblDetalleAlarmaExamenesTratamientos:hover {background:lightyellow; text-decoration:none;} /*BG color is a must for IE6*/
+.lblDetalleAlarmaExamenesTratamientos.tooltip title{display:none; padding:2px 3px; margin-left:8px; width:auto; background:#ffffff;}
+.lblDetalleAlarmaExamenesTratamientos.tooltip:hover title{display:inline; position:absolute; border:1px solid #cccccc; background:#ffffff; color:#6c6c6c;}
+
+
+.lblDetalleInicialesTecnico
+{
+    position: absolute;
+    top: 0px;
+    left: 780px;
+    width: 38px;
+}
+.lblDetalleProximaCita
+{
+    position: absolute;
+    top: 0px;
+    left: 820px;
+    width: 74px;
+}
+.lblDetalleIMC{
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    width: 72px;
+}
+.lblDetalleObservaciones
+{
+    position: absolute;
+    top: 23px;
+    left: 227px;
+    width: 646px; /*665*/
+}
+
+.lblDetalleObservaciones:hover {background:lightyellow; text-decoration:none;} /*BG color is a must for IE6*/
+.lblDetalleObservaciones.tooltip title{display:none; padding:2px 3px; margin-left:8px; width:auto; background:#ffffff;}
+.lblDetalleObservaciones.tooltip:hover title{display:inline; position:absolute; border:1px solid #cccccc; background:#ffffff; color:#6c6c6c;}
+
+.hlEditar
+{
+    position: absolute;
+    top: 23px;
+    left: 871px;
+    width: 28px; /*665*/	
+}
+
+.hlEliminar
+{
+    position: absolute;
+    top: 24px;
+    left: 871px;
+    width: 21px; /*665*/	
+}

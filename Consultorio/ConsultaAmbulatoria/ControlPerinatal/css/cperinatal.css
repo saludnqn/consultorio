@@ -1,0 +1,1726 @@
+﻿#sipContainer
+{
+    background-image: url(../../../images/ControlPerinatal/cperinatal-5.jpg);
+    width: 917px;
+    height: 459px;
+    position: relative;
+}
+
+.textBox3chars
+{
+    background-color: Transparent;
+    border: Solid 1px Gray;
+    height: 26px !important;
+    line-height: 26px !important;
+    font-size: 14px !important;
+    width: 50px !important;
+    padding: 0px 2px 0px 2px !important;
+    margin: 0;
+}
+
+.textBox3Smallchars
+{
+    background-color: Transparent;
+    border: Solid 1px Gray;
+    height: 26px !important;
+    line-height: 26px !important;
+    font-size: 14px !important;
+    width: 50px !important;
+    padding: 0px 2px 0px 2px !important;
+    margin: 0;
+}
+
+.textBox2chars
+{
+    background-color: Transparent;
+    border: Solid 1px Gray;
+    height: 26px !important;
+    line-height: 26px !important;
+    font-size: 24px !important;
+    width: 34px !important;
+    padding: 0px 0px 0px 2px !important;
+    margin: 0;
+}
+
+.textBox1chars
+{
+    background-color: Transparent;
+    border: Solid 1px Gray;
+    height: 26px !important;
+    line-height: 26px !important;
+    font-size: 24px !important;
+    width: 18px !important;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.textBoxchars
+{
+    background-color: Transparent;
+    border: Solid 1px Gray;
+    height: 26px !important;
+    line-height: 26px !important;
+    font-size: 14px !important;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.textBoxSmallchars
+{
+    background-color: Transparent;
+    border: Solid 1px Gray;
+    height: 26px !important;
+    line-height: 26px !important;
+    font-size: 14px !important;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.smallCaps
+{
+    font-size: 10px;
+    font-variant: small-caps;
+    height: 19.2px;
+}
+
+.normalNumbers
+{
+    font-size: 16px;
+}
+.divDatePopUp
+{
+    background-image: url(../../../images/ControlPerinatal/datepopup.gif);
+    height: 37px; /* tamaño inicial */
+    width: 65px; /* tamaño final */ /* width: 172px; */
+    z-index: 10;
+    position: absolute;
+}
+.divSifilisPNTPopUp
+{
+    background-image: url(../../../images/ControlPerinatal/sifilisPNTpopup.gif);
+    height: 37px; /* tamaño inicial */
+    width: 67px; /* tamaño final */ /* width: 174px; */
+    z-index: 12;
+    position: absolute;
+}
+.divSifilisPTPopUp
+{
+    background-image: url(../../../images/ControlPerinatal/sifilisPTpopup.gif);
+    height: 37px; /* tamaño inicial */
+    width: 74px; /* tamaño final */ /* width: 181px; */
+    z-index: 11;
+    position: absolute;
+}
+.divSifilisTRATPopUp
+{
+    background-image: url(../../../images/ControlPerinatal/sifilisTRATpopup.gif);
+    height: 37px; /* tamaño inicial */
+    width: 74px; /* tamaño final */ /* width: 181px; */
+    z-index: 10;
+    position: absolute;
+}
+/* Datos basicos */
+.lblNombre
+{
+    position: absolute;
+    top: 28px;
+    left: 6px;
+    width: 184px;
+    overflow: hidden;
+}
+.lblApellido
+{
+    position: absolute;
+    top: 28px;
+    left: 192px;
+    width: 174px;
+    overflow: hidden;
+}
+.lblDomicilio
+{
+    position: absolute;
+    top: 52px;
+    left: 6px;
+    width: 148px;
+    overflow: hidden;
+}
+
+.lblDocumento
+{
+    position: absolute;
+    top: 52px;
+    left: 192px;
+    width: 174px;
+    overflow: hidden;
+}
+.lblTelefono
+{
+    position: absolute;
+    top: 80px;
+    left: 208px;
+    width: 112px;
+    overflow: hidden;
+}
+.lblLocalidad
+{
+    position: absolute;
+    top: 80px;
+    left: 6px;
+    width: 242px;
+    overflow: hidden;
+}
+/* Fecha Nacimiento */
+.lblDiaNacimiento
+{
+    position: absolute;
+    top: 32px;
+    left: 386px;
+    width: 40px;
+    overflow: hidden;
+}
+.lblMesNacimiento
+{
+    position: absolute;
+    top: 32px;
+    left: 421px;
+    width: 40px;
+    overflow: hidden;
+}
+
+.lblAñoNacimiento
+{
+    position: absolute;
+    top: 32px;
+    left: 456px;
+    width: 40px;
+    overflow: hidden;
+}
+/* Edad */
+.lblEdad
+{
+    position: absolute;
+    top: 76px;
+    left: 391px;
+    width: 40px;
+    overflow: hidden;
+}
+
+.rbEdad
+{
+    position: absolute;
+    top: 75px;
+    left: 440px;
+}
+
+/* Etnia */
+.rbEtniaBlanca
+{
+    position: absolute;
+    top: 17px;
+    left: 495px;
+}
+.rbEtniaIndigena
+{
+    position: absolute;
+    top: 33px;
+    left: 495px;
+}
+.rbEtniaMestiza
+{
+    position: absolute;
+    top: 48px;
+    left: 495px;
+}
+.rbEtniaNegra
+{
+    position: absolute;
+    top: 64px;
+    left: 495px;
+}
+.rbEtniaOtra
+{
+    position: absolute;
+    top: 80px;
+    left: 495px;
+}
+/* Alfabeta */
+.rbAlfabetaNo
+{
+    position: absolute;
+    top: 41px;
+    left: 549px;
+}
+
+.rbAlfabetaSi
+{
+    position: absolute;
+    top: 71px;
+    left: 549px;
+}
+/* Estudios */
+.rbEstudiosNinguno
+{
+    position: absolute;
+    top: 16px;
+    left: 582px;
+}
+.rbEstudiosPrimaria
+{
+    position: absolute;
+    top: 16px;
+    left: 617px;
+}
+.rbEstudiosSecundario
+{
+    position: absolute;
+    top: 41px;
+    left: 582px;
+}
+.rbEstudiosUniversitarios
+{
+    position: absolute;
+    top: 41px;
+    left: 617px;
+}
+.txtEstudiosAniosMayorNivel
+{
+    position: absolute;
+    top: 69px;
+    left: 617px;
+    background-color: Transparent;
+    border-style: none;
+}
+/* Estado Civil */
+.rbEstadoCivilCasada
+{
+    position: absolute;
+    top: 4px;
+    left: 704px;
+}
+.rbEstadoCivilUnionEstable
+{
+    position: absolute;
+    top: 21px;
+    left: 704px;
+}
+.rbEstadoCivilSoltera
+{
+    position: absolute;
+    top: 38px;
+    left: 704px;
+}
+.rbEstadoCivilOtro
+{
+    position: absolute;
+    top: 55px;
+    left: 704px;
+}
+/* Vive Sola */
+.rbViveSolaSi
+{
+    position: absolute;
+    top: 78px;
+    left: 675px;
+}
+.rbViveSolaNo
+{
+    position: absolute;
+    top: 78px;
+    left: 703px;
+}
+/* Lugares - Indentidad */
+.lblLugarControlPerinatal
+{
+    position: absolute;
+    top: 12px;
+    left: 780px;
+    letter-spacing: 7px;
+}
+
+.lblLugarPartoAborto
+{
+    position: absolute;
+    top: 44px;
+    left: 780px;
+    letter-spacing: 7px;
+}
+.lblNumeroIdentidad
+{
+    position: absolute;
+    top: 78px;
+    left: 780px;
+    letter-spacing: 7px;
+}
+
+/* Antecedentes Familiares */
+.rbAntecedenteFamiliarTBCNo
+{
+    position: absolute;
+    top: 127px;
+    left: 29px;
+}
+.rbAntecedenteFamiliarTBCSi
+{
+    position: absolute;
+    top: 127px;
+    left: 48px;
+}
+.rbAntecedenteFamiliarDiabetesNo
+{
+    position: absolute;
+    top: 143px;
+    left: 29px;
+}
+.rbAntecedenteFamiliarDiabetesSi
+{
+    position: absolute;
+    top: 143px;
+    left: 48px;
+}
+.rbAntecedenteFamiliarHipertensionNo
+{
+    position: absolute;
+    top: 160px;
+    left: 29px;
+}
+.rbAntecedenteFamiliarHipertensionSi
+{
+    position: absolute;
+    top: 160px;
+    left: 48px;
+}
+.rbAntecedenteFamiliarInfUrinariaNo
+{
+    position: absolute;
+    top: 176px;
+    left: 29px;
+}
+.rbAntecedenteFamiliarInfUrinariaSi
+{
+    position: absolute;
+    top: 176px;
+    left: 48px;
+}
+.rbAntecedenteFamiliarOtrasInfeccionesNo
+{
+    position: absolute;
+    top: 193px;
+    left: 29px;
+}
+.rbAntecedenteFamiliarOtrasInfeccionesSi
+{
+    position: absolute;
+    top: 193px;
+    left: 48px;
+}
+.rbAntecedenteFamiliarOtraCondNo
+{
+    position: absolute;
+    top: 210px;
+    left: 29px;
+}
+.rbAntecedenteFamiliarOtraCondSi
+{
+    position: absolute;
+    top: 210px;
+    left: 48px;
+}
+
+/* Antecedentes Personales */
+.rbAntecedentePersonalTBCNo
+{
+    position: absolute;
+    top: 127px;
+    left: 138px;
+}
+.rbAntecedentePersonalTBCSi
+{
+    position: absolute;
+    top: 127px;
+    left: 157px;
+}
+.rbAntecedentePersonalDiabetesNo
+{
+    position: absolute;
+    top: 143px;
+    left: 138px;
+}
+.rbAntecedentePersonalDiabetesI
+{
+    position: absolute;
+    top: 143px;
+    left: 157px;
+}
+.rbAntecedentePersonalDiabetesII
+{
+    position: absolute;
+    top: 143px;
+    left: 174px;
+}
+.rbAntecedentePersonalDiabetesG
+{
+    position: absolute;
+    top: 143px;
+    left: 191px;
+}
+.rbAntecedentePersonalHipertensionNo
+{
+    position: absolute;
+    top: 160px;
+    left: 138px;
+}
+.rbAntecedentePersonalHipertensionSi
+{
+    position: absolute;
+    top: 160px;
+    left: 157px;
+}
+.rbAntecedentePersonalInfUrinariaNo
+{
+    position: absolute;
+    top: 176px;
+    left: 138px;
+}
+.rbAntecedentePersonalInfUrinariaSi
+{
+    position: absolute;
+    top: 176px;
+    left: 157px;
+}
+.rbAntecedentePersonalOtrasInfeccionesNo
+{
+    position: absolute;
+    top: 193px;
+    left: 138px;
+}
+.rbAntecedentePersonalOtrasInfeccionesSi
+{
+    position: absolute;
+    top: 193px;
+    left: 157px;
+}
+.rbAntecedentePersonalOtraCondNo
+{
+    position: absolute;
+    top: 210px;
+    left: 138px;
+}
+.rbAntecedentePersonalOtraCondSi
+{
+    position: absolute;
+    top: 210px;
+    left: 157px;
+}
+.rbAntecedentePersonalInfertilidadNo
+{
+    position: absolute;
+    top: 129px;
+    left: 249px;
+}
+.rbAntecedentePersonalInfertilidadSi
+{
+    position: absolute;
+    top: 129px;
+    left: 268px;
+}
+.rbAntecedentePersonalCardiopatiaNo
+{
+    position: absolute;
+    top: 145px;
+    left: 249px;
+}
+.rbAntecedentePersonalCardiopatiaSi
+{
+    position: absolute;
+    top: 145px;
+    left: 268px;
+}
+.rbAntecedentePersonalNefropatiaNo
+{
+    position: absolute;
+    top: 161px;
+    left: 249px;
+}
+.rbAntecedentePersonalNefropatiaSi
+{
+    position: absolute;
+    top: 161px;
+    left: 268px;
+}
+.rbAntecedentePersonalViolenciaNo
+{
+    position: absolute;
+    top: 178px;
+    left: 249px;
+}
+.rbAntecedentePersonalViolenciaSi
+{
+    position: absolute;
+    top: 178px;
+    left: 268px;
+}
+.rbAntecedentePersonalAlergiaMedicamentoNo
+{
+    position: absolute;
+    top: 194px;
+    left: 249px;
+}
+.rbAntecedentePersonalAlergiaMedicamentoSi
+{
+    position: absolute;
+    top: 194px;
+    left: 268px;
+}
+/* Datos del Contacto */
+.txtDatosContacto
+{
+    position: absolute;
+    top: 82px;
+    left: 100px;
+    width: 100px;
+    height: 16px !important;
+    line-height: 14px !important;
+    font-size: 14px !important;
+}
+
+.txtAntecedentesObervaciones
+{
+    position: absolute;
+    top: 214px;
+    left: 178px;
+    width: 100px;
+    height: 14px !important;
+    line-height: 14px !important;
+    font-size: 14px !important;
+}
+
+/* Antecedentes obstetricos */
+.txtGestasPrevias
+{
+    position: absolute;
+    top: 118px;
+    left: 390px;
+}
+.txtAbortos
+{
+    position: absolute;
+    top: 118px;
+    left: 466px;
+}
+.txtEmbarazosEctopicos
+{
+    position: absolute;
+    top: 150px;
+    left: 410px;
+}
+.txtPartos
+{
+    position: absolute;
+    top: 196px;
+    left: 466px;
+}
+.txtPartosVaginales
+{
+    position: absolute;
+    top: 118px;
+    left: 524px;
+}
+.txtCesareas
+{
+    position: absolute;
+    top: 196px;
+    left: 532px;
+}
+.txtNacidosVivos
+{
+    position: absolute;
+    top: 118px;
+    left: 594px;
+}
+.txtNacidosMuertos
+{
+    position: absolute;
+    top: 196px;
+    left: 604px;
+}
+.txtViven
+{
+    position: absolute;
+    top: 118px;
+    left: 686px;
+}
+.txtMuertosPrimerSemana
+{
+    position: absolute;
+    top: 160px;
+    left: 704px;
+}
+.txtMuertosDespuesPrimerSemana
+{
+    position: absolute;
+    top: 196px;
+    left: 704px;
+}
+.rbAbortos3Concecutivos
+{
+    position: absolute;
+    top: 156px;
+    left: 494px;
+}
+/* Ultimo Previo */
+.rbUltimoPrevioNoCorresponde
+{
+    position: absolute;
+    top: 156px;
+    left: 319px;
+}
+.rbUltimoPrevioNormal
+{
+    position: absolute;
+    top: 173px;
+    left: 319px;
+}
+.rbUltimoPrevioMenor2500
+{
+    position: absolute;
+    top: 156px;
+    left: 371px;
+}
+.rbUltimoPrevioMayor4000
+{
+    position: absolute;
+    top: 173px;
+    left: 371px;
+}
+
+.rbAntecedentesGemelaresNo
+{
+    position: absolute;
+    top: 206px;
+    left: 352px;
+}
+.rbAntecedentesGemelaresSi
+{
+    position: absolute;
+    top: 206px;
+    left: 371px;
+}
+
+.txtFinEmbAnterior
+{
+    position: absolute;
+    top: 126px;
+    left: 745px;
+    width: 104px;
+}
+
+.rbFinEmbAnteriorMenor1Año
+{
+    position: absolute;
+    top: 117px;
+    left: 888px;
+}
+.rbEmbarazoPlaneadoNo
+{
+    position: absolute;
+    top: 161px;
+    left: 868px;
+}
+.rbEmbarazoPlaneadoSi
+{
+    position: absolute;
+    top: 161px;
+    left: 897px;
+}
+/* metodo anticonceptivo */
+.rbFracMetAnticonceptivoNoUsaba
+{
+    position: absolute;
+    top: 194px;
+    left: 747px;
+}
+.rbFracMetAnticonceptivoBarrera
+{
+    position: absolute;
+    top: 194px;
+    left: 776px;
+}
+.rbFracMetAnticonceptivoDIU
+{
+    position: absolute;
+    top: 194px;
+    left: 805px;
+}
+.rbFracMetAnticonceptivoHormonal
+{
+    position: absolute;
+    top: 194px;
+    left: 834px;
+}
+.rbFracMetAnticonceptivoEmergencia
+{
+    position: absolute;
+    top: 194px;
+    left: 863px;
+}
+.rbFracMetAnticonceptivoNatural
+{
+    position: absolute;
+    top: 194px;
+    left: 892px;
+}
+/* Gestación actual */
+.txtPesoAnterior
+{
+    position: absolute;
+    top: 270px;
+    left: 8px;
+}
+.txtTalla
+{
+    position: absolute;
+    top: 270px;
+    left: 86px;
+}
+
+.txtFUM
+{
+    position: absolute;
+    top: 240px;
+    left: 165px;
+    width: 104px;
+}
+.txtFPP
+{
+    position: absolute;
+    top: 272px;
+    left: 165px;
+    width: 104px;
+}
+
+.rbEGConfiableFUMNo
+{
+    position: absolute;
+    top: 260px;
+    left: 297px;
+}
+.rbEGConfiableFUMSi
+{
+    position: absolute;
+    top: 280px;
+    left: 297px;
+}
+.rbEGConfiableEco20No
+{
+    position: absolute;
+    top: 260px;
+    left: 333px;
+}
+.rbEGConfiableEco20Si
+{
+    position: absolute;
+    top: 280px;
+    left: 333px;
+}
+/* Fumadora activa */
+.rbFumaActiva1TrimNo
+{
+    position: absolute;
+    top: 250px;
+    left: 408px;
+}
+.rbFumaActiva1TrimSi
+{
+    position: absolute;
+    top: 250px;
+    left: 427px;
+}
+.rbFumaActiva2TrimNo
+{
+    position: absolute;
+    top: 266px;
+    left: 408px;
+}
+.rbFumaActiva2TrimSi
+{
+    position: absolute;
+    top: 266px;
+    left: 427px;
+}
+.rbFumaActiva3TrimNo
+{
+    position: absolute;
+    top: 282px;
+    left: 408px;
+}
+.rbFumaActiva3TrimSi
+{
+    position: absolute;
+    top: 282px;
+    left: 427px;
+}
+/* Fumadora pasiva */
+.rbFumaPasiva1TrimNo
+{
+    position: absolute;
+    top: 250px;
+    left: 455px;
+}
+.rbFumaPasiva1TrimSi
+{
+    position: absolute;
+    top: 250px;
+    left: 474px;
+}
+.rbFumaPasiva2TrimNo
+{
+    position: absolute;
+    top: 266px;
+    left: 455px;
+}
+.rbFumaPasiva2TrimSi
+{
+    position: absolute;
+    top: 266px;
+    left: 474px;
+}
+.rbFumaPasiva3TrimNo
+{
+    position: absolute;
+    top: 282px;
+    left: 455px;
+}
+.rbFumaPasiva3TrimSi
+{
+    position: absolute;
+    top: 282px;
+    left: 474px;
+}
+/* Drogas */
+.rbDrogas1TrimNo
+{
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+.rbDrogas1TrimSi
+{
+    position: absolute;
+    top: 250px;
+    left: 519px;
+}
+.rbDrogas2TrimNo
+{
+    position: absolute;
+    top: 266px;
+    left: 500px;
+}
+.rbDrogas2TrimSi
+{
+    position: absolute;
+    top: 266px;
+    left: 519px;
+}
+.rbDrogas3TrimNo
+{
+    position: absolute;
+    top: 282px;
+    left: 500px;
+}
+.rbDrogas3TrimSi
+{
+    position: absolute;
+    top: 282px;
+    left: 519px;
+}
+/* Alcohol */
+.rbAlcohol1TrimNo
+{
+    position: absolute;
+    top: 250px;
+    left: 545px;
+}
+.rbAlcohol1TrimSi
+{
+    position: absolute;
+    top: 250px;
+    left: 564px;
+}
+.rbAlcohol2TrimNo
+{
+    position: absolute;
+    top: 266px;
+    left: 545px;
+}
+.rbAlcohol2TrimSi
+{
+    position: absolute;
+    top: 266px;
+    left: 564px;
+}
+.rbAlcohol3TrimNo
+{
+    position: absolute;
+    top: 282px;
+    left: 545px;
+}
+.rbAlcohol3TrimSi
+{
+    position: absolute;
+    top: 282px;
+    left: 564px;
+}
+/* Violencia */
+.rbViolencia1TrimNo
+{
+    position: absolute;
+    top: 250px;
+    left: 590px;
+}
+.rbViolencia1TrimSi
+{
+    position: absolute;
+    top: 250px;
+    left: 609px;
+}
+.rbViolencia2TrimNo
+{
+    position: absolute;
+    top: 266px;
+    left: 590px;
+}
+.rbViolencia2TrimSi
+{
+    position: absolute;
+    top: 266px;
+    left: 609px;
+}
+.rbViolencia3TrimNo
+{
+    position: absolute;
+    top: 282px;
+    left: 590px;
+}
+.rbViolencia3TrimSi
+{
+    position: absolute;
+    top: 282px;
+    left: 609px;
+}
+.rbAntirubeolaPrevia
+{
+    position: absolute;
+    top: 254px;
+    left: 641px;
+}
+.rbAntirubeolaNoSabe
+{
+    position: absolute;
+    top: 254px;
+    left: 686px;
+}
+.rbAntirubeolaEmbarazo
+{
+    position: absolute;
+    top: 282px;
+    left: 641px;
+}
+.rbAntirubeolaNo
+{
+    position: absolute;
+    top: 282px;
+    left: 686px;
+}
+/* Antitetanica */
+.rbAntitetanicaVigenteNo
+{
+    position: absolute;
+    top: 247px;
+    left: 764px;
+}
+.rbAntitetanicaVigenteSi
+{
+    position: absolute;
+    top: 247px;
+    left: 791px;
+}
+.txtAntitetanicaDosis1
+{
+    position: absolute;
+    top: 271px;
+    left: 769px;
+}
+.txtAntitetanicaDosis2
+{
+    position: absolute;
+    top: 271px;
+    left: 803px;
+}
+/* Ex(¿amen?) Normal */
+.rbExNormalOdontNo
+{
+    position: absolute;
+    top: 262px;
+    left: 874px;
+}
+.rbExNormalOdontSi
+{
+    position: absolute;
+    top: 262px;
+    left: 897px;
+}
+.rbExNormalMamasNo
+{
+    position: absolute;
+    top: 280px;
+    left: 874px;
+}
+.rbExNormalMamasSi
+{
+    position: absolute;
+    top: 280px;
+    left: 897px;
+}
+/* Cervix */
+.rbCervixVisualNormal
+{
+    position: absolute;
+    top: 318px;
+    left: 54px;
+}
+.rbCervixVisualANormal
+{
+    position: absolute;
+    top: 318px;
+    left: 87px;
+}
+.rbCervixVisualNoSeHizo
+{
+    position: absolute;
+    top: 318px;
+    left: 114px;
+}
+.rbCervixPAPNormal
+{
+    position: absolute;
+    top: 337px;
+    left: 54px;
+}
+.rbCervixPAPANormal
+{
+    position: absolute;
+    top: 337px;
+    left: 87px;
+}
+.rbCervixPAPNoSeHizo
+{
+    position: absolute;
+    top: 337px;
+    left: 114px;
+}
+.rbCervixCOLPNormal
+{
+    position: absolute;
+    top: 355px;
+    left: 54px;
+}
+.rbCervixCOLPANormal
+{
+    position: absolute;
+    top: 355px;
+    left: 87px;
+}
+.rbCervixCOLPNoSeHizo
+{
+    position: absolute;
+    top: 355px;
+    left: 114px;
+}
+/* ¿Sangre? */
+.txtGrupo
+{
+    position: absolute;
+    top: 315px;
+    left: 135px;
+}
+.rbSangreRhPositivo
+{
+    position: absolute;
+    top: 322px;
+    left: 192px;
+}
+.rbSangreRhNegativo
+{
+    position: absolute;
+    top: 322px;
+    left: 175px;
+}
+.rbSangreInmunizNo
+{
+    position: absolute;
+    top: 315px;
+    left: 225px;
+}
+.rbSangreInmunizSi
+{
+    position: absolute;
+    top: 332px;
+    left: 225px;
+}
+.rbSangreGlobulinaAntiDNo
+{
+    position: absolute;
+    top: 355px;
+    left: 145px;
+}
+.rbSangreGlobulinaAntiDSi
+{
+    position: absolute;
+    top: 355px;
+    left: 177px;
+}
+.rbSangreGlobulinaAntiDNC
+{
+    position: absolute;
+    top: 355px;
+    left: 210px;
+}
+/* Toxoplasmosis */
+.rbToxoplasmosisMenos20IgGNegativo
+{
+    position: absolute;
+    top: 316px;
+    left: 325px;
+}
+.rbToxoplasmosisMenos20IgGPositivo
+{
+    position: absolute;
+    top: 316px;
+    left: 345px;
+}
+.rbToxoplasmosisMenos20IgGNoSeHizo
+{
+    position: absolute;
+    top: 316px;
+    left: 365px;
+}
+.rbToxoplasmosisMas20IgGNegativo
+{
+    position: absolute;
+    top: 335px;
+    left: 325px;
+}
+.rbToxoplasmosisMas20IgGPositivo
+{
+    position: absolute;
+    top: 335px;
+    left: 345px;
+}
+.rbToxoplasmosisMas20IgGNoSeHizo
+{
+    position: absolute;
+    top: 335px;
+    left: 365px;
+}
+.rbToxoplasmosis1ConsultaIgMNegativo
+{
+    position: absolute;
+    top: 355px;
+    left: 325px;
+}
+.rbToxoplasmosis1ConsultaIgMPositivo
+{
+    position: absolute;
+    top: 355px;
+    left: 345px;
+}
+.rbToxoplasmosis1ConsultaIgMNoSeHizo
+{
+    position: absolute;
+    top: 355px;
+    left: 365px;
+}
+/* VIH */
+.rbVIHCRNo
+{
+    position: absolute;
+    top: 312px;
+    left: 412px;
+}
+.rbVIHCRSi
+{
+    position: absolute;
+    top: 312px;
+    left: 430px;
+}
+/* VIH Datos Comunes */
+.rbVIHSolicitadoNo
+{
+    position: absolute;
+    top: 0px;
+    left: 28px;
+    z-index: inherit;
+}
+.rbVIHSolicitadoSi
+{
+    position: absolute;
+    top: 0px;
+    left: 44px;
+    z-index: inherit;
+}
+.rbVIHRealizadoNo
+{
+    position: absolute;
+    top: 17px;
+    left: 28px;
+    z-index: inherit;
+}
+.rbVIHRealizadoSi
+{
+    position: absolute;
+    top: 17px;
+    left: 45px;
+    z-index: inherit;
+}
+.txtVIHFecha
+{
+    width: 103px;
+    top: 9px;
+    left: 67px;
+    position: absolute;
+    display: none;
+    z-index: inherit;
+}
+/* VIH Primer Muestra */
+.divVIHPrimerMuestra
+{
+    top: 341px;
+    left: 385px;
+}
+/* VIH Segunda Muestra */
+.divVIHSegundaMuestra
+{
+    top: 381px;
+    left: 385px;
+}
+/* VIH Tercer Muestra */
+.divVIHTercerMuestra
+{
+    top: 419px;
+    left: 385px;
+}
+/* Hemoglobina, hierro y folatos */
+
+.txtHBMenos20
+{
+    position: absolute;
+    top: 323px;
+    left: 452px;
+    width: 55px;
+}
+
+.rbHemoglobinaMenos20Menor11
+{
+    position: absolute;
+    top: 356px;
+    left: 493px;
+}
+.rbHierroIndicadoNo
+{
+    position: absolute;
+    top: 337px;
+    left: 535px;
+}
+.rbHierroIndicadoSi
+{
+    position: absolute;
+    top: 356px;
+    left: 535px;
+}
+.rbFolatosIndicadosNo
+{
+    position: absolute;
+    top: 337px;
+    left: 565px;
+}
+.rbFolatosIndicadosSi
+{
+    position: absolute;
+    top: 356px;
+    left: 565px;
+}
+
+.txtHBMas20
+{
+    position: absolute;
+    top: 323px;
+    left: 594px;
+    width: 55px;
+}
+
+.rbHemoglobinaMas20Menor11
+{
+    position: absolute;
+    top: 356px;
+    left: 634px;
+}
+
+/* Sifilis - Prueba No Treponémica */
+/* Primera Muestra */
+.divSifilisPruebaNTPrimerMuestra
+{
+    top: 339px;
+    left: 658px;
+}
+/* Segunda Muestra */
+.divSifilisPruebaNTSegundaMuestra
+{
+    top: 377px;
+    left: 658px;
+}
+/* Tercera Muestra */
+.divSifilisPruebaNTTercerMuestra
+{
+    top: 416px;
+    left: 658px;
+}
+/* Datos Comunes */
+.rbSifilisPruebaNTNegativo
+{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    z-index: inherit;
+}
+.rbSifilisPruebaNTPositivo
+{
+    position: absolute;
+    top: 7px;
+    left: 28px;
+    z-index: inherit;
+}
+.rbSifilisPruebaNTSD
+{
+    position: absolute;
+    top: 7px;
+    left: 45px;
+    z-index: inherit;
+}
+.txtSifilisPNTFecha
+{
+    width: 103px;
+    top: 9px;
+    left: 69px;
+    position: absolute;
+    display: none;
+    z-index: inherit;
+}
+/* Sifilis - Prueba Treponémica */
+/* Primera Muestra */
+.divSifilisPruebaTPrimerMuestra
+{
+    top: 340px;
+    left: 725px;
+}
+/* Segunda Muestra */
+.divSifilisPruebaTSegundaMuestra
+{
+    top: 378px;
+    left: 725px;
+}
+/* Tercera Muestra */
+.divSifilisPruebaTTercerMuestra
+{
+    top: 417px;
+    left: 725px;
+}
+/* Datos Comunes */
+.rbSifilisPruebaTNegativo
+{
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    z-index: inherit;
+}
+.rbSifilisPruebaTPositivo
+{
+    position: absolute;
+    top: 6px;
+    left: 21px;
+    z-index: inherit;
+}
+.rbSifilisPruebaTSD
+{
+    position: absolute;
+    top: 6px;
+    left: 39px;
+    z-index: inherit;
+}
+.rbSifilisPruebaTNC
+{
+    position: absolute;
+    top: 6px;
+    left: 56px;
+    z-index: inherit;
+}
+.txtSifilisPTFecha
+{
+    width: 103px;
+    top: 9px;
+    left: 75px;
+    position: absolute;
+    display: none;
+    z-index: inherit;
+}
+/* Sifilis - Tratamiento */
+/* Primera Muestra */
+.divSifilisTratamientoPrimerMuestra
+{
+    top: 340px;
+    left: 799px;
+}
+/* Segunda Muestra */
+.divSifilisTratamientoSegundaMuestra
+{
+    top: 378px;
+    left: 799px;
+}
+/* Tercera Muestra */
+.divSifilisTratamientoTercerMuestra
+{
+    top: 417px;
+    left: 799px;
+}
+/* Datos Basicos */
+.rbSifilisTratamientoNO
+{
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    z-index: inherit;
+}
+.rbSifilisTratamientoSi
+{
+    position: absolute;
+    top: 6px;
+    left: 21px;
+    z-index: inherit;
+}
+.rbSifilisTratamientoSD
+{
+    position: absolute;
+    top: 6px;
+    left: 39px;
+    z-index: inherit;
+}
+.rbSifilisTratamientoNC
+{
+    position: absolute;
+    top: 6px;
+    left: 56px;
+    z-index: inherit;
+}
+.txtSifilisTratamientoFecha
+{
+    width: 103px;
+    top: 9px;
+    left: 75px;
+    position: absolute;
+    display: none;
+    z-index: inherit;
+}
+/* Sifilis (Algo con la) pareja */
+.rbSifilisParejaMenos20No
+{
+    position: absolute;
+    top: 340px;
+    left: 877px;
+}
+.rbSifilisParejaMenos20Si
+{
+    position: absolute;
+    top: 340px;
+    left: 897px;
+}
+.rbSifilisParejaMenos20SD
+{
+    position: absolute;
+    top: 366px;
+    left: 877px;
+}
+.rbSifilisParejaMenos20NC
+{
+    position: absolute;
+    top: 366px;
+    left: 897px;
+}
+.rbSifilisParejaMas20No
+{
+    position: absolute;
+    top: 403px;
+    left: 877px;
+}
+.rbSifilisParejaMas20Si
+{
+    position: absolute;
+    top: 403px;
+    left: 897px;
+}
+.rbSifilisParejaMas20SD
+{
+    position: absolute;
+    top: 428px;
+    left: 877px;
+}
+.rbSifilisParejaMas20NC
+{
+    position: absolute;
+    top: 428px;
+    left: 897px;
+}
+/* Chagas */
+.rbChagasNegativo
+{
+    position: absolute;
+    top: 378px;
+    left: 26px;
+}
+.rbChagasPositivo
+{
+    position: absolute;
+    top: 402px;
+    left: 26px;
+}
+.rbChagasNoSeHizo
+{
+    position: absolute;
+    top: 436px;
+    left: 26px;
+}
+/* Hepatitis B */
+.rbHepatitisBNegativo
+{
+    position: absolute;
+    top: 402px;
+    left: 62px;
+}
+.rbHepatitisBPositivo
+{
+    position: absolute;
+    top: 402px;
+    left: 82px;
+}
+.rbHepatitisBNoSeHizo
+{
+    position: absolute;
+    top: 430px;
+    left: 72px;
+}
+/* Bacteriuria */
+.rbBacteriuriaMenos20Normal
+{
+    position: absolute;
+    top: 412px;
+    left: 152px;
+}
+.rbBacteriuriaMenos20Anormal
+{
+    position: absolute;
+    top: 412px;
+    left: 188px;
+}
+.rbBacteriuriaMenos20NoSeHizo
+{
+    position: absolute;
+    top: 412px;
+    left: 218px;
+}
+.rbBacteriuriaMas20Normal
+{
+    position: absolute;
+    top: 433px;
+    left: 152px;
+}
+.rbBacteriuriaMas20Anormal
+{
+    position: absolute;
+    top: 433px;
+    left: 188px;
+}
+.rbBacteriuriaMas20NoSeHizo
+{
+    position: absolute;
+    top: 433px;
+    left: 218px;
+}
+/* Glucemia en ayunas */
+.txtGlucemiaMenos20Valor
+{
+    position: absolute;
+    top: 392px;
+    left: 274px;
+}
+.rbGlucemiaMenos20Mayor105
+{
+    position: absolute;
+    top: 396px;
+    left: 350px;
+}
+.txtGlucemiaMas30Valor
+{
+    position: absolute;
+    top: 424px;
+    left: 274px;
+}
+
+.rbGlucemiaMas30Mayor105
+{
+    position: absolute;
+    top: 431px;
+    left: 350px;
+}
+/* Estreptococo B */
+.rbEstreptococoBNegativo
+{
+    position: absolute;
+    top: 428px;
+    left: 454px;
+}
+.rbEstreptococoBPositivo
+{
+    position: absolute;
+    top: 428px;
+    left: 473px;
+}
+.rbEstreptococoBNoSeHizo
+{
+    position: absolute;
+    top: 428px;
+    left: 495px;
+}
+/* Preparación para el parto */
+.rbPreparacionPartoNo
+{
+    position: absolute;
+    top: 436px;
+    left: 537px;
+}
+.rbPreparacionPartoSi
+{
+    position: absolute;
+    top: 436px;
+    left: 564px;
+}
+/* Consejeria lactancia materna */
+.rbConsejeriaLactanciaNo
+{
+    position: absolute;
+    top: 436px;
+    left: 602px;
+}
+.rbConsejeriaLactanciaSi
+{
+    position: absolute;
+    top: 436px;
+    left: 629px;
+}

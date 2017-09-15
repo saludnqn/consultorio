@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mConsultorio.Master.cs"
+    Inherits="Consultorio.mConsultorio" %>
+
+<!DOCTYPE html>
+<html lang="es-AR">
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Subsecretaría de Salud - Sistema Integral Provincial de Salud</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" id="lnkStyleSheetConsultorio">
+    <link rel="stylesheet" type="text/css" href="style.responsive.css" media="all">
+    <link rel="stylesheet" type="text/css" href="App_Themes/Login/css/style.css" media="screen" />
+    <script type="text/javascript" src="/sips/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/sips/js/script.js"></script>
+    <script type="text/javascript" src="/sips/js/script.responsive.js"></script>
+    <script type="text/javascript">
+        document.createElement("nav");
+        document.createElement("header");
+        document.createElement("footer");
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="art-sheet">
+        <header class="art-header clearfix">
+                <div class="art-shapes">
+                    <div class="art-logoDiv">
+                    </div>
+                    <div class="art-systemDiv">
+                        <strong>
+                            <asp:Label ID="lblSistema" runat="server" Text="SISTEMA INTEGRADO PROVINCIAL DE SALUD" />
+                        </strong>
+                        <div id="EfectorDiv">
+                            <asp:Label ID="lblEfector" runat="server" />
+                        </div>
+                    </div>
+                    <div class="art-datousrM">
+                        <%--<asp:ImageButton ID="ImgHomeSip" runat="server" ImageUrl="Images/desktop.png"
+                            CssClass="art-imgs" ToolTip="Inicio SIPS" />--%>
+                        <asp:ImageButton ID="ImgHomeSystem" runat="server" ImageUrl="Images/home.png"
+                            CssClass="art-imgs" ToolTip="Página principal" />
+                        <asp:ImageButton ID="ImgChangePass" runat="server" ImageUrl="Images/config.png"
+                            CssClass="art-imgs" ToolTip="Datos Usuario" />
+                        <asp:ImageButton ID="ImgExit" runat="server" ImageUrl="Images/shut-down.png"
+                            CssClass="art-imgs" ToolTip="Cerrar Sesión. Salir del Sistema" />
+                        <br />
+                        Usuario:
+                          <asp:Label ID="lblUsr" runat="server" />
+                    </div>
+                </div>
+            </header>
+        <nav class="art-nav clearfix">
+                <asp:ListView runat="server" ID="lvMenuSSO" EnableTheming="True" ItemPlaceholderID="menuItem"
+                    OnItemDataBound="lvMenuSSO_ItemDataBound">
+                    <LayoutTemplate>
+                        <ul class="art-hmenu clearfix">
+                            <asp:PlaceHolder ID="menuItem" runat="server" />
+                        </ul>
+                    </LayoutTemplate>
+                    <ItemTemplate>
+                        <li><a href="#" id="hlMenu" runat="server" class="active">
+                            <%# Eval("text") %></a>
+                            <asp:ListView runat="server" ID="lvSubMenuSSO" EnableTheming="True" ItemPlaceholderID="menuSubItem">
+                                <LayoutTemplate>
+                                    <ul class="active">
+                                        <asp:PlaceHolder ID="menuSubItem" runat="server" />
+                                    </ul>
+                                </LayoutTemplate>
+                                <ItemTemplate>
+                                    <li>
+                                        <asp:HyperLink ID="hlMenu2" runat="server" NavigateUrl='<%# "~/Consultorio" + Page.ResolveUrl(Eval("url").ToString()) %>'> 
+                         <%# Eval("text") %>
+                                        </asp:HyperLink>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:ListView>
+                        </li>
+                    </ItemTemplate>
+                </asp:ListView>
+            </nav>
+        <div id="subheader">
+            <div class="tit">
+                Consultorio<br />
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="Superior" runat="server">
+        </asp:ContentPlaceHolder>
+        <div id="main">
+            <div id="leftside">
+                <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="Botones" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <%--<footer class="art-footer clearfix">
+                <p>Copyright © 2013. Subsecretaría de Salud de Neuquén - Dirección Gral. de TIC'S</p>
+            </footer>--%>
+    </div>
+    </form>
+</body>
+</html>

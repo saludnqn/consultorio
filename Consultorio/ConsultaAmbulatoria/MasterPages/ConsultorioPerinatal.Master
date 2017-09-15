@@ -1,0 +1,218 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/Global.Master"
+  CodeBehind="ConsultorioPerinatal.master.cs" Inherits="Consultorio.ConsultaAmbulatoria.MasterPages.ConsultorioPerinatal" %>
+
+<%@ MasterType VirtualPath="~/Global.Master" %>
+<%@ Register Src="~/UserControls/ResumenPaciente.ascx" TagName="ResumenPaciente"
+  TagPrefix="uc" %>
+<%-- Scripts y hojas de estilo --%>
+<asp:Content ContentPlaceHolderID="head" runat="server">
+  <%-- Scripts globales --%>
+
+     <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/bootstrap.min.js") %>'></script>
+
+  <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-1.12.4.min.js") %>'></script>
+
+  <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/validation/jquery.validationEngine-es.js") %>'></script>
+
+  <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/validation/jquery.validationEngine.js") %>'></script>
+
+  <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-ui-1.12.1.min.js") %>'></script>
+
+  <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery.dataTables.min.js") %>'></script>
+
+  <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery.ui.selectmenu.js") %>'></script>
+
+  <%--<script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/ui.checkbox.js") %>'></script>--%>
+
+  <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/json2.js") %>'></script>
+
+  <%-- Estilos jQueryUI y dataTable --%>
+  <link href='<%= ResolveUrl("~/ControlMenor/css/redmond/jquery.ui.all.css") %>' rel="stylesheet"
+    type="text/css" />
+  <link href='<%= ResolveUrl("~/ControlMenor/css/datatable.css") %>' rel="stylesheet"
+    type="text/css" />
+  <link href='<%= ResolveUrl("~/ControlMenor/css/jquery.ui.selectmenu.css") %>' rel="stylesheet"
+    type="text/css" />
+  <link href='<%= ResolveUrl("~/ControlMenor/css/ui.checkbox.css") %>' rel="stylesheet"
+    type="text/css" />
+     <link href='<%= ResolveUrl("~/ControlMenor/css/css/bootstrap.min.css") %>' rel="stylesheet"
+    type="text/css" />
+
+    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/moment.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/validator.js") %>'></script>
+    <script type="text/javascript">
+        // When the document is ready
+        $(document).ready(function () {
+
+            $('.datepicker22').datepicker({
+                dateFormat: 'dd/mm/yy',
+                changeMonth: true,
+                changeYear: true
+            });
+
+        });
+        </script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Formatea y desoculta la botonera en caso de necesitarse.
+      if ($('#botonera').children().size() > 0) {
+        $('#botonera > input').button();
+        $('#botonera').show();
+      }
+      // Busca y formatea las grillas que haya.
+      $('.grilla').dataTable({
+        "bJQueryUI": true,
+        "oLanguage": {
+          "sSearch": "Buscar:",
+          "sLengthMenu": "Mostrar _MENU_ ítems por página",
+          "sZeroRecords": "No se encontró nada",
+          "sInfo": "Mostrando _START_ a _END_ de _TOTAL_ ítems",
+          "sInfoEmpty": "Mostrando 0 a 0 de 0 ítems",
+          "sInfoFiltered": "(filtrado de _MAX_ ítems totales)"
+        },
+        "iDisplayLength": 10,
+        "aaSorting": [[1, "asc"]],
+        "aoColumnDefs": [
+			            { "bSortable": false, "aTargets": [0] }
+		            ]
+      });
+    });
+  </script>
+    <style>
+        .menu1{
+        margin-left: 100px !important;
+         border-left: 0px solid !important;
+         } 
+        .nav-tabs > li > a {
+         font-size: 12px !important;
+         text-decoration: none;
+        }
+        .nav-tabs > li  {
+            border-left: 1px solid #A8A8A8CC;
+            border-top: 1px solid #A8A8A8CC;
+             background-color:#C1CC9E;
+         }
+        .nav-tabs > li > a:hover {
+           background-color:#C1CC9E;
+            color: #fff;
+             }
+        .nav-tabs > li > a:focus {
+            background-color:#C1CC9E;
+            color: #fff;
+             }
+ 
+        .content ul, .content ol {
+            margin-left: 0em !important;
+            }
+
+        .ui-widget-content {
+            font-size: 13px !important;
+            z-index: 99 !important;
+        }
+        
+        .ui-button {color: #000;
+        background-color: #8A995C80;
+        border-color: #8A995C80;
+        }
+       .ui-button:hover {color: #fff !important;
+        background-color: #C1CC9E !important;
+        border-color: #C1CC9E !important;
+        }
+
+    .ui-tabs .ui-tabs-nav li a {
+    padding: .0.8em 1em !important;
+        }
+    .ui-widget-header {
+    border: 0px solid #4297d7;
+    background:#C1CC9E!important;
+    color: #ffffff;
+    font-weight: bold;
+        }
+    .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #77805C !important;
+    text-decoration: none;
+        }
+    .ui-tabs .ui-tabs-nav li a:hover {
+    color: #000 !important;
+    background-color: #C1CC9E !important;
+    
+        }
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #77805C !important;
+    font-weight: bold;
+    color: #77805C !important;
+                    }
+    .arreglo{
+         margin-left: 14px !important;
+
+    }
+    </style>
+
+  <%-- Placeholder para agregar css o scripts locales --%>
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="contenido" runat="server">
+  <%-- Resumen del paciente --%>
+  <uc:ResumenPaciente ID="RP" runat="server"></uc:ResumenPaciente>
+  <%-- Navegación en "Control del Menor"--%>
+  <div class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+    <%--<uc:MenuControlMenor runat="server"></uc:MenuControlMenor>--%>
+    <div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-1">
+      <%-- Panel para errores --%>
+      <asp:Panel runat="server" ID="pnlMensaje" Visible="false" CssClass="" Style="padding: 5px 10px;">
+        <%-- Nada --%>
+      </asp:Panel>
+
+      <%-- Menu --%>
+     
+        <ul class="nav nav-tabs" id="tabGroup" runat="server">
+          <li id="tabControl" runat="server" class="menu1">
+            <asp:HyperLink runat="server" ID="hlControl" Text="<br />Control" NavigateUrl=""></asp:HyperLink>
+          </li>
+          <li id="tabActividades" runat="server" class="">
+            <asp:HyperLink runat="server" ID="hlActividades" Text="<br />Actividades" NavigateUrl=""></asp:HyperLink>
+          </li>
+          <li id="tabControlOdontologico" runat="server" class="">
+            <asp:HyperLink runat="server" ID="hlControlOdontologico" Text="Control<br />Odontológ"
+              NavigateUrl=""></asp:HyperLink>
+          </li>
+          <li id="tabInterconsultas" runat="server" class="">
+            <asp:HyperLink runat="server" ID="hlInterconsultas" Text="<br />Interconsultas" NavigateUrl=""></asp:HyperLink>
+          </li>
+          <li id="tabGraficos" runat="server" class="">
+            <asp:HyperLink runat="server" ID="hlGraficos" Text="<br />Gráfica IMC" NavigateUrl=""></asp:HyperLink>
+          </li>
+         <%-- <li id="tabScore" runat="server" class="">
+            <asp:HyperLink runat="server" ID="hlScore" Text="Riesgo<br />de BPN" NavigateUrl=""></asp:HyperLink>
+            </li>--%>
+            <%--<li id="tabEval" runat="server" class="">
+              <asp:HyperLink runat="server" ID="hlEvaluacion" Text="<br />Evaluación" NavigateUrl=""></asp:HyperLink>
+            </li>--%>
+           <li id="tabAlerta" runat="server" class="">
+              <asp:HyperLink runat="server" ID="hlAlerta" Text="<br />Alertas" NavigateUrl=""></asp:HyperLink>
+            </li>
+           <li id="tabAUterina" runat="server" class="">
+              <asp:HyperLink runat="server" ID="hlAUterina" Text="Altura<br />Uterina" NavigateUrl=""></asp:HyperLink>
+            </li>
+            <li id="tabParto" runat="server" class="">
+              <asp:HyperLink runat="server" ID="hlParto" Text="<br />Parto" NavigateUrl=""></asp:HyperLink>
+            </li>
+        </ul>
+        <div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="Div1">
+          <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+          </asp:ContentPlaceHolder>
+          <%-- Botonera (oculta si no hay botones) --%>
+          <div class="ui-widget-header ui-corner-all" id="botonera" style="display: none; padding: 5px 10px;
+            margin-top: 10px;">
+            <asp:ContentPlaceHolder ID="Botones" runat="server">
+            </asp:ContentPlaceHolder>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</asp:Content>
