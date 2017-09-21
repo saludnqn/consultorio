@@ -18,19 +18,18 @@
     <br />
 
     <h3>
-        <img src="../App_Themes/consultorio/images/information.png" />
+        <img src="./App_Themes/consultorio/images/information.png" />
         08/09/2015. Se ha actualizado el sistema con la opción de crear agendas mutidisciplinarias.</h3>
     <table>
         <tr>
             <td>
 
                 <asp:Panel ID="pnlPrincipal" runat="server" Visible="false">
-                    <div
-                        style="left: 20px; top: 10px; margin-left: 20px; margin-top: 10px; font-weight: bold;">
+                    <div style="left: 20px; top: 10px; margin-left: 20px; margin-top: 10px; font-weight: bold;">
                         <br />
                         <br />
                         <br />
-                        <%--       <a href="AtencionConsultorio/AgendaList.aspx">Atención Consultorio Externo</a><table>--%>
+
                 <tr>
                     <td style="vertical-align: top; width: 400px">
                         <asp:GridView ID="gvEspecialidad" runat="server" AutoGenerateColumns="False"
@@ -107,18 +106,12 @@
                       <tr>
                           <td colspan="2">&nbsp;</td>
                       </tr>
-
-
-
                       <tr>
                           <td rowspan="3">
-                              <img src="../App_Themes/consultorio/images/indicador.gif" /></td>
+                              <img src="./App_Themes/consultorio/images/indicador.gif" /></td>
                           <td>
                               <a href="PanelConsultas/AgendaList.aspx"><b class="mySubTitulo">Agendas y Disponibilidad de Turnos.</b></a></td>
                       </tr>
-
-
-
                       <tr>
                           <td>Cantidad de agendas abiertas y disponibilidad de turnos por efector.</td>
                       </tr>
@@ -129,7 +122,7 @@
                       </tr>
                       <tr>
                           <td rowspan="3">
-                              <img src="../App_Themes/consultorio/images/indicador.gif" /></td>
+                              <img src="./App_Themes/consultorio/images/indicador.gif" /></td>
                           <td>&nbsp;</td>
                       </tr>
                       <tr>
@@ -149,7 +142,7 @@
 
                       <tr>
                           <td rowspan="3">
-                              <img src="../App_Themes/consultorio/images/indicador.gif" /></td>
+                              <img src="./App_Themes/consultorio/images/indicador.gif" /></td>
                           <td>
                               <a href="PanelConsultas/ReporteDiagnosticos.aspx"><b class="mySubTitulo">Motivo de Consulta/Diagnósticos.</b></a>
                           </td>
@@ -189,48 +182,39 @@
 
           <div align="left" style="left: 50px; width: 300px;">
               <b>Documentación de Interés
-      <hr width="650" align="left" />
+                <hr width="650" align="left" />
               </b>
               <br />
 
-              <%--<img src="../App_Themes/consultorio/images/pdf.jpg" />
-      <asp:LinkButton ID="LinkButton5" Visible="false" runat="server" onclick="LinkButton5_Click">Actualizaciones : Ultima 16/10/2014 </asp:LinkButton>&nbsp;&nbsp;<b class="myLabelIzquierda"><img src="../App_Themes/consultorio/images/new.png" /></b>                     
-      <br />
-      <br />--%>
-
-              <img src="../App_Themes/consultorio/images/pdf.jpg" />
+              <img src="./App_Themes/consultorio/images/pdf.jpg" />
               <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">MANUAL DE USUARIO</asp:LinkButton>&nbsp;&nbsp;<b class="myLabelIzquierda"></b>
               <br />
-              <%--<br />    <img src="../App_Themes/consultorio/images/pdf.jpg" />
-      <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click">Actualizaciones del Sistema</asp:LinkButton>&nbsp;&nbsp;<b class="myLabelIzquierda"><img src="../App_Themes/consultorio/images/new.png" /> Ultima Actualización 16-Abril-2013</b>
-      <br />--%>
-              <img src="../App_Themes/consultorio/images/pdf.jpg" />
+
+              <img src="./App_Themes/consultorio/images/pdf.jpg" />
               <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Informe Técnico de la Consultoría - Diciembre 2011</asp:LinkButton>
               <br />
-              <img src="../App_Themes/consultorio/images/pdf.jpg" />
+              <img src="./App_Themes/consultorio/images/pdf.jpg" />
               <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Proceso de Solicitud y Entrega de Turnos para la Atención Ambulatoria</asp:LinkButton>
               <br />
-              <img src="../App_Themes/consultorio/images/pdf.jpg" />
+              <img src="./App_Themes/consultorio/images/pdf.jpg" />
               <asp:LinkButton ID="LinkButton1" runat="server"
                   OnClick="LinkButton1_Click">Notificación de Uso del Sistema</asp:LinkButton>
               <br />
               <br />
-              <img src="../App_Themes/consultorio/images/pdf.jpg" />
+              <img src="./App_Themes/consultorio/images/pdf.jpg" />
               <asp:LinkButton ID="lnkPlanillaConsultaAmbulatoria" runat="server" OnClick="lnkPlanillaConsultaAmbulatoria_Click">Modelo Planilla Consulta Ambulatoria</asp:LinkButton>
               <br />
-              <img src="../App_Themes/consultorio/images/pdf.jpg" />
+              <img src="./App_Themes/consultorio/images/pdf.jpg" />
               <asp:LinkButton ID="lnkPlanillaSaludMental" runat="server" OnClick="lnkPlanillaSaludMental_Click">Modelo Planilla Salud Mental</asp:LinkButton>
               <br />
-              <img src="../App_Themes/consultorio/images/pdf.jpg" />
+              <img src="./App_Themes/consultorio/images/pdf.jpg" />
               <asp:LinkButton ID="lnkPlanillaOdontologia" runat="server" OnClick="lnkPlanillaOdontologia_Click">Modelo Planilla Odontología</asp:LinkButton>
               <br />
 
           </div>
       </td>
-
-    <td style="vertical-align: top"></td>
-
-    <td style="vertical-align: top"></td>
+      <td style="vertical-align: top"></td>
+      <td style="vertical-align: top"></td>
     </tr>
     <tr>
         <td width="350" colspan="2"></td>
