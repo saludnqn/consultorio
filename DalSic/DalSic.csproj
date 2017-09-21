@@ -1,16 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{B44E2719-6DA4-4C40-B200-CDF3B8854EC5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DalSic</RootNamespace>
     <AssemblyName>DalSic</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,22 +37,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SubSonic">
-      <HintPath>..\..\..\SubSonic2.2\SubSonic2.2\SubSonic.dll</HintPath>
+    <Reference Include="SubSonic, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\SubSonic.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
-    <Reference Include="System.Core" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="extended\AprRelRecienNacidoEnfermedad.cs" />
     <Compile Include="extended\ConConsultaDiagnostico.cs" />
     <Compile Include="generated\AllStructs.cs" />
@@ -340,55 +351,141 @@
     <Compile Include="generated\FacPacientesConObraSocial.cs" />
     <Compile Include="generated\FacRelPerfilPaginaPrincipal.cs" />
     <Compile Include="generated\FacRelPerfilPaginaPrincipalController.cs" />
-    <Compile Include="generated\GuardiaAntecedente.cs" />
-    <Compile Include="generated\GuardiaAntecedenteController.cs" />
-    <Compile Include="generated\GuardiaC2.cs" />
-    <Compile Include="generated\GuardiaC2Controller.cs" />
+    <Compile Include="generated\GuardiaAntecedente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaAntecedenteController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaC2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaC2Controller.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="generated\GuardiaMedicosFuncione.cs" />
     <Compile Include="generated\GuardiaMedicosFuncioneController.cs" />
-    <Compile Include="generated\GuardiaMedicosRegistroIngreso.cs" />
-    <Compile Include="generated\GuardiaMedicosRegistroIngresoController.cs" />
+    <Compile Include="generated\GuardiaMedicosRegistroIngreso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaMedicosRegistroIngresoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="generated\GuardiaMedicosTiposFuncione.cs" />
     <Compile Include="generated\GuardiaMedicosTiposFuncioneController.cs" />
-    <Compile Include="generated\GuardiaMensaje.cs" />
-    <Compile Include="generated\GuardiaMensajeController.cs" />
-    <Compile Include="generated\GuardiaPracticasClase.cs" />
-    <Compile Include="generated\GuardiaPracticasClaseController.cs" />
-    <Compile Include="generated\GuardiaPracticasEstado.cs" />
-    <Compile Include="generated\GuardiaPracticasEstadoController.cs" />
-    <Compile Include="generated\GuardiaPracticasPrioridade.cs" />
-    <Compile Include="generated\GuardiaPracticasPrioridadeController.cs" />
-    <Compile Include="generated\GuardiaPrescripcione.cs" />
-    <Compile Include="generated\GuardiaPrescripcioneController.cs" />
-    <Compile Include="generated\GuardiaRegistro.cs" />
-    <Compile Include="generated\GuardiaRegistroController.cs" />
-    <Compile Include="generated\GuardiaRegistrosClasificacione.cs" />
-    <Compile Include="generated\GuardiaRegistrosClasificacioneController.cs" />
-    <Compile Include="generated\GuardiaRegistrosDiagnostico.cs" />
-    <Compile Include="generated\GuardiaRegistrosDiagnosticoController.cs" />
-    <Compile Include="generated\GuardiaRegistrosDiagnosticosCie10.cs" />
-    <Compile Include="generated\GuardiaRegistrosDiagnosticosCie10Controller.cs" />
-    <Compile Include="generated\GuardiaRegistrosEstado.cs" />
-    <Compile Include="generated\GuardiaRegistrosEstadoController.cs" />
+    <Compile Include="generated\GuardiaMensaje.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaMensajeController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaPracticasClase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaPracticasClaseController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaPracticasEstado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaPracticasEstadoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaPracticasPrioridade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaPracticasPrioridadeController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaPrescripcione.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaPrescripcioneController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistroController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosClasificacione.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosClasificacioneController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosDiagnostico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosDiagnosticoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosDiagnosticosCie10.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosDiagnosticosCie10Controller.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosEstado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosEstadoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="generated\GuardiaRegistrosHistorial.cs" />
     <Compile Include="generated\GuardiaRegistrosHistorialController.cs" />
-    <Compile Include="generated\GuardiaRegistrosMedicosResponsable.cs" />
-    <Compile Include="generated\GuardiaRegistrosMedicosResponsableController.cs" />
-    <Compile Include="generated\GuardiaRegistrosPractica.cs" />
-    <Compile Include="generated\GuardiaRegistrosPracticaController.cs" />
-    <Compile Include="generated\GuardiaRegistrosPracticasLaboratorio.cs" />
-    <Compile Include="generated\GuardiaRegistrosPracticasLaboratorioController.cs" />
-    <Compile Include="generated\GuardiaTipoPractica.cs" />
-    <Compile Include="generated\GuardiaTipoPracticaController.cs" />
-    <Compile Include="generated\GuardiaTiposEgreso.cs" />
-    <Compile Include="generated\GuardiaTiposEgresoController.cs" />
-    <Compile Include="generated\GuardiaTiposIngreso.cs" />
-    <Compile Include="generated\GuardiaTiposIngresoController.cs" />
-    <Compile Include="generated\GuardiaTriage.cs" />
-    <Compile Include="generated\GuardiaTriageController.cs" />
-    <Compile Include="generated\GuardiaTurnero.cs" />
-    <Compile Include="generated\GuardiaTurneroController.cs" />
-    <Compile Include="generated\GuardiaUltimoTriage.cs" />
+    <Compile Include="generated\GuardiaRegistrosMedicosResponsable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosMedicosResponsableController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosPractica.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosPracticaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosPracticasLaboratorio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaRegistrosPracticasLaboratorioController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTipoPractica.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTipoPracticaController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTiposEgreso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTiposEgresoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTiposIngreso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTiposIngresoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTriage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTriageController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTurnero.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaTurneroController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generated\GuardiaUltimoTriage.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="generated\HidHidatidosi.cs" />
     <Compile Include="generated\HidHidatidosiController.cs" />
     <Compile Include="generated\HidHidatidosisParcial.cs" />
@@ -479,12 +576,6 @@
     <Compile Include="generated\MamEstudiosHospitalProvincialController.cs" />
     <Compile Include="generated\MamExamenFisico.cs" />
     <Compile Include="generated\MamExamenFisicoController.cs" />
-    <Compile Include="generated\MamIndicadorM.cs" />
-    <Compile Include="generated\MamIndicadorMController.cs" />
-    <Compile Include="generated\MamIndicadorN.cs" />
-    <Compile Include="generated\MamIndicadorNController.cs" />
-    <Compile Include="generated\MamIndicadorT.cs" />
-    <Compile Include="generated\MamIndicadorTController.cs" />
     <Compile Include="generated\MamMaterial.cs" />
     <Compile Include="generated\MamMaterialController.cs" />
     <Compile Include="generated\MamMotivo.cs" />
@@ -511,10 +602,6 @@
     <Compile Include="generated\OdoNomencladorController.cs" />
     <Compile Include="generated\OdoPrograma.cs" />
     <Compile Include="generated\OdoProgramaController.cs" />
-    <Compile Include="generated\PnAccidentesLab.cs" />
-    <Compile Include="generated\PnAccidentesLabController.cs" />
-    <Compile Include="generated\PnAfjp.cs" />
-    <Compile Include="generated\PnAfjpController.cs" />
     <Compile Include="generated\PnAgenteInscriptor.cs" />
     <Compile Include="generated\PnAgenteInscriptorController.cs" />
     <Compile Include="generated\PnAltum.cs" />
@@ -529,33 +616,19 @@
     <Compile Include="generated\PnArchivosCasoController.cs" />
     <Compile Include="generated\PnArchivosEnviado.cs" />
     <Compile Include="generated\PnArchivosEnviadoController.cs" />
-    <Compile Include="generated\PnArchivosRecibido.cs" />
-    <Compile Include="generated\PnArchivosRecibidoController.cs" />
     <Compile Include="generated\PnArea.cs" />
     <Compile Include="generated\PnAreaController.cs" />
-    <Compile Include="generated\PnAsistencium.cs" />
-    <Compile Include="generated\PnAsistenciumController.cs" />
-    <Compile Include="generated\PnAusentismo.cs" />
-    <Compile Include="generated\PnAusentismoController.cs" />
     <Compile Include="generated\PnBarrio.cs" />
     <Compile Include="generated\PnBarrioController.cs" />
     <Compile Include="generated\PnBeneficiario.cs" />
     <Compile Include="generated\PnBeneficiarioController.cs" />
-    <Compile Include="generated\PnBorrar.cs" />
-    <Compile Include="generated\PnBorrarController.cs" />
     <Compile Include="generated\PnCalculaPrecio.cs" />
     <Compile Include="generated\PnCalculaPrecioController.cs" />
-    <Compile Include="generated\PnCalificacion.cs" />
-    <Compile Include="generated\PnCalificacionController.cs" />
     <Compile Include="generated\PnCantidadEmb.cs" />
     <Compile Include="generated\PnCantidadNin.cs" />
     <Compile Include="generated\PnCantidadOrdenesAfiliado.cs" />
     <Compile Include="generated\PnCantidadPar.cs" />
     <Compile Include="generated\PnCantidadTrazadorasAfiliado.cs" />
-    <Compile Include="generated\PnCapacitacione.cs" />
-    <Compile Include="generated\PnCapacitacioneController.cs" />
-    <Compile Include="generated\PnCapacitado.cs" />
-    <Compile Include="generated\PnCapacitadoController.cs" />
     <Compile Include="generated\PnCapsHacenParto.cs" />
     <Compile Include="generated\PnCapsHacenPartoController.cs" />
     <Compile Include="generated\PnCategoria.cs" />
@@ -566,10 +639,6 @@
     <Compile Include="generated\PnComprobanteController.cs" />
     <Compile Include="generated\PnCredito.cs" />
     <Compile Include="generated\PnCreditoController.cs" />
-    <Compile Include="generated\PnCurriculumIdioma.cs" />
-    <Compile Include="generated\PnCurriculumIdiomaController.cs" />
-    <Compile Include="generated\PnCurriculumReferencium.cs" />
-    <Compile Include="generated\PnCurriculumReferenciumController.cs" />
     <Compile Include="generated\PnDatMinObl.cs" />
     <Compile Include="generated\PnDatMinOblController.cs" />
     <Compile Include="generated\PnDatosReportable.cs" />
@@ -580,8 +649,6 @@
     <Compile Include="generated\PnDepartamentoController.cs" />
     <Compile Include="generated\PnDescIndicadorIn.cs" />
     <Compile Include="generated\PnDescIndicadorInController.cs" />
-    <Compile Include="generated\PnDiasSemana.cs" />
-    <Compile Include="generated\PnDiasSemanaController.cs" />
     <Compile Include="generated\PnDirectoriosArchivo.cs" />
     <Compile Include="generated\PnDirectoriosArchivoController.cs" />
     <Compile Include="generated\PnDistrito.cs" />
@@ -598,20 +665,14 @@
     <Compile Include="generated\PnEgresoController.cs" />
     <Compile Include="generated\PnEmbarazada.cs" />
     <Compile Include="generated\PnEmbarazadaController.cs" />
-    <Compile Include="generated\PnEnfermedade.cs" />
-    <Compile Include="generated\PnEnfermedadeController.cs" />
     <Compile Include="generated\PnEntrega.cs" />
     <Compile Include="generated\PnEntregaController.cs" />
-    <Compile Include="generated\PnEvaluadore.cs" />
-    <Compile Include="generated\PnEvaluadoreController.cs" />
     <Compile Include="generated\PnEvento.cs" />
     <Compile Include="generated\PnEventoController.cs" />
     <Compile Include="generated\PnExpediente.cs" />
     <Compile Include="generated\PnExpedienteController.cs" />
     <Compile Include="generated\PnFactura.cs" />
     <Compile Include="generated\PnFacturaController.cs" />
-    <Compile Include="generated\PnFamilium.cs" />
-    <Compile Include="generated\PnFamiliumController.cs" />
     <Compile Include="generated\PnFeriado.cs" />
     <Compile Include="generated\PnFeriadoController.cs" />
     <Compile Include="generated\PnGrupo.cs" />
@@ -622,10 +683,6 @@
     <Compile Include="generated\PnGruposUsuarioController.cs" />
     <Compile Include="generated\PnHistoricotemp.cs" />
     <Compile Include="generated\PnHistoricotempController.cs" />
-    <Compile Include="generated\PnHorariosTrabajo.cs" />
-    <Compile Include="generated\PnHorariosTrabajoController.cs" />
-    <Compile Include="generated\PnInasistencium.cs" />
-    <Compile Include="generated\PnInasistenciumController.cs" />
     <Compile Include="generated\PnInciso.cs" />
     <Compile Include="generated\PnIncisoController.cs" />
     <Compile Include="generated\PnIncisoItemGasto.cs" />
@@ -638,10 +695,6 @@
     <Compile Include="generated\PnIngresoController.cs" />
     <Compile Include="generated\PnItemGasto.cs" />
     <Compile Include="generated\PnItemGastoController.cs" />
-    <Compile Include="generated\PnLegajo.cs" />
-    <Compile Include="generated\PnLegajoController.cs" />
-    <Compile Include="generated\PnLegajosExt.cs" />
-    <Compile Include="generated\PnLegajosExtController.cs" />
     <Compile Include="generated\PnLengua.cs" />
     <Compile Include="generated\PnLenguaController.cs" />
     <Compile Include="generated\PnListaOrdene.cs" />
@@ -717,10 +770,6 @@
     <Compile Include="generated\PnPrestacionController.cs" />
     <Compile Include="generated\PnPrestacionesNOp.cs" />
     <Compile Include="generated\PnPrestacionesNOpController.cs" />
-    <Compile Include="generated\PnPrestacionesNueva.cs" />
-    <Compile Include="generated\PnPrestacionesNuevaController.cs" />
-    <Compile Include="generated\PnPromocione.cs" />
-    <Compile Include="generated\PnPromocioneController.cs" />
     <Compile Include="generated\PnProvincia.cs" />
     <Compile Include="generated\PnProvinciaController.cs" />
     <Compile Include="generated\PnPuco.cs" />
@@ -733,8 +782,6 @@
     <Compile Include="generated\PnRelPacienteAfiliadoController.cs" />
     <Compile Include="generated\PnRelPrestacionXDatoReportable.cs" />
     <Compile Include="generated\PnRelPrestacionXDatoReportableController.cs" />
-    <Compile Include="generated\PnReporteHipoacustium.cs" />
-    <Compile Include="generated\PnReporteHipoacustiumController.cs" />
     <Compile Include="generated\PnResponsable.cs" />
     <Compile Include="generated\PnResponsableController.cs" />
     <Compile Include="generated\PnServicio.cs" />
@@ -1036,9 +1083,6 @@
     <Compile Include="generated\VwAspnetWebPartStateShared.cs" />
     <Compile Include="generated\VwAspnetWebPartStateUser.cs" />
     <Compile Include="generated\VwLabScreeningHojaTrabajo.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="PnNomencladorXPatologium.cs" />
     <Compile Include="PnNomencladorXPatologiumController.cs" />
     <Compile Include="PnTipoDePrestacion.cs" />
@@ -1049,13 +1093,11 @@
     <Compile Include="SysUsuario.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\" />
-    <Folder Include="obj\Debug\TempPE\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

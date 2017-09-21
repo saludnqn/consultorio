@@ -68,7 +68,7 @@
                                 </LayoutTemplate>
                                 <ItemTemplate>
                                     <li>
-                                        <asp:HyperLink ID="hlMenu2" runat="server" NavigateUrl='<%# "~/Consultorio" + Page.ResolveUrl(Eval("url").ToString()) %>'> 
+                                        <asp:HyperLink ID="hlMenu2" runat="server" NavigateUrl='<%# "~" + Page.ResolveUrl(Eval("url").ToString()) %>'> 
                          <%# Eval("text") %>
                                         </asp:HyperLink>
                                     </li>

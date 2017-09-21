@@ -1,11 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mConsultorio.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" 
-    Inherits="Consultorio.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mConsultorio.Master" Inherits="Consultorio.Default" AutoEventWireup="true" CodeBehind="Default.aspx.cs"  %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Cuerpo" runat="server">
     <div style="text-align: left; width: 80%">
         <a href="https://www.saludnqn.gob.ar/Sips" visible="false" target="_blank" runat="server" id="btnSips">Acceso al SIPS (Sistema Integrado Provincial de Salud) </a>
         <link href="App_Themes/Metro/css/metro-bootstrap.min.css" rel="stylesheet" />
-        <%--<link href="App_Themes/Metro/css/font-awesome.min.css" rel="stylesheet" />--%>
     </div>
 
     <div id="modulos">
@@ -14,9 +12,6 @@
             ItemPlaceholderID="menuItem">
             <LayoutTemplate>
                 <asp:PlaceHolder runat="server" ID="groupPlaceHolder" />
-                <%--<div style="text-align: center; width: 95%">
-                    
-                </div>--%>
             </LayoutTemplate>
 
 
@@ -37,10 +32,6 @@
                             <img src='<%# Page.ResolveUrl(Eval("image").ToString()) %>' alt='<%# Eval("description")%>'">
                             
                         </a>
-   
-                        <%--<a runat="server" id="hlModulo" href='<%# Page.ResolveUrl(Eval("urlPage").ToString()) %>'>--%>
-                        <%--<img src='<%# Page.ResolveUrl(Eval("image").ToString()) %>' alt='<%# Eval("description")%>'
-                                    border="0" />--%>
                     </div>
                 </div>
             </ItemTemplate>

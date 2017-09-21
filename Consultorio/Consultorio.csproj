@@ -111,6 +111,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\NPOI.dll</HintPath>
     </Reference>
+    <Reference Include="Salud.Security.SSO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\laboratorioProvincial\Referencias\Salud.Security.SSO.dll</HintPath>
+    </Reference>
+    <Reference Include="Salud.Security.SSO.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\laboratorioProvincial\Referencias\Salud.Security.SSO.Core.dll</HintPath>
+    </Reference>
     <Reference Include="SubSonic, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\SubSonic2.2\SubSonic2.2\SubSonic.dll</HintPath>
@@ -263,6 +271,7 @@
     <Content Include="ConsultaAmbulatoria\Ayuda.pdf" />
     <Content Include="Global.Master" />
     <Content Include="mConsultorio.Master" />
+    <None Include="Properties\PublishProfiles\Consultorio.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -431,18 +440,21 @@
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\AreasDesarrollo.ascx.cs">
       <DependentUpon>AreasDesarrollo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\AreasDesarrollo.ascx.designer.cs">
       <DependentUpon>AreasDesarrollo.ascx</DependentUpon>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\Control.ascx.cs">
       <DependentUpon>Control.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\Control.ascx.designer.cs">
       <DependentUpon>Control.ascx</DependentUpon>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\ControlOdontologico.ascx.cs">
       <DependentUpon>ControlOdontologico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\ControlOdontologico.ascx.designer.cs">
       <DependentUpon>ControlOdontologico.ascx</DependentUpon>
@@ -456,30 +468,35 @@
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\Enfermeria.ascx.cs">
       <DependentUpon>Enfermeria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\Enfermeria.ascx.designer.cs">
       <DependentUpon>Enfermeria.ascx</DependentUpon>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\EstadoNutricional.ascx.cs">
       <DependentUpon>EstadoNutricional.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\EstadoNutricional.ascx.designer.cs">
       <DependentUpon>EstadoNutricional.ascx</DependentUpon>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\FactoresProtectores.ascx.cs">
       <DependentUpon>FactoresProtectores.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\FactoresProtectores.ascx.designer.cs">
       <DependentUpon>FactoresProtectores.ascx</DependentUpon>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\FactoresRiesgo.ascx.cs">
       <DependentUpon>FactoresRiesgo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\FactoresRiesgo.ascx.designer.cs">
       <DependentUpon>FactoresRiesgo.ascx</DependentUpon>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\Hemoglobina.ascx.cs">
       <DependentUpon>Hemoglobina.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlMenor\Hemoglobina.ascx.designer.cs">
       <DependentUpon>Hemoglobina.ascx</DependentUpon>
@@ -528,6 +545,7 @@
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Control\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\ControlPerinatal\Control\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -653,18 +671,21 @@
     </Compile>
     <Compile Include="ConsultaAmbulatoria\Services\cie10.aspx.cs">
       <DependentUpon>cie10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\Services\cie10.aspx.designer.cs">
       <DependentUpon>cie10.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\Services\estnut.aspx.cs">
       <DependentUpon>estnut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\Services\estnut.aspx.designer.cs">
       <DependentUpon>estnut.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\Services\med.aspx.cs">
       <DependentUpon>med.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\Services\med.aspx.designer.cs">
       <DependentUpon>med.aspx</DependentUpon>
@@ -675,6 +696,7 @@
     </Compile>
     <Compile Include="ConsultaAmbulatoria\Services\odonto.aspx.cs">
       <DependentUpon>odonto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\Services\odonto.aspx.designer.cs">
       <DependentUpon>odonto.aspx</DependentUpon>
@@ -688,6 +710,7 @@
     </Compile>
     <Compile Include="ConsultaAmbulatoria\UserControls\ConsultaAmbulatoria.ascx.cs">
       <DependentUpon>ConsultaAmbulatoria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ConsultaAmbulatoria\UserControls\ConsultaAmbulatoria.ascx.designer.cs">
       <DependentUpon>ConsultaAmbulatoria.ascx</DependentUpon>
@@ -1299,14 +1322,6 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SSO\SSO\Salud.Security.SSO.Core\Salud.Security.SSO.Core.csproj">
-      <Project>{834c6e3c-14df-4810-a02e-e42f4f3f4add}</Project>
-      <Name>Salud.Security.SSO.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SSO\SSO\Salud.Security.SSO\Salud.Security.SSO.csproj">
-      <Project>{8128c75f-66fb-4b4f-8ec1-0a51850bdbe3}</Project>
-      <Name>Salud.Security.SSO</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DalSic\DalSic.csproj">
       <Project>{b44e2719-6da4-4c40-b200-cdf3b8854ec5}</Project>
       <Name>DalSic</Name>

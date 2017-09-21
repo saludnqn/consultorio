@@ -86,31 +86,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-            <%-- <asp:ImageButton ID="Img1" runat="server" ImageUrl="~/Images/Toolbar/home.png"
-                            CssClass="art-imgs" ToolTip="Página principal" />
-                        <%-- Links de Ayuda --%>
-
-
-
-
-            <%--<div><asp:HyperLink runat="server" NavigateUrl="~/ConsultaAmbulatoria/Inicio.aspx" CssClass="hll"
-                        ID="HyperLink4" Text="Inicio Consultas" BorderColor="#fbec88" BorderWidth="1px" ForeColor="#fbec88" BorderStyle="solid" />
-                    <asp:HyperLink runat="server" NavigateUrl="~/ConsultaAmbulatoria/BuscarPaciente.aspx" CssClass="hll"
-                        ID="HyperLink1" Text="Consultas Ambulatorias" BorderColor="#fbec88" BorderWidth="1px" ForeColor="#fbec88" BorderStyle="solid" />
-                    <asp:HyperLink runat="server" NavigateUrl="~/ConsultaAmbulatoria/BuscarMenor.aspx" CssClass="hll"
-                        ID="HyperLink2" Text="Control del Menor" BorderColor="#fbec88" BorderWidth="1px" ForeColor="#fbec88" BorderStyle="solid" />
-                    <asp:HyperLink runat="server" NavigateUrl="~/ConsultaAmbulatoria/BuscarEmbarazada.aspx" CssClass="hll"
-                        ID="HyperLink3" Text="Control Perinatal" BorderColor="#fbec88" BorderWidth="1px" ForeColor="#fbec88" BorderStyle="solid"/>
-                </div>--%>
         </header>
         <%-- Separador cabecera-cuerpo --%>
         <div class="lineaColor">
@@ -144,19 +119,7 @@
         </asp:ContentPlaceHolder>
         <%-- Cuerpo de la página --%>
         <div class="centroGrande content">
-            <%--<div class="ubicacionmenu">
-            <div class="imagemenu">
-                <asp:Menu ID="mnuPrincipal" MaximumDynamicDisplayLevels="7" runat="server" Height="30px"
-                    Orientation="Horizontal" CssClass="acc-section">
-                    <DynamicMenuStyle BorderWidth="1px" CssClass="acc-section" BorderColor="#00898d"
-                        Width="110px" />
-                    <DynamicHoverStyle Font-Bold="True" />
-                    <StaticMenuStyle BorderColor="#00898d" Width="30px" CssClass="acc-content" />
-                    <StaticMenuItemStyle Width="120px" CssClass="acc-content" />
-                    <StaticHoverStyle Font-Bold="True" />
-                </asp:Menu>
-            </div>
-        </div>--%>
+
             <div class="cont">
                 <%-- Contenido de la página (correspondiente al subsistema) --%>
                 <asp:ContentPlaceHolder ID="contenido" runat="server" />
