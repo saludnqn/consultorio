@@ -2,10 +2,10 @@
 
 <asp:Content ID="content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Turnos.css" rel="stylesheet" type="text/css" />  
-  <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
-  <script type="text/javascript" src="../../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
 </asp:Content>
 
 <asp:Content ID="content2" ContentPlaceHolderID="cuerpo" runat="server">
@@ -26,7 +26,7 @@
               &nbsp;</td>
     </tr>
     <tr>
-    <td   rowspan="2"> <img src="../../App_Themes/consultorio/images/indicador.gif"/>
+    <td   rowspan="2"> <img src="../App_Themes/consultorio/images/indicador.gif"/>
     </td>
     <td  > <a  href= "ConsultasxEfector.aspx?tipo=Consultas"><b class="mySubTitulo">Pacientes Atendidos.</b></a>
     </td>
@@ -41,7 +41,7 @@
                
     
      <tr>
-      <td  rowspan="3"><img src="../../App_Themes/consultorio/images/indicador.gif"/></td>
+      <td  rowspan="3"><img src="../App_Themes/consultorio/images/indicador.gif"/></td>
     <td>&nbsp;</td>
     </tr>
               
@@ -58,14 +58,14 @@
               
   
      <tr>
-      <td class="style6" rowspan="3"><img src="../../App_Themes/consultorio/images/indicador.gif"/></td>
+      <td class="style6" rowspan="3"><img src="../App_Themes/consultorio/images/indicador.gif"/></td>
     <td class="style5">&nbsp;</td>
     </tr>
               
     
      <tr>
     <td class="style5"><a  href= "ReporteC2.aspx"><b class="mySubTitulo">
-        Reporte Diagnósticos C2.</b></a> <img src="../../App_Themes/consultorio/images/new.png" /></td>
+        Reporte Diagnósticos C2.</b></a> <img src="../App_Themes/consultorio/images/new.png" /></td>
     </tr>
               
     

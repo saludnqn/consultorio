@@ -101,7 +101,7 @@
         });
     </script>
 
-    <script src="../../../js/Format.js" type="text/javascript"></script>
+    <script src="../../js/Format.js" type="text/javascript"></script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Cuerpo" runat="server">

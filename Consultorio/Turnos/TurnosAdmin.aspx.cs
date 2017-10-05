@@ -152,13 +152,13 @@ namespace Consultorio.Turnos
 
             if (st == string.Empty)
             {
-                estilo = "background-color:#F1E2BB;background-image: url('../../App_Themes/consultorio/Agenda/check_verde.png');background-repeat:no-repeat;";
+                estilo = "background-color:#F1E2BB;background-image: url('../App_Themes/consultorio/Agenda/check_verde.png');background-repeat:no-repeat;";
                 lblMsg.Text = "";
                 actualizarAgendas();
             }
             else
             {
-                estilo = "background-color:#F1E2BB;background-image: url('../../App_Themes/consultorio/Agenda/check_rojopng.png');background-repeat:no-repeat;";
+                estilo = "background-color:#F1E2BB;background-image: url('../App_Themes/consultorio/Agenda/check_rojopng.png');background-repeat:no-repeat;";
                 lblMsg.Text = st;
             }
             divMsg.Style.Value = estilo;
@@ -784,9 +784,9 @@ namespace Consultorio.Turnos
             string url = string.Empty;
             switch (sexo)
             {
-                case 1: url = "../../App_Themes/consultorio/Agenda/ayuda32.png"; break;
-                case 2: url = "../../App_Themes/consultorio/Agenda/mujer32.png"; break;
-                case 3: url = "../../App_Themes/consultorio/Agenda/hombre32.png"; break;
+                case 1: url = "../App_Themes/consultorio/Agenda/ayuda32.png"; break;
+                case 2: url = "../App_Themes/consultorio/Agenda/mujer32.png"; break;
+                case 3: url = "../App_Themes/consultorio/Agenda/hombre32.png"; break;
             }
             return url;
         }

@@ -8,8 +8,8 @@
 <%@ MasterType VirtualPath="~/Global.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Consultorio/Turnos.css" rel="stylesheet" type="text/css" />
-    <link href="../../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
     <%--     <uc1:DiagnosticoSecundario ID="DiagnosticoPrincipal2" runat="server" />--%>
     <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-1.5.1.min.js") %>'></script>
     <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>

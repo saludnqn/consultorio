@@ -4,22 +4,22 @@
 <%@ Register Src="~/ConsultaAmbulatoria/UserControls/DiagnosticoSecundario.ascx" TagName="DiagnosticoSecundario" TagPrefix="uc2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="../../Turnos.css" rel="stylesheet" type="text/css" />
-    <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
+    <link href="../Turnos.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
 
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery-1.8.18.min.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery.dataTables.min.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery.ui.selectmenu.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/ui.checkbox.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/json2.js") %>'></script>
-    <link href='<%= ResolveUrl("../../ControlMenor/css/redmond/jquery.ui.all.css") %>' rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery-1.8.18.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery.dataTables.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery.ui.selectmenu.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/ui.checkbox.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/json2.js") %>'></script>
+    <link href='<%= ResolveUrl("../ControlMenor/css/redmond/jquery.ui.all.css") %>' rel="stylesheet" type="text/css" />
 
-    <link href='<%= ResolveUrl("../../ControlMenor/css/redmond/jquery.ui.all.css") %>' rel="stylesheet" type="text/css" />   
-    <link href='<%= ResolveUrl("../../ControlMenor/css/datatable.css") %>' rel="stylesheet" type="text/css" />
-    <link href='<%= ResolveUrl("../../ControlMenor/css/jquery.ui.selectmenu.css") %>' rel="stylesheet" type="text/css" />
-    <link href='<%= ResolveUrl("../../ControlMenor/css/ui.checkbox.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= ResolveUrl("../ControlMenor/css/redmond/jquery.ui.all.css") %>' rel="stylesheet" type="text/css" />   
+    <link href='<%= ResolveUrl("../ControlMenor/css/datatable.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= ResolveUrl("../ControlMenor/css/jquery.ui.selectmenu.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= ResolveUrl("../ControlMenor/css/ui.checkbox.css") %>' rel="stylesheet" type="text/css" />
 
         <script type="text/javascript">
         $(document).ready(function () {

@@ -4,8 +4,6 @@
 <%@ Register Assembly="Subsonic" Namespace="SubSonic" TagPrefix="subsonic" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%--<link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />--%>
- <%-- <link href="../Turnos.css" rel="stylesheet" type="text/css" />--%>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cuerpo" runat="server">
@@ -58,13 +56,13 @@
                 </div>
                 <div style="width:100%;">
                   <asp:Button ID="btnActualizar" runat="server" Text=" Buscar agendas" CssClass="myButtonRojo"
-                    style="float:right; margin-right:5px; width:130px; background-image: url('../../App_Themes/consultorio/Agenda/turnorecitado.png'); background-repeat: no-repeat" />
+                    style="float:right; margin-right:5px; width:130px; background-image: url('../App_Themes/consultorio/Agenda/turnorecitado.png'); background-repeat: no-repeat" />
                 </div>
                 <br /><br />
                 <div style="width:100%;">
                   <asp:HyperLink ID="lnkNuevaAgenda" runat="server" CssClass="myLink" style="float:right; margin-right:5px;" 
                     NavigateUrl="~/Consultorio/Agenda/AgendaPorEspacio.aspx" ToolTip="Click para generar nuevas agendas">
-                    <img src="../../App_Themes/consultorio/Agenda/reiniciar.png" alt="" style="vertical-align:middle;border:none;" />
+                    <img src="../App_Themes/consultorio/Agenda/reiniciar.png" alt="" style="vertical-align:middle;border:none;" />
                     Nueva Agenda</asp:HyperLink>
                 </div>
                 
@@ -108,7 +106,7 @@
                             <div style="width:100%;">
                               <asp:HyperLink ID="lnkEditAgenda" runat="server" CssClass="myLittleLink" style="float:left;margin-top:10px;"
                                 NavigateUrl='<%# "AgendaEdit.aspx?idAgenda=" + DataBinder.Eval(Container.DataItem, "idAgenda")%>'>
-                                <img alt="" src="../../App_Themes/consultorio/Agenda/oficina-icono-9743-16.png" 
+                                <img alt="" src="../App_Themes/consultorio/Agenda/oficina-icono-9743-16.png" 
                                 style="vertical-align:bottom;border:none; " />edición
                               </asp:HyperLink>
                               <asp:LinkButton ID="lnkTurnos" runat="server" CommandName="cmdTurnos"
@@ -124,7 +122,7 @@
                             </div>
                             <div class="div_izquierdo20" style="position:relative;margin-top:10px;">
                               <asp:Image ID="imgBloqueada" runat="server" AlternateText="agenda bloqueada" ToolTip="agenda bloqueada"
-                                ImageUrl="../../App_Themes/consultorio/Agenda/candado32.png" />
+                                ImageUrl="../App_Themes/consultorio/Agenda/candado32.png" />
                             </div>
                           </div>
                           <div class="div_derecho80" style="background-color:Transparent;height:175px;padding-top:5px;">

@@ -4,23 +4,23 @@
 <%@ Register Assembly="Subsonic" Namespace="SubSonic" TagPrefix="subsonic" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
 </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cuerpo" runat="server">  
   
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>
-  <script type="text/javascript" src="../../js/Mascara.js"></script>
-  <script type="text/javascript" src="../../js/ValidaFecha.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
+  <script type="text/javascript" src="../js/Mascara.js"></script>
+  <script type="text/javascript" src="../js/ValidaFecha.js"></script>
   <script type="text/javascript">
     $(function() {
       $("#<%=txtFinicio.ClientID %>").datepicker({
           showOn: 'button',
           dateFormat: 'dd/mm/yy',
-        buttonImage: '../../App_Themes/default/img/calendar.png',
+        buttonImage: '../App_Themes/default/img/calendar.png',
         buttonImageOnly: true
 
       });
@@ -30,7 +30,7 @@
       $("#<%=txtFfin.ClientID %>").datepicker({
           showOn: 'button',
           dateFormat: 'dd/mm/yy',
-        buttonImage: '../../App_Themes/default/img/calendar.png',
+        buttonImage: '../App_Themes/default/img/calendar.png',
         buttonImageOnly: true
         
       });
@@ -57,13 +57,13 @@
                             <table class="myTabla">
                               <tr>  
                                 <td align="left" >
-                                  <p><img src="../../App_Themes/consultorio/Agenda/cubo.png" style="width: 16px; height: 16px" alt ="" />
+                                  <p><img src="../App_Themes/consultorio/Agenda/cubo.png" style="width: 16px; height: 16px" alt ="" />
                                   Servicio</p>
                                   <subsonic:DropDown ID="ddlServicio" runat="server" TableName="Sys_Servicio" TextField="nombre" ShowPrompt="true" 
                                      ValidationGroup="gr1" PromptText="--Seleccione--" PromptValue="0" CssClass="myList"></subsonic:DropDown>
                                 </td>
                                 <td align="left" >
-                                  <p><img src="../../App_Themes/Consultorio/Agenda/grupo.png" style="width: 16px; height: 16px" alt =""/>
+                                  <p><img src="../App_Themes/Consultorio/Agenda/grupo.png" style="width: 16px; height: 16px" alt =""/>
                                   Especialidad</p>
                                   <subsonic:DropDown ID="ddlEspecialidad" runat="server" TableName="Sys_Especialidad" TextField="nombre" ShowPrompt="true" 
                                      ValidationGroup="gr1" PromptText="--Seleccione--" PromptValue="0" CssClass="myList"></subsonic:DropDown> 
@@ -71,13 +71,13 @@
                               </tr>
                               <tr>
                                 <td align="left" >
-                                  <p><img src="../../App_Themes/Consultorio/Agenda/personacorazon.png" style="width: 16px; height: 16px" alt =""/>
+                                  <p><img src="../App_Themes/Consultorio/Agenda/personacorazon.png" style="width: 16px; height: 16px" alt =""/>
                                   Profesional</p>
                                   <subsonic:DropDown ID="ddlProfesional" runat="server" TableName="Sys_Profesional" TextField="NombreCompleto" ShowPrompt="true" 
                                      ValidationGroup="gr1" PromptText="--Seleccione--" PromptValue="0" CssClass="myList"></subsonic:DropDown>
                                 </td>
                                 <td align="left" >
-                                  <p><img src="../../App_Themes/Consultorio/Agenda/casa.png" style="width: 16px; height: 16px" alt =""/>
+                                  <p><img src="../App_Themes/Consultorio/Agenda/casa.png" style="width: 16px; height: 16px" alt =""/>
                                   Tipo de consultorios</p>
                                   <subsonic:DropDown ID="ddlTipoConsultorio" runat="server" TableName="Con_ConsultorioTipo" TextField="Nombre" ShowPrompt="true" 
                                      ValidationGroup="gr1" PromptText="--Seleccione--" PromptValue="0" CssClass="myList"></subsonic:DropDown>
@@ -185,21 +185,21 @@
                     <asp:TemplateField HeaderText="Detalles">
                       <ItemTemplate>
                         <asp:ImageButton ID="cmdDetalles" runat="server" CommandName="cmdDetalles" AlternateText="Ver detalles" 
-                         ToolTip="Ver detalles de la agenda" ImageUrl="../../App_Themes/Consultorio/Agenda/buscar.png" />
+                         ToolTip="Ver detalles de la agenda" ImageUrl="../App_Themes/Consultorio/Agenda/buscar.png" />
                       </ItemTemplate>                                                            
                       <ItemStyle HorizontalAlign="Center" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Duplicar">
                       <ItemTemplate>
                         <asp:ImageButton ID="cmdDuplicar" runat="server" CommandName="cmdDuplicar" AlternateText="Duplicar fecha" 
-                          ToolTip="Insertar nuevo registro para la fecha seleccionada" ImageUrl="../../App_Themes/Consultorio/Agenda/duplicar.png" />
+                          ToolTip="Insertar nuevo registro para la fecha seleccionada" ImageUrl="../App_Themes/Consultorio/Agenda/duplicar.png" />
                       </ItemTemplate>                                                            
                       <ItemStyle HorizontalAlign="Center" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Eliminar">
                       <ItemTemplate>
                         <asp:ImageButton ID="cmdEliminar" runat="server" CommandName="cmdEliminar" AlternateText="Eliminar" ToolTip="Eliminar agenda"
-                         OnClientClick="return PreguntoEliminar();" ImageUrl="../../App_Themes/Consultorio/Agenda/eliminar.png" />
+                         OnClientClick="return PreguntoEliminar();" ImageUrl="../App_Themes/Consultorio/Agenda/eliminar.png" />
                       </ItemTemplate>                                                            
                       <ItemStyle HorizontalAlign="Center" />
                     </asp:TemplateField>
@@ -324,25 +324,25 @@
               <table class="myTabla" width="100%">
                 <tr>  
                   <td align="left" >
-                    <img src="../../App_Themes/consultorio/Agenda/cubo.png" style="width: 16px; height: 16px" alt ="" />
+                    <img src="../App_Themes/consultorio/Agenda/cubo.png" style="width: 16px; height: 16px" alt ="" />
                     Servicio<asp:Label ID="lblServicio" runat="server" Text="" CssClass="myLabelDerechaGde" ></asp:Label>
                   </td>
                 </tr>
                 <tr>
                   <td align="left" >
-                    <img src="../../App_Themes/Consultorio/Agenda/grupo.png" style="width: 16px; height: 16px" alt =""/>
+                    <img src="../App_Themes/Consultorio/Agenda/grupo.png" style="width: 16px; height: 16px" alt =""/>
                     Especialidad<asp:Label ID="lblEspecialidad" runat="server" Text="" CssClass="myLabelDerechaGde"></asp:Label>
                   </td>
                 </tr>
                 <tr>
                   <td align="left" >
-                    <img src="../../App_Themes/Consultorio/Agenda/personacorazon.png" style="width: 16px; height: 16px" alt =""/>
+                    <img src="../App_Themes/Consultorio/Agenda/personacorazon.png" style="width: 16px; height: 16px" alt =""/>
                     Profesional<asp:Label ID="lblProfesional" runat="server" Text="" CssClass="myLabelDerechaGde"></asp:Label>
                   </td>
                 </tr>
                 <tr>
                   <td align="left" >
-                    <img src="../../App_Themes/Consultorio/Agenda/casa.png" style="width: 16px; height: 16px" alt =""/>
+                    <img src="../App_Themes/Consultorio/Agenda/casa.png" style="width: 16px; height: 16px" alt =""/>
                     Tipo de consultorios<asp:Label ID="lblTipoConsultorio" runat="server" Text="" CssClass="myLabelDerechaGde"></asp:Label>
                   </td>
                 </tr>

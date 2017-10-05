@@ -951,9 +951,9 @@ namespace Consultorio.Turnos
         protected void lnkRegresar_Click(object sender, EventArgs e)
         {
             //if (Request["Tipo"] != null)
-            //    Response.Redirect("../../Consultorio/AtencionConsultorio/AgendaList.aspx", false);
+            //    Response.Redirect("../Consultorio/AtencionConsultorio/AgendaList.aspx", false);
             //else
-            Response.Redirect("../../Consultorio/Agenda/AgendaList.aspx?llamada=consultorio", false);
+            Response.Redirect("../Consultorio/Agenda/AgendaList.aspx?llamada=consultorio", false);
         }
 
         protected void cvDiagnostico_ServerValidate(object source, ServerValidateEventArgs args)

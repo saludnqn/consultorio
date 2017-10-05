@@ -380,23 +380,23 @@ namespace Consultorio.Turnos
                             {
 
                                 case "":
-                                    imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/turnoactivo.png";
+                                    imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/turnoactivo.png";
                                     imgTurno.ToolTip = "Turno activo";
                                     break;
 
                                 case "Turno":
-                                    imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/check_verde16.png";
+                                    imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/check_verde16.png";
                                     imgTurno.ToolTip = "Turno habitaul";
 
 
                                     break;
                                 case "Programado":
-                                    imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/alerta1.png";
+                                    imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/alerta1.png";
                                     imgTurno.ToolTip = "Turno Programado por el Medico";
 
                                     break;
                                 case "Interconsulta":
-                                    imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/alerta.png";
+                                    imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/alerta.png";
                                     imgTurno.ToolTip = "Turno reservado para interconsulta";
 
                                     break;
@@ -406,7 +406,7 @@ namespace Consultorio.Turnos
                         } break;
                     case "Bloqueado":
                         {
-                            imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/turnobloqueado.png";
+                            imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/turnobloqueado.png";
                             imgTurno.ToolTip = "Turno bloqueado";
                         } break;
 
@@ -466,9 +466,9 @@ namespace Consultorio.Turnos
             string url = string.Empty;
             switch (sexo)
             {
-                case 1: url = "../../App_Themes/consultorio/Agenda/ayuda32.png"; break;
-                case 2: url = "../../App_Themes/consultorio/Agenda/mujer32.png"; break;
-                case 3: url = "../../App_Themes/consultorio/Agenda/hombre32.png"; break;
+                case 1: url = "../App_Themes/consultorio/Agenda/ayuda32.png"; break;
+                case 2: url = "../App_Themes/consultorio/Agenda/mujer32.png"; break;
+                case 3: url = "../App_Themes/consultorio/Agenda/hombre32.png"; break;
             }
             return url;
         }

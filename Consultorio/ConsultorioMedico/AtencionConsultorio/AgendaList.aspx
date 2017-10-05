@@ -6,11 +6,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Turnos.css" rel="stylesheet" type="text/css" />
-  <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
-  <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
-  <script type="text/javascript" src="../../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>   
+  <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>   
       
   <script type="text/javascript">       
 
@@ -18,7 +18,7 @@
 		$("#<%=txtDesde.ClientID %>").datepicker({
 		    showOn: 'button',
 		    dateFormat: 'dd/mm/yy',
-			buttonImage: '../../App_Themes/consultorio/images/calend1.jpg',
+			buttonImage: '../App_Themes/consultorio/images/calend1.jpg',
 			buttonImageOnly: true
 		});
 	});
@@ -27,7 +27,7 @@
 		$("#<%=txtHasta.ClientID %>").datepicker({
 		    showOn: 'button',
 		    dateFormat: 'dd/mm/yy',
-			buttonImage: '../../App_Themes/consultorio/images/calend1.jpg',
+			buttonImage: '../App_Themes/consultorio/images/calend1.jpg',
 			buttonImageOnly: true
 		});
 	}); 
@@ -166,12 +166,12 @@
                                                                     <td class="myLabelLitlle">
                                                                         Referencias:
                                                                     </td>   <td class="myLabelLitlle" width="70px">
-                                                                        <img src="../../App_Themes/consultorio/images/verde.gif" /> Activa</td>
+                                                                        <img src="../App_Themes/consultorio/images/verde.gif" /> Activa</td>
                                                                   
                                                                     <td class="myLabelLitlle" width="80px">
-                                                                        <img src="../../App_Themes/consultorio/images/amarillo.gif" />Bloqueada</td>
+                                                                        <img src="../App_Themes/consultorio/images/amarillo.gif" />Bloqueada</td>
                                                                    <td class="myLabelLitlle" width="80px">
-                                                                        <img src="../../App_Themes/consultorio/images/rojo.gif" />Inactiva</td>
+                                                                        <img src="../App_Themes/consultorio/images/rojo.gif" />Inactiva</td>
                                                                    
                                                                 </tr>
                                                             </table>--%>

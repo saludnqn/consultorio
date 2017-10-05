@@ -5,21 +5,21 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">  
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
 </asp:Content >
 <asp:Content ID="Content2" ContentPlaceHolderID="cuerpo" runat="server">  
     
-  <script type="text/javascript" src="../../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>
-  <script type="text/javascript" src="../../js/Mascara.js"></script>
-  <script type="text/javascript" src="../../js/ValidaFecha.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
+  <script type="text/javascript" src="../js/Mascara.js"></script>
+  <script type="text/javascript" src="../js/ValidaFecha.js"></script>
   <script type="text/javascript">
     $(function() {
       $("#<%=txtFecha.ClientID %>").datepicker({
           showOn: 'button',
           dateFormat: 'dd/mm/yy',
-        buttonImage: '../../App_Themes/default/img/calendar.png',
+        buttonImage: '../App_Themes/default/img/calendar.png',
         buttonImageOnly: true
         
       });
@@ -43,7 +43,7 @@
                           <td style="vertical-align: top">
                               <div class= "left_content">
                                   <div class="services_block">
-                                    <img src="../../App_Themes/consultorio/principal/images/Calendar.png" height="32px"
+                                    <img src="../App_Themes/consultorio/principal/images/Calendar.png" height="32px"
                                       title="" border="0" class="icon_left" width="32px" alt=""/>
                                     <div class="services_details">                                      
                                       <p>Número de Documento</p>
@@ -97,7 +97,7 @@
                                       <asp:BoundField DataField="fechaNacimiento" DataFormatString="{0:dd/MM/yyy}" HeaderText="Fec.Nac" />
                                       <asp:TemplateField>
                                         <ItemTemplate>
-                                          <asp:ImageButton ID="cmdSel" runat="server" ImageUrl="../../App_Themes/consultorio/Agenda/bntLargo.png" CommandName="cmdSel" />
+                                          <asp:ImageButton ID="cmdSel" runat="server" ImageUrl="../App_Themes/consultorio/Agenda/bntLargo.png" CommandName="cmdSel" />
                                         </ItemTemplate>                                                            
                                         <ItemStyle HorizontalAlign="Center" />
                                       </asp:TemplateField>
@@ -131,7 +131,7 @@
                       <td style="vertical-align: top">
                           <div class= "left_content">
                               <div class="services_block">
-                                <img src="../../App_Themes/consultorio/principal/images/Calendar.png" height="32px"
+                                <img src="../App_Themes/consultorio/principal/images/Calendar.png" height="32px"
                                   title="" border="0" class="icon_left" width="32px" alt=""/>
                                 <div class="services_details">                         
                                   <p>Desde fecha:</p>
@@ -201,7 +201,7 @@
                               <asp:BoundField DataField="Profesional" HeaderText="Profesional" />
                               <asp:TemplateField>
                                 <ItemTemplate>
-                                  <asp:ImageButton ID="cmdSel" runat="server" ImageUrl="../../App_Themes/consultorio/Agenda/bntLargo.png" CommandName="cmdSel" />
+                                  <asp:ImageButton ID="cmdSel" runat="server" ImageUrl="../App_Themes/consultorio/Agenda/bntLargo.png" CommandName="cmdSel" />
                                 </ItemTemplate>                                                            
                                 <ItemStyle HorizontalAlign="Center" />
                               </asp:TemplateField>
@@ -234,7 +234,7 @@
                       <td style="vertical-align: top">
                           <div class= "left_content">
                               <div class="services_block">
-                                <img src="../../App_Themes/consultorio/principal/images/Calendar.png" height="32px"
+                                <img src="../App_Themes/consultorio/principal/images/Calendar.png" height="32px"
                                   title="" border="0" class="icon_left" width="32px" alt=""/>
                                 <div class="services_details">
                                   <h2><a href="#" target="_parent">Indique número de Agenda</a></h2>
@@ -269,7 +269,7 @@
     </li>
   </ul>
  
-  <script type="text/javascript" src="../../js/scriptAcordion.js"></script>
+  <script type="text/javascript" src="../js/scriptAcordion.js"></script>
   <script language="javascript" type="text/javascript">
     var parentAccordion = new TINY.accordion.slider("parentAccordion");
     parentAccordion.init("acc", "h3", false, 0);

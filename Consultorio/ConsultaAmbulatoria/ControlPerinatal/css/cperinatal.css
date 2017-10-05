@@ -1,6 +1,6 @@
 ﻿#sipContainer
 {
-    background-image: url(../../../images/ControlPerinatal/cperinatal-5.jpg);
+    background-image: url(../../images/ControlPerinatal/cperinatal-5.jpg);
     width: 917px;
     height: 459px;
     position: relative;
@@ -89,7 +89,7 @@
 }
 .divDatePopUp
 {
-    background-image: url(../../../images/ControlPerinatal/datepopup.gif);
+    background-image: url(../../images/ControlPerinatal/datepopup.gif);
     height: 37px; /* tamaño inicial */
     width: 65px; /* tamaño final */ /* width: 172px; */
     z-index: 10;
@@ -97,7 +97,7 @@
 }
 .divSifilisPNTPopUp
 {
-    background-image: url(../../../images/ControlPerinatal/sifilisPNTpopup.gif);
+    background-image: url(../../images/ControlPerinatal/sifilisPNTpopup.gif);
     height: 37px; /* tamaño inicial */
     width: 67px; /* tamaño final */ /* width: 174px; */
     z-index: 12;
@@ -105,7 +105,7 @@
 }
 .divSifilisPTPopUp
 {
-    background-image: url(../../../images/ControlPerinatal/sifilisPTpopup.gif);
+    background-image: url(../../images/ControlPerinatal/sifilisPTpopup.gif);
     height: 37px; /* tamaño inicial */
     width: 74px; /* tamaño final */ /* width: 181px; */
     z-index: 11;
@@ -113,7 +113,7 @@
 }
 .divSifilisTRATPopUp
 {
-    background-image: url(../../../images/ControlPerinatal/sifilisTRATpopup.gif);
+    background-image: url(../../images/ControlPerinatal/sifilisTRATpopup.gif);
     height: 37px; /* tamaño inicial */
     width: 74px; /* tamaño final */ /* width: 181px; */
     z-index: 10;

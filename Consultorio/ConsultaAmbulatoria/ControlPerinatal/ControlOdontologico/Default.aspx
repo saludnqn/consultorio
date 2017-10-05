@@ -37,7 +37,7 @@
                                <ItemTemplate>
                                    <a href="<%# String.Format("Edit.aspx?idHistoriaClinicaPerinatal={0}&id={1}",Eval("idHistoriaClinicaPerinatal"),Eval("idControlOdontologico")) %>" title="Editar">
                                       
-                                       <img id="imgView" alt="Editar" border="0" src="../../../App_Themes/Default/images/edit.png" />
+                                       <img id="imgView" alt="Editar" border="0" src="../../App_Themes/Default/images/edit.png" />
                                    </a>
                                </ItemTemplate>
                            </asp:TemplateField>

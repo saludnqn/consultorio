@@ -311,9 +311,9 @@ namespace Consultorio.Turnos
 
         //private string getImagenPaciente(int idSexo)
         //{
-        //    string hombre = "../../App_Themes/consultorio/Agenda/hombre48.png";
-        //    string mujer = "../../App_Themes/consultorio/Agenda/mujer48.png";
-        //    string indefinido = "../../App_Themes/consultorio/Agenda/ayuda48.png";
+        //    string hombre = "../App_Themes/consultorio/Agenda/hombre48.png";
+        //    string mujer = "../App_Themes/consultorio/Agenda/mujer48.png";
+        //    string indefinido = "../App_Themes/consultorio/Agenda/ayuda48.png";
         //    return (idSexo == 1) ? indefinido : (idSexo == 2) ? mujer : hombre;
         //}
 
@@ -728,7 +728,7 @@ namespace Consultorio.Turnos
             //lblAgendaOcupados.Text = ocupados.ToString() + " (" + Rutinas.porcentaje(ocupados, total).ToString() + "%)";
             //lblAgendaSobreturnos.Text = sobreturnos.ToString() + " (máximo p/agenda: " + maxsobreturnos + ")";
             //lblAgendaReservados.Text = reservados.ToString() + " (máximo p/agenda: " + maxreservados + ")";
-            //imgAgenda.ImageUrl = (ag.IdAgendaEstado == 1) ? "../../App_Themes/consultorio/Agenda/agenda32.png" : "../../App_Themes/consultorio/Agenda/candado32.png";
+            //imgAgenda.ImageUrl = (ag.IdAgendaEstado == 1) ? "../App_Themes/consultorio/Agenda/agenda32.png" : "../App_Themes/consultorio/Agenda/candado32.png";
             //lnkEditarAgenda.PostBackUrl = "~/Consultorio/Agenda/AgendaEdit.aspx?idAgenda=" + idAgenda.ToString();
             //lnkEditarTurnos.PostBackUrl = "TurnosAdmin.aspx?idAgenda=" + idAgenda.ToString();
             //divinfoagenda.Visible = true;
@@ -1044,24 +1044,24 @@ namespace Consultorio.Turnos
                             {
 
                                 case "":
-                                    imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/turnoactivo.png";
+                                    imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/turnoactivo.png";
                                     imgTurno.ToolTip = "Turno activo";
                                     cmdSelTurno.Visible = true;
                                     break;
 
                                 case "Turno":
-                                    imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/check_verde16.png";
+                                    imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/check_verde16.png";
                                     imgTurno.ToolTip = "Turno del día";
 
                                     cmdSelTurno.Visible = false;
                                     break;
                                 case "Programado":
-                                    imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/alerta1.png";
+                                    imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/alerta1.png";
                                     imgTurno.ToolTip = "Turno Anticipado";
                                     cmdSelTurno.Visible = false;
                                     break;
                                 case "SobreTurno":
-                                    imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/alerta.png";
+                                    imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/alerta.png";
                                     imgTurno.ToolTip = "Sobre Turno";
                                     cmdSelTurno.Visible = false;
 
@@ -1070,7 +1070,7 @@ namespace Consultorio.Turnos
                         } break;
                     case "Bloqueado":
                         {
-                            imgTurno.ImageUrl = "../../App_Themes/consultorio/Agenda/turnobloqueado.png";
+                            imgTurno.ImageUrl = "../App_Themes/consultorio/Agenda/turnobloqueado.png";
                             imgTurno.ToolTip = "Turno bloqueado";
                             cmdSelTurno.Visible = false;
                         } break;

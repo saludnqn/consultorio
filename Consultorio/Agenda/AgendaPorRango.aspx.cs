@@ -209,12 +209,12 @@ namespace Consultorio.Agenda {
                 if (e.Row.Cells[2].Text != "__:__") {
                     resaltarFila(e.Row, true);
                     bool tieneTurnos = contieneTurnos(e.Row.RowIndex);
-                    url = (tieneTurnos ? "../../App_Themes/consultorio/Agenda/eliminardisabled.png" : "../../App_Themes/consultorio/Agenda/eliminar.png");
+                    url = (tieneTurnos ? "../App_Themes/consultorio/Agenda/eliminardisabled.png" : "../App_Themes/consultorio/Agenda/eliminar.png");
                     cmdEliminar.ImageUrl = url;
                     cmdEliminar.Enabled = !tieneTurnos;
                     e.Row.Enabled = !tieneTurnos;
                 } else {
-                    url = "../../App_Themes/consultorio/Agenda/eliminardisabled.png";
+                    url = "../App_Themes/consultorio/Agenda/eliminardisabled.png";
                     cmdEliminar.ImageUrl = url;
                     cmdEliminar.Enabled = false;
                     resaltarFila(e.Row, false);

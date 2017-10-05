@@ -306,7 +306,7 @@ namespace Consultorio.AtencionConsultorio
                 Response.Redirect("../Turnos/AsistenciaEdit.aspx?idAgenda=" + e.CommandArgument.ToString(), false);
 
             if (e.CommandName == "Codificar")
-                Response.Redirect("../../ConsultaAmbulatoria/DiagnosticoEdit.aspx?idAgenda=" + e.CommandArgument.ToString()+"&Tipo=Atencion", false);
+                Response.Redirect("../ConsultaAmbulatoria/DiagnosticoEdit.aspx?idAgenda=" + e.CommandArgument.ToString()+"&Tipo=Atencion", false);
 
 
             if (e.CommandName == "Turnos")

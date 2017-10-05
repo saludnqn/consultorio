@@ -13,8 +13,8 @@
     <title></title>
 </head>
 <body>
-        <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery-1.5.1.min.js") %>'></script>
-        <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery-1.5.1.min.js") %>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
     <form id="form1" runat="server">
     <div>
     

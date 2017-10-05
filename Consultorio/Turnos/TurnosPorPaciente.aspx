@@ -5,10 +5,10 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
-  <link href="../Turnos.css" rel="stylesheet" type="text/css" />     <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
-  <script type="text/javascript" src="../../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+  <link href="../Turnos.css" rel="stylesheet" type="text/css" />     <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
 
   <script type="text/javascript">
     function valHora(oTxt) {
@@ -273,11 +273,11 @@
                             <div style="text-align:right;">
                               <asp:LinkButton ID="lnkAsistenciaNo" runat="server" CssClass="links" 
                                 style="text-decoration:underline;vertical-align:middle;cursor:pointer" 
-                                onclick="lnkAsistenciaNo_Click"> <img alt="" src="../../App_Themes/consultorio/Agenda/check_verde16.png"style="vertical-align:middle;border:none;"/> Indicar asistencia </asp:LinkButton>
+                                onclick="lnkAsistenciaNo_Click"> <img alt="" src="../App_Themes/consultorio/Agenda/check_verde16.png"style="vertical-align:middle;border:none;"/> Indicar asistencia </asp:LinkButton>
                               <br />
                              <%-- <asp:LinkButton ID="lnkImprimir" runat="server" CssClass="links" 
                                 style="text-decoration:underline;vertical-align:middle;cursor:pointer" 
-                                onclick="lnkImprimir_Click"> <img alt="" src="../../App_Themes/consultorio/images/impreso.jpg"style="vertical-align:middle;border:none;"/> Impirmir comprobante </asp:LinkButton>--%>
+                                onclick="lnkImprimir_Click"> <img alt="" src="../App_Themes/consultorio/images/impreso.jpg"style="vertical-align:middle;border:none;"/> Impirmir comprobante </asp:LinkButton>--%>
                             </div>
                           </div>
                           <!-- info con asistencia !-->
@@ -287,10 +287,10 @@
                             <br />
                             <asp:LinkButton ID="cmdBorrarAsistencia" runat="server" CssClass="links" 
                               style="text-decoration:underline;vertical-align:middle;cursor:pointer;" 
-                              onclick="cmdBorrarAsistencia_Click"> <img alt="" src="../../App_Themes/consultorio/Agenda/suprime-la-ventana-icono-4582-16.png"style="vertical-align:middle;border:none;"/> borrar asistencia </asp:LinkButton>&nbsp;
+                              onclick="cmdBorrarAsistencia_Click"> <img alt="" src="../App_Themes/consultorio/Agenda/suprime-la-ventana-icono-4582-16.png"style="vertical-align:middle;border:none;"/> borrar asistencia </asp:LinkButton>&nbsp;
                             <asp:LinkButton ID="cmdEditarAsistencia" runat="server" CssClass="links" 
                               style="text-decoration:underline;vertical-align:middle;cursor:pointer;" 
-                              onclick="cmdEditarAsistencia_Click"> <img alt="" src="../../App_Themes/consultorio/Agenda/oficina-icono-9743-16.png"style="vertical-align:middle;border:none;"/> editar horario de asistencia </asp:LinkButton>
+                              onclick="cmdEditarAsistencia_Click"> <img alt="" src="../App_Themes/consultorio/Agenda/oficina-icono-9743-16.png"style="vertical-align:middle;border:none;"/> editar horario de asistencia </asp:LinkButton>
                           </div>
                           <!-- edición de asistencia !-->
                           <div id="divAsistenciaEdit" runat="server" visible="false">
@@ -328,7 +328,7 @@
                         <td align="right" style="padding:5px;">
                         <%--  <asp:LinkButton ID="cmdAuditoria" runat="server" CssClass="links" onclick="cmdAuditoria_Click"
                             style="text-decoration:underline;vertical-align:middle;cursor:pointer;" > 
-                          <img alt="" src="../../App_Themes/consultorio/Agenda/encontrar-busqueda-zoom-icono-6513-16.png"
+                          <img alt="" src="../App_Themes/consultorio/Agenda/encontrar-busqueda-zoom-icono-6513-16.png"
                             style="vertical-align:middle;border:none;"/>Auditoría </asp:LinkButton>
                           <br />
                         </td>

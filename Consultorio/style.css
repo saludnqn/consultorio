@@ -1,7 +1,7 @@
 @charset "CP850";
 @import url(jquery-ui-1.8.20.css);
 @import url(jquery-ui.overrides.css);
-/* Definici�n de variables globales */
+/* Definiciï¿½n de variables globales */
 /* Imports */
 /* ******************************************************** FONTS ********************************************************* */
 /*
@@ -29,31 +29,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  /*font-family: "Segoe UI";*/
-  font-size: 14px;
+  /*font-family: "Segoe UI";
+  font-size: 14px;*/
   font-variant: normal;
   vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
-#CopyRi{
-    margin-top: 2.2em;
-    color: rgb(255, 255, 255);
-}
-#wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
-}
-footer{
-background-color: rgb(2, 171, 104);
-padding-bottom: 18px;
-  width:100%; 
-}
 ol, ul {
   list-style: none; }
 
@@ -928,7 +911,7 @@ BODY {
 #HeaderInnerDiv #MenuDiv .rmRootGroup.rmHorizontal > .rmItem > A > IMG {
   display: none; }
 
-/* >>> Aplicaci�n seleccionada */
+/* >>> Aplicaciï¿½n seleccionada */
 #HeaderInnerDiv #MenuDiv UL.rmRootGroup > LI.rmFirst > .rmSlide > UL {
   padding-left: 10px;
   border-left: 10px solid #000000;
@@ -989,7 +972,7 @@ BODY {
   width: 186px;
   white-space: normal; }
 
-/* >>> Acciones de cada aplicaci�n */
+/* >>> Acciones de cada aplicaciï¿½n */
 #HeaderInnerDiv #MenuDiv .rmVertical.rmLevel1 .rmSlide UL {
   background: #C2C2C2; }
 
@@ -2895,7 +2878,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
 {
    /*width: 100%;*/
-   padding: 0px 12px;   
+   padding: 0px 0;
    color: #334747 !important;
    font-size: 13px;
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
@@ -3776,6 +3759,26 @@ img.art-lightbox-image.active
 /* Begin Additional CSS Styles */
 .art-blockheader .t, .art-vmenublockheader .t {white-space: nowrap;}
 /* End Additional CSS Styles */
+  /*font-family: "Segoe UI";*/
+  font-size: 14px;
+#CopyRi{
+    margin-top: 2.2em;
+    color: rgb(255, 255, 255);
+}
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+footer{
+background-color: rgb(2, 171, 104);
+padding-bottom: 18px;
+  width:100%; 
+}
+   padding: 0px 12px;   
 
 .btn span.glyphicon {    			
 	opacity: 0;				

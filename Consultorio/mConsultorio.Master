@@ -8,8 +8,10 @@
     <title>Subsecretaría de Salud - Sistema Integral Provincial de Salud</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" id="lnkStyleSheetConsultorio">
-    <link rel="stylesheet" type="text/css" href="style.responsive.css" media="all">
+	<link rel="stylesheet" type="text/css" href="style.responsive.css" media="all">
     <link rel="stylesheet" type="text/css" href="App_Themes/Login/css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="App_Themes/default/estilo.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="App_Themes/default/estilo2.css" media="screen" />
     <script type="text/javascript" src="/sips/js/jquery.min.js"></script>
     <script type="text/javascript" src="/sips/js/script.js"></script>
     <script type="text/javascript" src="/sips/js/script.responsive.js"></script>

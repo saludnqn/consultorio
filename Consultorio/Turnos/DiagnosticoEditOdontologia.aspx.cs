@@ -732,7 +732,7 @@ namespace Consultorio.Turnos
             if (Request["Desde"].ToString() == "Consultorio")
                 s_paginaDesde = "?llamada=consultorio";// +Request["llamada"].ToString();
 
-            Response.Redirect("../../Consultorio/Agenda/AgendaList.aspx" + s_paginaDesde, false);
+            Response.Redirect("../Consultorio/Agenda/AgendaList.aspx" + s_paginaDesde, false);
         }
 
 

@@ -1,0 +1,17 @@
+*{margin:0; padding:0; line-height:normal;}
+#acc{width:800px; list-style:none; color:#033; margin:5px auto 10px -10px; padding-left: 12px; padding-top: 5px}
+#acc h3{width:786px;border: 1px solid #bbbbbb;padding: 6px 6px 8px;font-weight: bold;margin-top: 0px;cursor: pointer;background: url(img/fd_menuu.gif) repeat-x;color: #666666;}
+#acc h3:hover{background: #fff}
+#acc .acc-section{overflow:hidden;}
+#acc .acc-content{width: 786px; border-left: 1px solid #bbbbbb;border-right: 1px solid #bbbbbb;border-bottom: 1px solid #bbbbbb;width: 692px;padding: 0px;border-top: none;border-top-color: inherit;border-right-color: #bbbbbb;border-bottom-color: #bbbbbb;border-left-color: #bbbbbb;}
+#nested{width:755px; list-style:none; color:#033; margin-bottom:15px}
+#nested h3{width:761px; border:1px solid #256c32; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:pointer; background:url(../images/header.gif)}
+#nested h3:hover{background:url(../images/header_over.gif)}
+#nested .acc-section{overflow:hidden; background:#fff}
+#nested .acc-content{width: 743px; padding:15px; border:1px solid #256c32; border-top:none; background:#fff}
+#nested .acc-selected{background:url(../images/header_over.gif)}
+#acc{width:800px; list-style:none; color:#033; margin:5px auto 10px -10px; padding-top: 5px}
+#acc h3{width: 786px;border: 1px solid #bbbbbb;padding: 6px 6px 8px;font-weight: bold;margin-top: 0px;cursor: pointer;background: url(img/fd_menuu.gif) repeat-x;color: #666666;font-size:small}
+#acc h3:hover{background: #fff}
+#acc .acc-section{overflow:hidden; margin-top: -10px;}
+#acc .acc-content{width: 786px; border-left: 1px solid #bbbbbb;border-right: 1px solid #bbbbbb;border-bottom: 1px solid #bbbbbb;width: 692px;padding: 8px;border-top: none;border-top-color: inherit;border-right-color: #bbbbbb;border-bottom-color: #bbbbbb;border-left-color: #bbbbbb;}

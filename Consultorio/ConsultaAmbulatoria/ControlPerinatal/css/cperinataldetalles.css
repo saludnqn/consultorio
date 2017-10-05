@@ -1,6 +1,6 @@
 ﻿#sipDetallesContainer
 {
-    background-image: url(../../../images/ControlPerinatal/cperinatal-detallesContainer-back.jpg);
+    background-image: url(../../images/ControlPerinatal/cperinatal-detallesContainer-back.jpg);
     width: 897px;
     min-height: 117px;
     position: relative;
@@ -9,7 +9,7 @@
 }
 .sipDetalles
 {
-    background-image: url(../../../images/ControlPerinatal/cperinatal-detalles-back2.jpg);
+    background-image: url(../../images/ControlPerinatal/cperinatal-detalles-back2.jpg);
     width: 897px;
     height: 46px;
     position: relative; /*left: 20px;*/

@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Cuerpo" runat="server">
     <div style="text-align: left; width: 80%">
         <a href="https://www.saludnqn.gob.ar/Sips" visible="false" target="_blank" runat="server" id="btnSips">Acceso al SIPS (Sistema Integrado Provincial de Salud) </a>
-        <link href="App_Themes/Metro/css/metro-bootstrap.min.css" rel="stylesheet" />
+        <!--<link href="App_Themes/Metro/css/metro-bootstrap.min.css" rel="stylesheet" />-->
     </div>
 
     <div id="modulos">

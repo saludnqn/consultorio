@@ -115,7 +115,7 @@
 
 
          var $this = $(this);
-         $('<iframe src="../../ConsultaAmbulatoria/ControlPerinatal/Control/Default.aspx?idPaciente=' + IdPaciente + '" />').dialog({
+         $('<iframe src="../ConsultaAmbulatoria/ControlPerinatal/Control/Default.aspx?idPaciente=' + IdPaciente + '" />').dialog({
              title: 'Control Perinatal',
              autoOpen: true,
              width: 1000,
@@ -150,7 +150,7 @@
 
 
          var $this = $(this);
-         $('<iframe src="../../Laboratorio/Resultados/ProtocoloList.aspx?id=' + dni + '" />').dialog({
+         $('<iframe src="../Laboratorio/Resultados/ProtocoloList.aspx?id=' + dni + '" />').dialog({
              title: 'Laboratorios',
              autoOpen: true,
              width: 1000,
@@ -184,7 +184,7 @@
 
 
          var $this = $(this);
-         $('<iframe src="../../Paciente/Antecedente/AntecedentesFamiliares.aspx?idPaciente=' + IdPaciente + '" />').dialog({
+         $('<iframe src="../Paciente/Antecedente/AntecedentesFamiliares.aspx?idPaciente=' + IdPaciente + '" />').dialog({
              title: 'Antecedentes Familiares',
              autoOpen: true,
              width: 800,
@@ -220,7 +220,7 @@
          var $this = $(this);
 
 
-         $('<iframe src="../../../laboratorio/Resultados/Procesa.aspx?idServicio=0&ModoCarga=LP&Operacion=HC&Parametros=P.idPaciente=' + IdPaciente + '&idArea=0&idHojaTrabajo=0&validado=1&modo=Normal&Tipo=PacienteValidado" />').dialog({
+         $('<iframe src="../../laboratorio/Resultados/Procesa.aspx?idServicio=0&ModoCarga=LP&Operacion=HC&Parametros=P.idPaciente=' + IdPaciente + '&idArea=0&idHojaTrabajo=0&validado=1&modo=Normal&Tipo=PacienteValidado" />').dialog({
              title: 'Laboratorios',
              autoOpen: true,
              width: 1090,
@@ -253,7 +253,7 @@
 
 
          var $this = $(this);
-         $('<iframe src="../../Interconsultas1/ListadoDeInterconsultas.aspx?IdPaciente=' + IdPaciente + '" />').dialog({
+         $('<iframe src="../Interconsultas1/ListadoDeInterconsultas.aspx?IdPaciente=' + IdPaciente + '" />').dialog({
              title: 'Ver Interconsultas',
              autoOpen: true,
              width: 1000,
@@ -286,7 +286,7 @@
 
 
          var $this = $(this);
-         $('<iframe src="../../Interconsultas1/InterconsultasEdit.aspx?IdPaciente=' + IdPaciente + '&idInterconsulta=0" />').dialog({
+         $('<iframe src="../Interconsultas1/InterconsultasEdit.aspx?IdPaciente=' + IdPaciente + '&idInterconsulta=0" />').dialog({
              title: 'Nueva Interconsulta',
              autoOpen: true,
              width: 1000,
@@ -351,7 +351,7 @@
 
 
          var $this = $(this);
-         $('<iframe src="../../../Eventos/Consultas.aspx?Id=' + dni + '" />').dialog({
+         $('<iframe src="../../Eventos/Consultas.aspx?Id=' + dni + '" />').dialog({
              title: 'Eventos del Paciente',
              autoOpen: true,
              width: 1000,
@@ -385,7 +385,7 @@
 
          var $this = $(this);
        
-         $('<iframe src= "../../..//Tamizaje/Default.aspx?dni=' + dni + '&idEfector=' + IdEfector + '" />').dialog({
+         $('<iframe src= "../..//Tamizaje/Default.aspx?dni=' + dni + '&idEfector=' + IdEfector + '" />').dialog({
              title: 'Pedido PAP y HPV',
              autoOpen: true,
              width: 1000,
@@ -419,7 +419,7 @@
 
          var $this = $(this);
 
-         $('<iframe src= "../../../Mamas/Default.aspx?dni=' + dni + '" />').dialog({
+         $('<iframe src= "../../Mamas/Default.aspx?dni=' + dni + '" />').dialog({
              title: 'Pedido PAP y HPV',
              autoOpen: true,
              width: 1000,
@@ -518,7 +518,7 @@
          }
 
          var $this = $(this);
-         $('<iframe src="../../../VGI/vgiedit.aspx?IdPaciente=' + IdPaciente + '&idTurno=' + IdTurno + '" />').dialog({
+         $('<iframe src="../../VGI/vgiedit.aspx?IdPaciente=' + IdPaciente + '&idTurno=' + IdTurno + '" />').dialog({
              title: 'Nueva Valoración Geriátrica Integral',
              autoOpen: true,
              width: 800,

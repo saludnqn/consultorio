@@ -1031,9 +1031,9 @@ var Microsoft;
         Telemetry.Envelope = Envelope;
     })(Telemetry = Microsoft.Telemetry || (Microsoft.Telemetry = {}));
 })(Microsoft || (Microsoft = {}));
-/// <reference path="../../Contracts/Generated/Envelope.ts" />
-/// <reference path="../../Contracts/Generated/Base.ts" />
-/// <reference path="../../Util.ts"/>
+/// <reference path="../Contracts/Generated/Envelope.ts" />
+/// <reference path="../Contracts/Generated/Base.ts" />
+/// <reference path="../Util.ts"/>
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -1075,7 +1075,7 @@ var Microsoft;
         })(Telemetry = ApplicationInsights.Telemetry || (ApplicationInsights.Telemetry = {}));
     })(ApplicationInsights = Microsoft.ApplicationInsights || (Microsoft.ApplicationInsights = {}));
 })(Microsoft || (Microsoft = {}));
-/// <reference path="../../Contracts/Generated/Base.ts"/>
+/// <reference path="../Contracts/Generated/Base.ts"/>
 var Microsoft;
 (function (Microsoft) {
     var ApplicationInsights;
@@ -1828,8 +1828,8 @@ var AI;
     })(Microsoft.Telemetry.Domain);
     AI.MessageData = MessageData;
 })(AI || (AI = {}));
-/// <reference path="../../logging.ts" />
-/// <reference path="../../Util.ts"/>
+/// <reference path="../logging.ts" />
+/// <reference path="../Util.ts"/>
 var Microsoft;
 (function (Microsoft) {
     var ApplicationInsights;
@@ -2256,7 +2256,7 @@ var AI;
     })();
     AI.DataPoint = DataPoint;
 })(AI || (AI = {}));
-/// <reference path="../../Contracts/Generated/DataPoint.ts"/>
+/// <reference path="../Contracts/Generated/DataPoint.ts"/>
 var Microsoft;
 (function (Microsoft) {
     var ApplicationInsights;
@@ -2733,7 +2733,7 @@ var Microsoft;
         Telemetry.Data = Data;
     })(Telemetry = Microsoft.Telemetry || (Microsoft.Telemetry = {}));
 })(Microsoft || (Microsoft = {}));
-/// <reference path="../../Contracts/Generated/Data.ts"/>
+/// <reference path="../Contracts/Generated/Data.ts"/>
 var Microsoft;
 (function (Microsoft) {
     var ApplicationInsights;

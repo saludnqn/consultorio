@@ -3,13 +3,13 @@
 <%@ Register Assembly="Subsonic" Namespace="SubSonic" TagPrefix="subsonic" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
     
   <link href="../Turnos.css" rel="stylesheet" type="text/css" />
   
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
-  <script type="text/javascript" src="../../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cuerpo" runat="server">
@@ -96,7 +96,7 @@
             </tr>
             <tr>
               <td align="left" colspan="6">
-                <img src="../../App_Themes/consultorio/images/pdf.jpg" />
+                <img src="../App_Themes/consultorio/images/pdf.jpg" />
                   <asp:LinkButton ID="lnkExportarPdf" CssClass="myLink" runat="server" 
                       onclick="lnkExportarPdf_Click">Exportar Pdf</asp:LinkButton>
                 </td>

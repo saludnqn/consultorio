@@ -20,7 +20,7 @@
     TagPrefix="CM" %>
 <%@ Register Src="~/ConsultaAmbulatoria/ControlMenor/Hemoglobina.ascx" TagName="ControlHemoglobina"
     TagPrefix="CM" %>
-<%@ Register src="../../UserControls/AlertasControlMenor.ascx" tagname="AlertasControlMenor" tagprefix="uc2" %>
+<%@ Register src="../UserControls/AlertasControlMenor.ascx" tagname="AlertasControlMenor" tagprefix="uc2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 

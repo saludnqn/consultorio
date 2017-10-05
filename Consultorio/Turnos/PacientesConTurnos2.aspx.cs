@@ -350,7 +350,7 @@ namespace Consultorio.Turnos
             if (e.CommandName == "Editar")
             {
                 ConTurno oTurno = new ConTurno(int.Parse(e.CommandArgument.ToString()));     
-                Response.Redirect("../../Paciente/PacienteEdit.aspx?id=" +oTurno.IdPaciente.ToString(), false);
+                Response.Redirect("../Paciente/PacienteEdit.aspx?id=" +oTurno.IdPaciente.ToString(), false);
             }
         }
 

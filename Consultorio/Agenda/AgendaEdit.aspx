@@ -4,12 +4,12 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
     <link href="../Turnos.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cuerpo" runat="server">
     <br />
@@ -241,7 +241,7 @@
                                             <!-- errores !-->
                                             <div id="divErr" runat="server" visible="false" style="height: auto; float: left; padding: 5px; border: dotted 1px Maroon; background-color: #F1E2BB;">
                                                 <div style="float: left; width: 46px;">
-                                                    <img id="imgErr" runat="server" alt="Error" src="../../App_Themes/consultorio/Agenda/boton-de-error-icono-5371-48.png" />
+                                                    <img id="imgErr" runat="server" alt="Error" src="../App_Themes/consultorio/Agenda/boton-de-error-icono-5371-48.png" />
                                                 </div>
                                                 <div>
                                                     <asp:Label ID="lblError" runat="server" class="labelerror" Text="Error" Style="font-weight: bolder; width: 100%;"></asp:Label>

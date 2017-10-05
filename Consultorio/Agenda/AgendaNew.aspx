@@ -4,14 +4,14 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajx" %>
 <%@ Register Assembly="Subsonic" Namespace="SubSonic" TagPrefix="subsonic" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
     <link href="../Turnos.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>
-    <script type="text/javascript" src="../../js/Mascara.js"></script>
-    <script type="text/javascript" src="../../js/ValidaFecha.js"></script>
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
+    <script type="text/javascript" src="../js/Mascara.js"></script>
+    <script type="text/javascript" src="../js/ValidaFecha.js"></script>
     <script type='text/javascript'>
 
     </script>
@@ -239,7 +239,7 @@
                                             <div style="float: right; padding-top: 5px; padding-right: 5px;">
                                                 <asp:LinkButton ID="lnkConsultorio" runat="server" PostBackUrl="#" ToolTip="click para seleccionar consultorio"
                                                     CommandName="Select"> 
-                            <img src="../../App_Themes/consultorio/Agenda/seleccionar.png" 
+                            <img src="../App_Themes/consultorio/Agenda/seleccionar.png" 
                               alt="Click para seleccionar consultorio" style="border:none;text-align:right;"/> 
                                                 </asp:LinkButton>
                                             </div>

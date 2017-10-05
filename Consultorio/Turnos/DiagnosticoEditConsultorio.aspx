@@ -5,30 +5,30 @@
     TagPrefix="uc1" %>
 <%@ Register Src="~/ConsultaAmbulatoria/UserControls/DiagnosticoSecundario.ascx"
     TagName="DiagnosticoSecundario" TagPrefix="uc2" %>
-<%@ Register Src="../../UserControls/ConsultorioPaciente.ascx" TagName="ConsultorioPaciente" TagPrefix="uc3" %>
+<%@ Register Src="../UserControls/ConsultorioPaciente.ascx" TagName="ConsultorioPaciente" TagPrefix="uc3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Turnos.css" rel="stylesheet" type="text/css" />
-    <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
     <link href="../Resources/jquery-ui-1.8.20.css" rel="stylesheet" type="text/css" />
     <script src="../Resources/jQuery-ui-1.8.18.min.js" type="text/javascript"></script>
     <script src="../Resources/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="../../Laboratorio/script/ValidaFecha.js"></script>
+    <script type="text/javascript" src="../Laboratorio/script/ValidaFecha.js"></script>
     <%--    <li><a runat="server" href="#tabInterconsulta">Interconsulta</a></li>--%>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery-1.5.1.min.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery.dataTables.min.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/jquery.ui.selectmenu.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/ui.checkbox.js") %>'></script>
-    <script type="text/javascript" src='<%= ResolveUrl("../../ControlMenor/js/json2.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery-1.5.1.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery.dataTables.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/jquery.ui.selectmenu.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/ui.checkbox.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("../ControlMenor/js/json2.js") %>'></script>
     <%--    <li><a runat="server" href="#tabInterconsulta">Interconsulta</a></li>--%>
-    <link href='<%= ResolveUrl("../../ControlMenor/css/redmond/jquery.ui.all.css") %>'
+    <link href='<%= ResolveUrl("../ControlMenor/css/redmond/jquery.ui.all.css") %>'
         rel="stylesheet" type="text/css" />
-    <link href='<%= ResolveUrl("../../ControlMenor/css/datatable.css") %>' rel="stylesheet"
+    <link href='<%= ResolveUrl("../ControlMenor/css/datatable.css") %>' rel="stylesheet"
         type="text/css" />
-    <link href='<%= ResolveUrl("../../ControlMenor/css/jquery.ui.selectmenu.css") %>'
+    <link href='<%= ResolveUrl("../ControlMenor/css/jquery.ui.selectmenu.css") %>'
         rel="stylesheet" type="text/css" />
-    <link href='<%= ResolveUrl("../../ControlMenor/css/ui.checkbox.css") %>' rel="stylesheet"
+    <link href='<%= ResolveUrl("../ControlMenor/css/ui.checkbox.css") %>' rel="stylesheet"
         type="text/css" />
     <script type="text/javascript">
         $(document).ready(function () {
@@ -98,7 +98,7 @@
 
         function abririmagenRCVG()
         {
-            window.open("../../App_Themes/consultorio/images/Guía-de-Bolsillo-RCVG.jpg", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=200, width=600, height=600");
+            window.open("../App_Themes/consultorio/images/Guía-de-Bolsillo-RCVG.jpg", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=200, width=600, height=600");
             
         }
     </script>
@@ -404,7 +404,7 @@
                                                             </td>
                                                             <td style="width: 15px; font-size: xx-small; height: 22px;">&nbsp;</td>
                                                             <td dir="rtl" style="width: 37px; height: 22px;">
-                                                                <asp:Label ID="lblRCVG" runat="server" Text="(%):RCVG"></asp:Label>  <img src="../../App_Themes/consultorio/images/zoom.png" onclick="abririmagenRCVG()" title="Ver Tabla"/>
+                                                                <asp:Label ID="lblRCVG" runat="server" Text="(%):RCVG"></asp:Label>  <img src="../App_Themes/consultorio/images/zoom.png" onclick="abririmagenRCVG()" title="Ver Tabla"/>
                                                             </td>
                                                             <td style="height: 22px;" colspan="2">
                                                                 <%--<asp:TextBox ID="txtRCVG" runat="server" Width="70px"></asp:TextBox>--%>
@@ -698,7 +698,7 @@
 
 
             var $this = $(this);
-            $('<iframe src="../../ConsultaAmbulatoria/ControlPerinatal/Control/Default.aspx?idPaciente=' + IdPaciente + '" />').dialog({
+            $('<iframe src="../ConsultaAmbulatoria/ControlPerinatal/Control/Default.aspx?idPaciente=' + IdPaciente + '" />').dialog({
                 title: 'Control Perinatal',
                 autoOpen: true,
                 width: 1000,
@@ -733,7 +733,7 @@
 
 
             var $this = $(this);
-            $('<iframe src="../../Laboratorio/Resultados/ProtocoloList.aspx?id=' + dni + '" />').dialog({
+            $('<iframe src="../Laboratorio/Resultados/ProtocoloList.aspx?id=' + dni + '" />').dialog({
                 title: 'Laboratorios',
                 autoOpen: true,
                 width: 1000,
@@ -802,7 +802,7 @@
 
 
             var $this = $(this);
-            $('<iframe src="../../Interconsultas1/ListadoDeInterconsultas.aspx?IdPaciente=' + IdPaciente + '" />').dialog({
+            $('<iframe src="../Interconsultas1/ListadoDeInterconsultas.aspx?IdPaciente=' + IdPaciente + '" />').dialog({
                 title: 'Ver Interconsultas',
                 autoOpen: true,
                 width: 1000,
@@ -835,7 +835,7 @@
 
 
             var $this = $(this);
-            $('<iframe src="../../Interconsultas1/InterconsultasEdit.aspx?IdPaciente=' + IdPaciente + '&idInterconsulta=0" />').dialog({
+            $('<iframe src="../Interconsultas1/InterconsultasEdit.aspx?IdPaciente=' + IdPaciente + '&idInterconsulta=0" />').dialog({
                 title: 'Nueva Interconsulta',
                 autoOpen: true,
                 width: 1000,

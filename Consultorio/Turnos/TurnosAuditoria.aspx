@@ -4,7 +4,7 @@
 <%@ Register Assembly="Subsonic" Namespace="SubSonic" TagPrefix="subsonic" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-  <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+  <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
   <link href="../Turnos.css" rel="stylesheet" type="text/css" />  
 </asp:Content>
 

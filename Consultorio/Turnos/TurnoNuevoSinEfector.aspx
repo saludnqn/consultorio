@@ -5,15 +5,15 @@
 <%@ Register Assembly="Subsonic" Namespace="SubSonic" TagPrefix="subsonic" %>
 <%@ Register Src="~/UserControls/ObrasSociales.ascx" TagName="OSociales" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
     <link href="../Turnos.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>
-    <script type="text/javascript" src="../../js/Mascara.js"></script>
-    <script type="text/javascript" src="../../js/ValidaFecha.js"></script>
-    <script type="text/javascript" src="../../js/tooltips/jquery.tools.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
+    <script type="text/javascript" src="../js/Mascara.js"></script>
+    <script type="text/javascript" src="../js/ValidaFecha.js"></script>
+    <script type="text/javascript" src="../js/tooltips/jquery.tools.min.js"></script>
     <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-1.5.1.min.js") %>'></script>
     <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
     <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/json2.js") %>'></script>
@@ -135,7 +135,7 @@
                     </tr>
                     <tr>
                         <td class="myLabelTitulo" width="200px" align="left" colspan="5">
-                            <img src="../../App_Themes/consultorio/Agenda/alerta.png" runat="server" id="imgAsistencia" />
+                            <img src="../App_Themes/consultorio/Agenda/alerta.png" runat="server" id="imgAsistencia" />
                             <asp:Label ID="lblInasistencia" CssClass="myLabelRojo" runat="server" Text="Label"> </asp:Label>
                         </td>
                         <td width="70px">

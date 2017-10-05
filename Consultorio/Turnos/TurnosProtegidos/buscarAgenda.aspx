@@ -2,25 +2,25 @@
     Inherits="Consultorio.Turnos.TurnosProtegidos.buscarAgenda" MasterPageFile="~/mConsultorio.Master"%>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Superior" runat="server">
-    <link href="../../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../../js/jquery-ui-1.7.1.custom.css" />
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
 
-    <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
 
-    <script type="text/javascript" src="../../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
 
-    <script type="text/javascript" src="../../../js/jquery.ui.datepicker-es.js"></script>
+    <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>
 
-    <script type="text/javascript" src="../../../js/Mascara.js"></script>
+    <script type="text/javascript" src="../../js/Mascara.js"></script>
 
-    <script type="text/javascript" src="../../../js/ValidaFecha.js"></script>
+    <script type="text/javascript" src="../../js/ValidaFecha.js"></script>
 
     <script type="text/javascript">
 
         $(function () {
             $("#<%=txtFechaInicio.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '../../../App_Themes/turnosProtegidos/images/calendario.jpg',
+                buttonImage: '../../App_Themes/turnosProtegidos/images/calendario.jpg',
                 buttonImageOnly: true
             });
         });
@@ -28,7 +28,7 @@
         $(function () {
             $("#<%=txtFechaFin.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '../../../App_Themes/turnosProtegidos/images/calendario.jpg',
+                buttonImage: '../../App_Themes/turnosProtegidos/images/calendario.jpg',
                 buttonImageOnly: true
             });
         });
@@ -238,7 +238,7 @@
                                                 </td>
                                                 <td class="auto-style4">
                                                     <asp:Panel ID="pnlVerAgendas" runat="server">
-                                                        <asp:ImageButton ID="ibVerDatos" runat="server" ImageUrl="../../../App_Themes/turnosProtegidos/images/verAgendas.png" OnClick="ibVerDatos_Click" />
+                                                        <asp:ImageButton ID="ibVerDatos" runat="server" ImageUrl="../../App_Themes/turnosProtegidos/images/verAgendas.png" OnClick="ibVerDatos_Click" />
                                                     </asp:Panel>
                                                 </td>
                                             </tr>

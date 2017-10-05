@@ -5,9 +5,9 @@
 <%@ Register Assembly="Subsonic" Namespace="SubSonic" TagPrefix="subsonic" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Turnos.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cuerpo" runat="server">
     <br />
@@ -128,7 +128,7 @@
                             <div id="divConfirma" runat="server" visible="false" style="width: 90%; height: auto;
                                 border: dotted 1px Maroon; padding: 5px; background-color: #F1E2BB;">
                                 <div style="float: left; width: 46px;">
-                                    <img alt="confirme" src="../../App_Themes/consultorio/Agenda/ayuda48.png" />
+                                    <img alt="confirme" src="../App_Themes/consultorio/Agenda/ayuda48.png" />
                                 </div>
                                 <div style="float: left; text-align: left; width: 250px;">
                                     <asp:Label ID="lblConfirma" runat="server" class="labelerror" Style="font-weight: bolder;"></asp:Label>
@@ -146,7 +146,7 @@
                                 border: dotted 1px Maroon; padding: 5px; margin: 5px 0px 5px 0px; background-color: #F1E2BB;
                                 overflow: auto;">
                                 <div style="float: left; width: 46px;">
-                                    <img alt="confirme" src="../../App_Themes/consultorio/Agenda/boton-de-error-icono-5371-48.png" />
+                                    <img alt="confirme" src="../App_Themes/consultorio/Agenda/boton-de-error-icono-5371-48.png" />
                                 </div>
                                 <div style="float: left; text-align: center; width: 220px;">
                                     <asp:Label ID="lblError" runat="server" class="labelerror" Style="font-weight: bolder;
@@ -231,7 +231,7 @@
                             <div id="divConfirmaConsultorio" runat="server" visible="false" style="width: 90%;
                                 height: auto; border: solid 1px Maroon; padding: 5px; background-color: #F1E2BB;">
                                 <div style="float: left; width: 46px;">
-                                    <img alt="confirme" src="../../App_Themes/consultorio/Agenda/ayuda48.png" />
+                                    <img alt="confirme" src="../App_Themes/consultorio/Agenda/ayuda48.png" />
                                 </div>
                                 <div style="float: left; text-align: left; width: 250px;">
                                     <asp:Label ID="lbl" runat="server" class="labelerror" Style="font-weight: bolder;">¿Confirma eliminar el consultorio?</asp:Label>
@@ -249,7 +249,7 @@
                                 border: solid 1px Maroon; padding: 5px; margin: 5px 0px 5px 0px; background-color: #F1E2BB;
                                 overflow: auto;">
                                 <div style="float: left; width: 46px;">
-                                    <img alt="confirme" src="../../App_Themes/consultorio/Agenda/boton-de-error-icono-5371-48.png" />
+                                    <img alt="confirme" src="../App_Themes/consultorio/Agenda/boton-de-error-icono-5371-48.png" />
                                 </div>
                                 <div style="float: left; text-align: center; width: 220px;">
                                     <asp:Label ID="lblErrorConsultorio" runat="server" class="labelerror" Style="font-weight: bolder;

@@ -5,14 +5,14 @@
 <%@ Register Assembly="Subsonic" Namespace="SubSonic" TagPrefix="subsonic" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Turnos.css" rel="stylesheet" type="text/css" />
-    <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
 
-    <script src="../../js/jquery-1.8.2.js" type="text/javascript"></script>
-    <script src="../../js/jquery-ui.js" type="text/javascript"></script>
+    <script src="../js/jquery-1.8.2.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.js" type="text/javascript"></script>
 
     <script type="text/javascript">
 
@@ -20,7 +20,7 @@
             $("#<%=txtDesde.ClientID %>").datepicker({
                 showOn: 'button',
                 dateFormat: 'dd/mm/yy',
-                buttonImage: '../../App_Themes/consultorio/images/calend1.jpg',
+                buttonImage: '../App_Themes/consultorio/images/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -29,7 +29,7 @@
             $("#<%=txtHasta.ClientID %>").datepicker({
                 showOn: 'button',
                 dateFormat: 'dd/mm/yy',
-                buttonImage: '../../App_Themes/consultorio/images/calend1.jpg',
+                buttonImage: '../App_Themes/consultorio/images/calend1.jpg',
                 buttonImageOnly: true
             });
         }); 
@@ -240,10 +240,10 @@
                     &nbsp;
                 </td>
                 <td align="left" colspan="2">
-                    <img src="../../App_Themes/consultorio/images/pdf.jpg" />
+                    <img src="../App_Themes/consultorio/images/pdf.jpg" />
                     <asp:LinkButton ID="lnkPdf" runat="server" CssClass="myLink" OnClick="lnkPdf_Click">Exportar a Pdf</asp:LinkButton>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="../../App_Themes/consultorio/images/excelPeq.gif" />
+                    <img src="../App_Themes/consultorio/images/excelPeq.gif" />
                     <asp:LinkButton ID="lnkExcel" runat="server" CssClass="myLink" OnClick="lnkExcel_Click">Exportar a Excel</asp:LinkButton>
                 </td>
             </tr>

@@ -4,22 +4,22 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <link href="../Turnos.css" rel="stylesheet" type="text/css" />
-    <link href="../../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="../../js/jquery-ui-1.7.1.custom.css" />
+    <link href="../App_Themes/consultorio/ical.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.7.1.custom.css" />
 
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery.ui.datepicker-es.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
 
-     <script src="../../js/jquery-1.8.2.js" type="text/javascript"></script>
-     <script src="../../js/jquery-ui.js" type="text/javascript"></script>
+     <script src="../js/jquery-1.8.2.js" type="text/javascript"></script>
+     <script src="../js/jquery-ui.js" type="text/javascript"></script>
     <script type="text/javascript">
 
         $(function () {
             $("#<%=txtDesde.ClientID %>").datepicker({
                 showOn: 'button',
                 dateFormat: 'dd/mm/yy',
-                buttonImage: '../../App_Themes/consultorio/images/calend1.jpg',
+                buttonImage: '../App_Themes/consultorio/images/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -28,7 +28,7 @@
             $("#<%=txtHasta.ClientID %>").datepicker({
                 showOn: 'button',
                 dateFormat: 'dd/mm/yy',
-                buttonImage: '../../App_Themes/consultorio/images/calend1.jpg',
+                buttonImage: '../App_Themes/consultorio/images/calend1.jpg',
                 buttonImageOnly: true
             });
         }); 

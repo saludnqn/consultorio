@@ -471,18 +471,18 @@ namespace Consultorio.Agenda
                     st = parametrosCorrectos(i);
                     if (st == string.Empty)
                     {
-                        img.ImageUrl = "../../App_Themes/consultorio/Agenda/check_verde16.png";
+                        img.ImageUrl = "../App_Themes/consultorio/Agenda/check_verde16.png";
                         img.Visible = true;
                     }
                     else
                     {
-                        img.ImageUrl = "../../App_Themes/consultorio/Agenda/turnoreservado.png";
+                        img.ImageUrl = "../App_Themes/consultorio/Agenda/turnoreservado.png";
                         img.Visible = true;
                     }
                 }
                 else
                 {
-                    img.ImageUrl = "background-image: url('../../App_Themes/consultorio/Agenda/turnoeliminado.png');background-repeat:no-repeat;";
+                    img.ImageUrl = "background-image: url('../App_Themes/consultorio/Agenda/turnoeliminado.png');background-repeat:no-repeat;";
                     img.Visible = true;
                     if (st != string.Empty) { st += Environment.NewLine; }
                     st = "- el/los horarios marcados han sido ocupados por otra agenda";
