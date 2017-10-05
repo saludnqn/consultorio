@@ -1,0 +1,27 @@
+/*!
+ * Se define este archivo secundario para no modificar jquery-ui-1.8.20.css
+ */
+
+.ui-widget-overlay
+{
+    background: black !important;
+    opacity: 0.5 !important;
+    position: fixed;
+}
+
+.ui-widget
+{
+    font: 14px "Segoe UI" !important;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button
+{
+    font: 14px "Segoe UI" !important;
+    font-weight: bold !important;
+}
+
+.ui-widget-content
+{
+    background: white !important;
+    color: black !important;
+}
