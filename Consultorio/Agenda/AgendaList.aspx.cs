@@ -637,7 +637,7 @@ namespace Consultorio.Agenda
 
         protected void BtnOtrasActividades_Click(object sender, EventArgs e)
         {
-            string url = "../../../ActividadGrupal/Default.aspx";
+            string url = "~/../ActividadGrupal/Default.aspx";
             Response.Redirect(url, false);
         }
     }

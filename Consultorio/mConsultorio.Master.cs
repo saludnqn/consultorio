@@ -12,7 +12,6 @@ namespace Consultorio
     {
         public string strsips = SSOHelper.Configuration["Publicacion_Sips"] as string;
         public string strsso = SSOHelper.Configuration["Publicacion_SSO"] as string;
-        public string url = HttpContext.Current.Request.QueryString["url"];
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,14 +24,25 @@ namespace Consultorio
             else
             {
                 lblUsr.Text = string.Format(" {0}", SSOHelper.CurrentIdentity.Surname + " " + SSOHelper.CurrentIdentity.FirstName);
-                lblEfector.Text = string.Format("{0}", SSOHelper.GetNombreEfectorRol(SSOHelper.CurrentIdentity.IdEfectorRol));                
-
-                if (string.IsNullOrEmpty(url))
-                    url = SSOHelper.Configuration["StartPage"] as string;
+                lblEfector.Text = string.Format("{0}", SSOHelper.GetNombreEfectorRol(SSOHelper.CurrentIdentity.IdEfectorRol));
 
                 List<SSOMenuItem> menu = SSOHelper.GetApplicationMenuByEfector();
                 lvMenuSSO.DataSource = menu[0].items;
                 lvMenuSSO.DataBind();
+
+                lblUsr.Text = string.Format("{0}, {1}", SSOHelper.CurrentIdentity.Surname, SSOHelper.CurrentIdentity.FirstName);
+                lblEfector.Text = string.Format("{0}", SSOHelper.GetNombreEfectorRol(SSOHelper.CurrentIdentity.IdEfectorRol));
+                ImgHomeSystem.PostBackUrl = "~/../sips/default.aspx";
+
+                ImgChangePass.PostBackUrl = "/" + strsso + "/Options.aspx";
+                //ImgChangePass.PostBackUrl = "/sso/Options.aspx";
+
+                string url = HttpContext.Current.Request.QueryString["url"];
+                if (string.IsNullOrEmpty(url))
+                    url = SSOHelper.Configuration["StartPage"] as string;
+
+                ImgExit.PostBackUrl = "/" + strsso + "/Logout.aspx?relogin=1&url=" + url;// +"/" + strsips;
+                //ImgExit.PostBackUrl = "/sso/Logout.aspx?relogin=1&url=" + url + "/sips";
             }
         }
 
@@ -67,12 +77,12 @@ namespace Consultorio
 
         protected void hkbSesion_Click(object sender, EventArgs e)
         {
-            
+
             string strsso = SSOHelper.Configuration["Publicacion_SSO"] as string;
-          
+
 
             //Response.Redirect("~/SSO/Logout.aspx");
-            Response.Redirect("~/"+strsso+"/Logout.aspx");
+            Response.Redirect("~/" + strsso + "/Logout.aspx");
         }
     }
 }

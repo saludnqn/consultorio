@@ -144,13 +144,13 @@ namespace Consultorio.Turnos
         protected void btnNuevo_Click(object sender, EventArgs e)
         {
             if (txtDni.Text.Trim().Length > 0)
-                Response.Redirect("~/Paciente/PacienteEdit.aspx?dni=" + txtDni.Text.Trim() + "&llamada=Consultorio", false);
+                Response.Redirect("/empadronamiento/PacienteEdit.aspx?dni=" + txtDni.Text.Trim() + "&llamada=Consultorio", false);
             else
             {
-                if (Request["idTurnoAcompaniante"] == null)            
-                    Response.Redirect("~/Paciente/PacienteEdit.aspx?idPaciente=0&llamada=Consultorio", false);
+                if (Request["idTurnoAcompaniante"] == null)
+                    Response.Redirect("/empadronamiento/PacienteEdit.aspx?idPaciente=0&llamada=Consultorio", false);
                 else
-                    Response.Redirect("~/Paciente/PacienteEdit.aspx?idPaciente=0", false);
+                    Response.Redirect("/empadronamiento/PacienteEdit.aspx?idPaciente=0", false);
             }
         }
 
